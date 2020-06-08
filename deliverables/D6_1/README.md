@@ -1,0 +1,1 @@
+# D6.1 - White Paper on EN compliant e-invoice adoption in Italy
