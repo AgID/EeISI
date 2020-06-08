@@ -1,0 +1,1 @@
+# D2.7 - Systems gap analysis for «Fattura elettronica – il servizio delle Camere di Commercio»

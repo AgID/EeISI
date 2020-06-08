@@ -1,0 +1,1 @@
+# D2.11 - eDelivery gap analysis for «Fattura elettronica – il servizio delle Camere di Commercio»

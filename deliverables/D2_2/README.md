@@ -1,0 +1,1 @@
+# D2.2 - FatturaPA format evolution
