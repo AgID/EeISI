@@ -1,0 +1,1 @@
+# D3.10 - Design of the eDelivery architecture for «Fattura elettronica – il servizio delle Camere di Commercio»

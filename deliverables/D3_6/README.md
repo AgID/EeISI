@@ -1,0 +1,1 @@
+# D3.6 - Design technical specification for «Fattura elettronica – il servizio delle Camere di Commercio»
