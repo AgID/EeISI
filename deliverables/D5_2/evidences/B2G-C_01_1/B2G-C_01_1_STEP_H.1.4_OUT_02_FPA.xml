@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?><ns3:FatturaElettronica xmlns:ns3="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" versione="FPA12">
+    <FatturaElettronicaHeader>
+        <DatiTrasmissione>
+            <IdTrasmittente>
+                <IdPaese>DE</IdPaese>
+                <IdCodice>02483810392</IdCodice>
+            </IdTrasmittente>
+            <ProgressivoInvio>00001</ProgressivoInvio>
+            <FormatoTrasmissione>FPA12</FormatoTrasmissione>
+            <CodiceDestinatario>4YXHOT</CodiceDestinatario>
+        </DatiTrasmissione>
+        <CedentePrestatore>
+            <DatiAnagrafici>
+                <IdFiscaleIVA>
+                    <IdPaese>DE</IdPaese>
+                    <IdCodice>02483810392</IdCodice>
+                </IdFiscaleIVA>
+                <Anagrafica>
+                    <Denominazione>IBM PEPPOL Demo Endpoint CTE</Denominazione>
+                </Anagrafica>
+                <RegimeFiscale>RF01</RegimeFiscale>
+            </DatiAnagrafici>
+            <Sede>
+                <Indirizzo>Via Test, 12 Info aggiuntive su indirizzo Info aggiuntive</Indirizzo>
+                <CAP>40122</CAP>
+                <Comune>Bologna</Comune>
+                <Nazione>DE</Nazione>
+            </Sede>
+            <Contatti>
+                <Telefono>05223456789</Telefono>
+                <Email>test.email@supplier.com</Email>
+            </Contatti>
+        </CedentePrestatore>
+        <CessionarioCommittente>
+            <DatiAnagrafici>
+                <IdFiscaleIVA>
+                    <IdPaese>IT</IdPaese>
+                    <IdCodice>00463020651</IdCodice>
+                </IdFiscaleIVA>
+                <Anagrafica>
+                    <Denominazione>Azienda USL di Reggio Emilia</Denominazione>
+                </Anagrafica>
+            </DatiAnagrafici>
+            <Sede>
+                <Indirizzo>VIA AMENDOLA 2</Indirizzo>
+                <CAP>42100</CAP>
+                <Comune>REGGIO NELLEMILIA</Comune>
+                <Provincia>RE</Provincia>
+                <Nazione>IT</Nazione>
+            </Sede>
+        </CessionarioCommittente>
+    </FatturaElettronicaHeader>
+    <FatturaElettronicaBody>
+        <DatiGenerali>
+            <DatiGeneraliDocumento>
+                <TipoDocumento>TD01</TipoDocumento>
+                <Divisa>EUR</Divisa>
+                <Data>2019-12-12</Data>
+                <Numero>16-12-2019/INV/AP</Numero>
+                <ImportoTotaleDocumento>1395.68</ImportoTotaleDocumento>
+                <Causale>Consegnato a: AZIENDA UNITA SANITARIA LOCALE DI REGGIO EMILIA VIA VERTOIBA N.10/A -REGGIO EMILIA	</Causale>
+            </DatiGeneraliDocumento>
+            <DatiOrdineAcquisto>
+                <RiferimentoNumeroLinea>1</RiferimentoNumeroLinea>
+                <IdDocumento>S126346</IdDocumento>
+                <NumItem>3</NumItem>
+            </DatiOrdineAcquisto>
+            <DatiDDT>
+                <NumeroDDT>1196</NumeroDDT>
+                <DataDDT>2000-01-01</DataDDT>
+            </DatiDDT>
+            <DatiTrasporto>
+                <IndirizzoResa>
+                    <Indirizzo>VIA VERTOIBA N.10/A</Indirizzo>
+                    <CAP>42100</CAP>
+                    <Comune>REGGIO EMILIA</Comune>
+                    <Provincia>RE</Provincia>
+                    <Nazione>IT</Nazione>
+                </IndirizzoResa>
+            </DatiTrasporto>
+        </DatiGenerali>
+        <DatiBeniServizi>
+            <DettaglioLinee>
+                <NumeroLinea>1</NumeroLinea>
+                <CodiceArticolo>
+                    <CodiceTipo>Seller</CodiceTipo>
+                    <CodiceValore>377108/R</CodiceValore>
+                </CodiceArticolo>
+                <CodiceArticolo>
+                    <CodiceTipo>ZZZ</CodiceTipo>
+                    <CodiceValore>1:377108/R</CodiceValore>
+                </CodiceArticolo>
+                <Descrizione>PINZA DA BIOPSIA</Descrizione>
+                <Quantita>20.00000000</Quantita>
+                <UnitaMisura>1.00 C62</UnitaMisura>
+                <PrezzoUnitario>57.20000000</PrezzoUnitario>
+                <PrezzoTotale>1144.00000000</PrezzoTotale>
+                <AliquotaIVA>22.00</AliquotaIVA>
+                <AltriDatiGestionali>
+                    <TipoDato>BT-127</TipoDato>
+                    <RiferimentoTesto>RIV 2,3MM 180CM CON AGO MORSO DENTATO</RiferimentoTesto>
+                </AltriDatiGestionali>
+                <AltriDatiGestionali>
+                    <TipoDato>BT-70</TipoDato>
+                    <RiferimentoTesto>AZIENDA UNITA SANITARIA LOCALE DI REGGIO EMILIA</RiferimentoTesto>
+                </AltriDatiGestionali>
+            </DettaglioLinee>
+            <DatiRiepilogo>
+                <AliquotaIVA>22.00</AliquotaIVA>
+                <ImponibileImporto>1144.00</ImponibileImporto>
+                <Imposta>251.68</Imposta>
+                <EsigibilitaIVA>I</EsigibilitaIVA>
+            </DatiRiepilogo>
+        </DatiBeniServizi>
+        <DatiPagamento>
+            <CondizioniPagamento>TP02</CondizioniPagamento>
+            <DettaglioPagamento>
+                <ModalitaPagamento>MP05</ModalitaPagamento>
+                <DataScadenzaPagamento>2019-12-20</DataScadenzaPagamento>
+                <ImportoPagamento>1395.68</ImportoPagamento>
+            </DettaglioPagamento>
+        </DatiPagamento>
+        <Allegati>
+            <NomeAttachment>not-mapped-values.txt</NomeAttachment>
+            <FormatoAttachment>txt</FormatoAttachment>
+            <Attachment>QlQwMDIwOiBELkxHUy4gMjMxLzIwMDIgUy5NLgpCVDAwMjM6IHVybjpmZGM6cGVwcG9sLmV1OjIwMTc6cG9hY2M6YmlsbGluZzowMToxLjAKQlQwMDI4OiBJQk0gUEVQUE9MIERlbW8gRW5kcG9pbnQgQ1RFCkJUMDAzNDogMDIwMTppY3Rlc3QKQlQwMDQxOiBBbGVzc2FuZHJvIExvcmVuemV0dGkKQlQwMDQ1OiBBemllbmRhIFVTTCBkaSBSZWdnaW8gRW1pbGlhCkJUMDA1NjogTUFSQ08gUk9TU0kKQlQwMDU3OiAwODc0NjA1NjEKQlQwMDU4OiBtYXJjby5yb3NzaUBhdXNsLnJlLml0CkJUMDAyOTogbnVsbDo1MDUwNjg5MDAwMDE4CkJUMDAzOTogQk8=</Attachment>
+        </Allegati>
+        <Allegati>
+            <NomeAttachment>fattura_originale</NomeAttachment>
+            <FormatoAttachment>xml</FormatoAttachment>
+            <Attachment>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48SW52b2ljZSB4bWxucz0idXJuOm9hc2lzOm5hbWVzOnNwZWNpZmljYXRpb246dWJsOnNjaGVtYTp4c2Q6SW52b2ljZS0yIiB4bWxuczpleHQ9InVybjpvYXNpczpuYW1lczpzcGVjaWZpY2F0aW9uOnVibDpzY2hlbWE6eHNkOkNvbW1vbkV4dGVuc2lvbkNvbXBvbmVudHMtMiIgeG1sbnM6cWR0PSJ1cm46b2FzaXM6bmFtZXM6c3BlY2lmaWNhdGlvbjp1Ymw6c2NoZW1hOnhzZDpRdWFsaWZpZWREYXRhdHlwZXMtMiIgeG1sbnM6Y2N0cz0idXJuOnVuOnVuZWNlOnVuY2VmYWN0OmRvY3VtZW50YXRpb246MiIgeG1sbnM6Y2FjPSJ1cm46b2FzaXM6bmFtZXM6c3BlY2lmaWNhdGlvbjp1Ymw6c2NoZW1hOnhzZDpDb21tb25BZ2dyZWdhdGVDb21wb25lbnRzLTIiIHhtbG5zOnVkdD0idXJuOnVuOnVuZWNlOnVuY2VmYWN0OmRhdGE6c3BlY2lmaWNhdGlvbjpVbnF1YWxpZmllZERhdGFUeXBlc1NjaGVtYU1vZHVsZToyIiB4bWxuczpjYmM9InVybjpvYXNpczpuYW1lczpzcGVjaWZpY2F0aW9uOnVibDpzY2hlbWE6eHNkOkNvbW1vbkJhc2ljQ29tcG9uZW50cy0yIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIiB4bWxuczpjcj0iaHR0cDovL3d3dy51YmwtaXRhbGlhLm9yZy9ucy9Dcm9zc1JlZmVyZW5jZSIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJ1cm46b2FzaXM6bmFtZXM6c3BlY2lmaWNhdGlvbjp1Ymw6c2NoZW1hOnhzZDpJbnZvaWNlLTIgVUJMLUludm9pY2UtMi4xLnhzZCI+CiAgICA8Y2JjOkN1c3RvbWl6YXRpb25JRD51cm46Y2VuLmV1OmVuMTY5MzE6MjAxNyNjb21wbGlhbnQjdXJuOmZkYzpwZXBwb2wuZXU6MjAxNzpwb2FjYzpiaWxsaW5nOjMuMDwvY2JjOkN1c3RvbWl6YXRpb25JRD4KICAgIDxjYmM6UHJvZmlsZUlEPnVybjpmZGM6cGVwcG9sLmV1OjIwMTc6cG9hY2M6YmlsbGluZzowMToxLjA8L2NiYzpQcm9maWxlSUQ+CiAgICA8Y2JjOklEPjE2LTEyLTIwMTkvSU5WL0FQPC9jYmM6SUQ+CiAgICA8Y2JjOklzc3VlRGF0ZT4yMDE5LTEyLTEyPC9jYmM6SXNzdWVEYXRlPgogICAgPGNiYzpEdWVEYXRlPjIwMTktMTItMjA8L2NiYzpEdWVEYXRlPgogICAgPGNiYzpJbnZvaWNlVHlwZUNvZGU+MzgwPC9jYmM6SW52b2ljZVR5cGVDb2RlPgogICAgPCEtLSAzODAgPSBDb21tZXJjaWFsIGludm9pY2UgIC0tPgogICAgPGNiYzpOb3RlPkNvbnNlZ25hdG8gYTogQVpJRU5EQSBVTklUQSBTQU5JVEFSSUEgTE9DQUxFIERJIFJFR0dJTyBFTUlMSUEgVklBIFZFUlRPSUJBIE4uMTAvQSAtUkVHR0lPIEVNSUxJQQk8L2NiYzpOb3RlPgogICAgPGNiYzpEb2N1bWVudEN1cnJlbmN5Q29kZT5FVVI8L2NiYzpEb2N1bWVudEN1cnJlbmN5Q29kZT4KICAgIDxjYWM6T3JkZXJSZWZlcmVuY2U+CiAgICAgIDxjYmM6SUQ+UzEyNjM0NjwvY2JjOklEPgogICAgPC9jYWM6T3JkZXJSZWZlcmVuY2U+CiAgICA8Y2FjOkRlc3BhdGNoRG9jdW1lbnRSZWZlcmVuY2U+CiAgICAgIDxjYmM6SUQ+MTE5NjwvY2JjOklEPgogICAgPC9jYWM6RGVzcGF0Y2hEb2N1bWVudFJlZmVyZW5jZT4KICAgIDxjYWM6QWNjb3VudGluZ1N1cHBsaWVyUGFydHk+CiAgICAgIDxjYWM6UGFydHk+CiAgICAgICAgPGNiYzpFbmRwb2ludElEIHNjaGVtZUlEPSIwMjAxIj5pY3Rlc3Q8L2NiYzpFbmRwb2ludElEPgogICAgICAgIDxjYWM6UGFydHlJZGVudGlmaWNhdGlvbj4KICAgICAgICAgIDxjYmM6SUQ+NTA1MDY4OTAwMDAxODwvY2JjOklEPgogICAgICAgIDwvY2FjOlBhcnR5SWRlbnRpZmljYXRpb24+CiAgICAgICAgPGNhYzpQYXJ0eU5hbWU+CiAgICAgICAgICA8Y2JjOk5hbWU+SUJNIFBFUFBPTCBEZW1vIEVuZHBvaW50IENURTwvY2JjOk5hbWU+CiAgICAgICAgPC9jYWM6UGFydHlOYW1lPgogICAgICAgIDxjYWM6UG9zdGFsQWRkcmVzcz4KICAgICAgICAgIDxjYmM6U3RyZWV0TmFtZT5WaWEgVGVzdCwgMTI8L2NiYzpTdHJlZXROYW1lPgogICAgICAgICAgPGNiYzpBZGRpdGlvbmFsU3RyZWV0TmFtZT5JbmZvIGFnZ2l1bnRpdmUgc3UgaW5kaXJpenpvPC9jYmM6QWRkaXRpb25hbFN0cmVldE5hbWU+CiAgICAgICAgICA8Y2JjOkNpdHlOYW1lPkJvbG9nbmE8L2NiYzpDaXR5TmFtZT4KICAgICAgICAgIDxjYmM6UG9zdGFsWm9uZT40MDEyMjwvY2JjOlBvc3RhbFpvbmU+CiAgICAgICAgICA8Y2JjOkNvdW50cnlTdWJlbnRpdHk+Qk88L2NiYzpDb3VudHJ5U3ViZW50aXR5PgogICAgICAgICAgPGNhYzpBZGRyZXNzTGluZT4KICAgICAgICAgICAgPGNiYzpMaW5lPkluZm8gYWdnaXVudGl2ZTwvY2JjOkxpbmU+CiAgICAgICAgICA8L2NhYzpBZGRyZXNzTGluZT4KICAgICAgICAgIDxjYWM6Q291bnRyeT4KICAgICAgICAgICAgPGNiYzpJZGVudGlmaWNhdGlvbkNvZGUgbGlzdElEPSJJU08zMTY2LTE6QWxwaGEyIj5ERTwvY2JjOklkZW50aWZpY2F0aW9uQ29kZT4KICAgICAgICAgIDwvY2FjOkNvdW50cnk+CiAgICAgICAgPC9jYWM6UG9zdGFsQWRkcmVzcz4KICAgICAgICA8Y2FjOlBhcnR5VGF4U2NoZW1lPgogICAgICAgICAgPGNiYzpDb21wYW55SUQ+REUwMjQ4MzgxMDM5MjwvY2JjOkNvbXBhbnlJRD4KICAgICAgICAgIDxjYWM6VGF4U2NoZW1lPgogICAgICAgICAgICA8Y2JjOklEPlZBVDwvY2JjOklEPgogICAgICAgICAgPC9jYWM6VGF4U2NoZW1lPgogICAgICAgIDwvY2FjOlBhcnR5VGF4U2NoZW1lPgogICAgICAgIDxjYWM6UGFydHlMZWdhbEVudGl0eT4KICAgICAgICAgIDxjYmM6UmVnaXN0cmF0aW9uTmFtZT5JQk0gUEVQUE9MIERlbW8gRW5kcG9pbnQgQ1RFPC9jYmM6UmVnaXN0cmF0aW9uTmFtZT4KICAgICAgICA8L2NhYzpQYXJ0eUxlZ2FsRW50aXR5PgogICAgICAgIDxjYWM6Q29udGFjdD4KICAgICAgICAgIDxjYmM6TmFtZT5BbGVzc2FuZHJvIExvcmVuemV0dGk8L2NiYzpOYW1lPgogICAgICAgICAgPGNiYzpUZWxlcGhvbmU+MDUyMjM0NTY3ODk8L2NiYzpUZWxlcGhvbmU+CiAgICAgICAgICA8Y2JjOkVsZWN0cm9uaWNNYWlsPnRlc3QuZW1haWxAc3VwcGxpZXIuY29tPC9jYmM6RWxlY3Ryb25pY01haWw+CiAgICAgICAgPC9jYWM6Q29udGFjdD4KICAgICAgPC9jYWM6UGFydHk+CiAgICA8L2NhYzpBY2NvdW50aW5nU3VwcGxpZXJQYXJ0eT4KICAgIDxjYWM6QWNjb3VudGluZ0N1c3RvbWVyUGFydHk+CiAgICAgIDxjYWM6UGFydHk+CiAgICAgICAgPGNiYzpFbmRwb2ludElEIHNjaGVtZUlEPSIwMjAxIj40WVhIT1Q8L2NiYzpFbmRwb2ludElEPgogICAgICAgIDxjYWM6UGFydHlOYW1lPgogICAgICAgICAgPGNiYzpOYW1lPkF6aWVuZGEgVVNMIGRpIFJlZ2dpbyBFbWlsaWE8L2NiYzpOYW1lPgogICAgICAgIDwvY2FjOlBhcnR5TmFtZT4KICAgICAgICA8Y2FjOlBvc3RhbEFkZHJlc3M+CiAgICAgICAgICA8Y2JjOlN0cmVldE5hbWU+VklBIEFNRU5ET0xBIDI8L2NiYzpTdHJlZXROYW1lPgogICAgICAgICAgPGNiYzpDaXR5TmFtZT5SRUdHSU8gTkVMTEVNSUxJQTwvY2JjOkNpdHlOYW1lPgogICAgICAgICAgPGNiYzpQb3N0YWxab25lPjQyMTAwPC9jYmM6UG9zdGFsWm9uZT4KICAgICAgICAgIDxjYmM6Q291bnRyeVN1YmVudGl0eT5SRTwvY2JjOkNvdW50cnlTdWJlbnRpdHk+CiAgICAgICAgICA8Y2FjOkNvdW50cnk+CiAgICAgICAgICAgIDxjYmM6SWRlbnRpZmljYXRpb25Db2RlPklUPC9jYmM6SWRlbnRpZmljYXRpb25Db2RlPgogICAgICAgICAgPC9jYWM6Q291bnRyeT4KICAgICAgICA8L2NhYzpQb3N0YWxBZGRyZXNzPgogICAgICAgIDxjYWM6UGFydHlUYXhTY2hlbWU+CiAgICAgICAgICA8Y2JjOkNvbXBhbnlJRD5JVDAwNDYzMDIwNjUxPC9jYmM6Q29tcGFueUlEPgogICAgICAgICAgPGNhYzpUYXhTY2hlbWU+CiAgICAgICAgICAgIDxjYmM6SUQ+VkFUPC9jYmM6SUQ+CiAgICAgICAgICA8L2NhYzpUYXhTY2hlbWU+CiAgICAgICAgPC9jYWM6UGFydHlUYXhTY2hlbWU+CiAgICAgICAgPGNhYzpQYXJ0eUxlZ2FsRW50aXR5PgogICAgICAgICAgPGNiYzpSZWdpc3RyYXRpb25OYW1lPkF6aWVuZGEgVVNMIGRpIFJlZ2dpbyBFbWlsaWE8L2NiYzpSZWdpc3RyYXRpb25OYW1lPgogICAgICAgIDwvY2FjOlBhcnR5TGVnYWxFbnRpdHk+CiAgICAgICAgPGNhYzpDb250YWN0PgogICAgICAgICAgPGNiYzpOYW1lPk1BUkNPIFJPU1NJPC9jYmM6TmFtZT4KICAgICAgICAgIDxjYmM6VGVsZXBob25lPjA4NzQ2MDU2MTwvY2JjOlRlbGVwaG9uZT4KICAgICAgICAgIDxjYmM6RWxlY3Ryb25pY01haWw+bWFyY28ucm9zc2lAYXVzbC5yZS5pdDwvY2JjOkVsZWN0cm9uaWNNYWlsPgogICAgICAgIDwvY2FjOkNvbnRhY3Q+CiAgICAgIDwvY2FjOlBhcnR5PgogICAgPC9jYWM6QWNjb3VudGluZ0N1c3RvbWVyUGFydHk+CiAgICA8Y2FjOkRlbGl2ZXJ5PgogICAgICA8Y2FjOkRlbGl2ZXJ5TG9jYXRpb24+CiAgICAgICAgPGNhYzpBZGRyZXNzPgogICAgICAgICAgPGNiYzpJRD4wMjwvY2JjOklEPgogICAgICAgICAgPGNiYzpTdHJlZXROYW1lPlZJQSBWRVJUT0lCQSBOLjEwL0E8L2NiYzpTdHJlZXROYW1lPgogICAgICAgICAgPGNiYzpDaXR5TmFtZT5SRUdHSU8gRU1JTElBPC9jYmM6Q2l0eU5hbWU+CiAgICAgICAgICA8Y2JjOlBvc3RhbFpvbmU+NDIxMDA8L2NiYzpQb3N0YWxab25lPgogICAgICAgICAgPGNiYzpDb3VudHJ5U3ViZW50aXR5PlJFPC9jYmM6Q291bnRyeVN1YmVudGl0eT4KICAgICAgICAgIDxjYWM6Q291bnRyeT4KICAgICAgICAgICAgPGNiYzpJZGVudGlmaWNhdGlvbkNvZGU+SVQ8L2NiYzpJZGVudGlmaWNhdGlvbkNvZGU+CiAgICAgICAgICA8L2NhYzpDb3VudHJ5PgogICAgICAgIDwvY2FjOkFkZHJlc3M+CiAgICAgIDwvY2FjOkRlbGl2ZXJ5TG9jYXRpb24+CiAgICAgIDxjYWM6RGVsaXZlcnlQYXJ0eT4KICAgICAgICA8Y2FjOlBhcnR5TmFtZT4KICAgICAgICAgIDxjYmM6TmFtZT5BWklFTkRBIFVOSVRBIFNBTklUQVJJQSBMT0NBTEUgREkgUkVHR0lPIEVNSUxJQTwvY2JjOk5hbWU+CiAgICAgICAgPC9jYWM6UGFydHlOYW1lPgogICAgICA8L2NhYzpEZWxpdmVyeVBhcnR5PgogICAgPC9jYWM6RGVsaXZlcnk+CiAgICA8Y2FjOlBheW1lbnRNZWFucz4KICAgICAgPGNiYzpQYXltZW50TWVhbnNDb2RlPjMwPC9jYmM6UGF5bWVudE1lYW5zQ29kZT4KICAgICAgPGNhYzpQYXllZUZpbmFuY2lhbEFjY291bnQ+CiAgICAgICAgPGNiYzpJRD5JVDA5RzAzMDU5MDEwMDQxMDAwMDAxMDE1NTA8L2NiYzpJRD4KICAgICAgPC9jYWM6UGF5ZWVGaW5hbmNpYWxBY2NvdW50PgogICAgPC9jYWM6UGF5bWVudE1lYW5zPgogICAgPGNhYzpQYXltZW50VGVybXM+CiAgICAgIDxjYmM6Tm90ZT5ELkxHUy4gMjMxLzIwMDIgUy5NLjwvY2JjOk5vdGU+CiAgICA8L2NhYzpQYXltZW50VGVybXM+CiAgICA8Y2FjOlRheFRvdGFsPgogICAgICA8Y2JjOlRheEFtb3VudCBjdXJyZW5jeUlEPSJFVVIiPjI1MS42ODwvY2JjOlRheEFtb3VudD4KICAgICAgPGNhYzpUYXhTdWJ0b3RhbD4KICAgICAgICA8Y2JjOlRheGFibGVBbW91bnQgY3VycmVuY3lJRD0iRVVSIj4xMTQ0LjAwPC9jYmM6VGF4YWJsZUFtb3VudD4KICAgICAgICA8Y2JjOlRheEFtb3VudCBjdXJyZW5jeUlEPSJFVVIiPjI1MS42ODwvY2JjOlRheEFtb3VudD4KICAgICAgICA8Y2FjOlRheENhdGVnb3J5PgogICAgICAgICAgPGNiYzpJRCBzY2hlbWVJRD0iVU5DTDUzMDUiPlM8L2NiYzpJRD4KICAgICAgICAgIDxjYmM6UGVyY2VudD4yMjwvY2JjOlBlcmNlbnQ+CiAgICAgICAgICA8Y2FjOlRheFNjaGVtZT4KICAgICAgICAgICAgPGNiYzpJRCBzY2hlbWVJRD0iVU5DTDUxNTQiPlZBVDwvY2JjOklEPgogICAgICAgICAgPC9jYWM6VGF4U2NoZW1lPgogICAgICAgIDwvY2FjOlRheENhdGVnb3J5PgogICAgICA8L2NhYzpUYXhTdWJ0b3RhbD4KICAgIDwvY2FjOlRheFRvdGFsPgogICAgPGNhYzpMZWdhbE1vbmV0YXJ5VG90YWw+CiAgICAgIDwhLS0gU29tbWEgZGVnbGkgaW1wb3J0aSBkaSByaWdhIC0tPgogICAgICA8Y2JjOkxpbmVFeHRlbnNpb25BbW91bnQgY3VycmVuY3lJRD0iRVVSIj4xMTQ0PC9jYmM6TGluZUV4dGVuc2lvbkFtb3VudD4KICAgICAgPCEtLSBJbXBvcnRvIHRvdGFsZSBmYXR0dXJhIGVzY2x1c2EgSVZBL1ZBVCAtLT4KICAgICAgPGNiYzpUYXhFeGNsdXNpdmVBbW91bnQgY3VycmVuY3lJRD0iRVVSIj4xMTQ0PC9jYmM6VGF4RXhjbHVzaXZlQW1vdW50PgogICAgICA8IS0tIEltcG9ydG8gdG90YWxlIGZhdHR1cmEgaW5jbHVzYSBJVkEvVkFUIC0tPgogICAgICA8Y2JjOlRheEluY2x1c2l2ZUFtb3VudCBjdXJyZW5jeUlEPSJFVVIiPjEzOTUuNjg8L2NiYzpUYXhJbmNsdXNpdmVBbW91bnQ+CiAgICAgIDwhLS0gSW1wb3J0byBmaW5hbGUgZGEgcGFnYXJlIC0tPgogICAgICA8Y2JjOlBheWFibGVBbW91bnQgY3VycmVuY3lJRD0iRVVSIj4xMzk1LjY4PC9jYmM6UGF5YWJsZUFtb3VudD4KICAgIDwvY2FjOkxlZ2FsTW9uZXRhcnlUb3RhbD4KICAgIDxjYWM6SW52b2ljZUxpbmU+CiAgICAgIDxjYmM6SUQ+MTwvY2JjOklEPgogICAgICA8Y2JjOk5vdGU+UklWIDIsM01NIDE4MENNIENPTiBBR08gTU9SU08gREVOVEFUTzwvY2JjOk5vdGU+CiAgICAgIDxjYmM6SW52b2ljZWRRdWFudGl0eSB1bml0Q29kZT0iQzYyIj4yMDwvY2JjOkludm9pY2VkUXVhbnRpdHk+CiAgICAgIDxjYmM6TGluZUV4dGVuc2lvbkFtb3VudCBjdXJyZW5jeUlEPSJFVVIiPjExNDQ8L2NiYzpMaW5lRXh0ZW5zaW9uQW1vdW50PgogICAgICA8Y2FjOk9yZGVyTGluZVJlZmVyZW5jZT4KICAgICAgICA8Y2JjOkxpbmVJRD4zPC9jYmM6TGluZUlEPgogICAgICAgIDxjYWM6T3JkZXJSZWZlcmVuY2U+CiAgICAgICAgICA8Y2JjOklEPlMxMjYzNDY8L2NiYzpJRD4KICAgICAgICA8L2NhYzpPcmRlclJlZmVyZW5jZT4KICAgICAgPC9jYWM6T3JkZXJMaW5lUmVmZXJlbmNlPgogICAgICA8Y2FjOkl0ZW0+CiAgICAgICAgPGNiYzpOYW1lPlBJTlpBIERBIEJJT1BTSUE8L2NiYzpOYW1lPgogICAgICAgIDxjYWM6U2VsbGVyc0l0ZW1JZGVudGlmaWNhdGlvbj4KICAgICAgICAgIDxjYmM6SUQ+Mzc3MTA4L1I8L2NiYzpJRD4KICAgICAgICA8L2NhYzpTZWxsZXJzSXRlbUlkZW50aWZpY2F0aW9uPgogICAgICAgIDxjYWM6Q29tbW9kaXR5Q2xhc3NpZmljYXRpb24+CiAgICAgICAgICA8Y2JjOkl0ZW1DbGFzc2lmaWNhdGlvbkNvZGUgbGlzdElEPSJaWloiPjE6Mzc3MTA4L1I8L2NiYzpJdGVtQ2xhc3NpZmljYXRpb25Db2RlPgogICAgICAgIDwvY2FjOkNvbW1vZGl0eUNsYXNzaWZpY2F0aW9uPgogICAgICAgIDxjYWM6Q2xhc3NpZmllZFRheENhdGVnb3J5PgogICAgICAgICAgPGNiYzpJRCBzY2hlbWVJRD0iVU5DTDUzMDUiPlM8L2NiYzpJRD4KICAgICAgICAgIDxjYmM6UGVyY2VudD4yMjwvY2JjOlBlcmNlbnQ+CiAgICAgICAgICA8Y2FjOlRheFNjaGVtZT4KICAgICAgICAgICAgPGNiYzpJRD5WQVQ8L2NiYzpJRD4KICAgICAgICAgIDwvY2FjOlRheFNjaGVtZT4KICAgICAgICA8L2NhYzpDbGFzc2lmaWVkVGF4Q2F0ZWdvcnk+CiAgICAgIDwvY2FjOkl0ZW0+CiAgICAgIDxjYWM6UHJpY2U+CiAgICAgICAgPGNiYzpQcmljZUFtb3VudCBjdXJyZW5jeUlEPSJFVVIiPjU3LjI8L2NiYzpQcmljZUFtb3VudD4KICAgICAgPC9jYWM6UHJpY2U+CiAgICA8L2NhYzpJbnZvaWNlTGluZT4KICA8L0ludm9pY2U+</Attachment>
+        </Allegati>
+    </FatturaElettronicaBody>
+<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="Signature1"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><ds:Reference Id="reference-document" URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2002/06/xmldsig-filter2"><XPath xmlns="http://www.w3.org/2002/06/xmldsig-filter2" Filter="subtract">/descendant::ds:Signature</XPath></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>hqugUy8s0Ojo73ZJbOWruQZXfsbZEMX1iGICAqbAyV4=</ds:DigestValue></ds:Reference><ds:Reference Id="reference-signedpropeties" Type="http://uri.etsi.org/01903#SignedProperties" URI="#SignedProperties_1"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>yIXk7wirgkCQfcq/enCCLh5U9V0cuC49eNAsAmVU4xo=</ds:DigestValue></ds:Reference><ds:Reference Id="reference-keyinfo" URI="#KeyInfoId"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>opiYF9OCvs8dEwFbGlkTxbpR+8zmrqtyVpxx9flde9E=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="SignatureValue1">B82whTfc2YmhaBOlS9vWKYnXVfqG0SRFg9YD06AYZPJYJx9EAXXHF62luLdwQpn4GXSfikbrkbfo
+nslTini2YSzJsKuUwRhuNZhhICctnm85iuLenso8wkjJ110gntLC1ZngF67CYHayrkJvcZirm4sP
+HtvnW5TeljudtQRaSQM=</ds:SignatureValue><ds:KeyInfo Id="KeyInfoId"><ds:X509Data><ds:X509Certificate>MIIDYTCCAkmgAwIBAgIIEeWeNIjrhuAwDQYJKoZIhvcNAQELBQAwNTELMAkGA1UEBhMCSVQxDjAM
+BgNVBAoTBVNvZ2VpMRYwFAYDVQQDEw1DQSBTb2dlaSBUZXN0MB4XDTE2MTEwNDEyMjUzNFoXDTE5
+MTEwNTEyMjUzNFowaTELMAkGA1UEBhMCSVQxHjAcBgNVBAoMFUFnZW56aWEgZGVsbGUgRW50cmF0
+ZTEaMBgGA1UEYQwRVkFUSVQtMDYzNjMzOTEwMDExHjAcBgNVBAMMFUFnZW56aWEgZGVsbGUgRW50
+cmF0ZTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAvaL/bu5MAW771w2cWHCHg7dSn8o1Gl3Y
+2kIibofXvObJMcCrfnvoYlnUMoHRpP3l6jpEC/ipbVDun6gW/IdPzPM13wUnoeYdJdMI/DPDhKRp
+xqQaj8ee1/XxAjxERSEPpWbBRTXd05wQ4YUGiiv6rwa1pnqsb3DLBwarIl+p9L8CAwEAAaOBxDCB
+wTAfBgNVHSMEGDAWgBRXw3zNFaJhEwprPuHGSexOQx/DhzBvBgNVHR8EaDBmMGSgYqBghl5sZGFw
+Oi8vY2Fkcy5zb2dlaS5maW5hbnplLml0L2NuJTNkQ0ElMjBTb2dlaSUyMFRlc3QsbyUzZFNvZ2Vp
+LGMlM2RpdD9jZXJ0aWZpY2F0ZVJldm9jYXRpb25MaXN0MB0GA1UdDgQWBBQp8Ddv2FcSO9NDHW7x
+Z1hbb3iQCTAOBgNVHQ8BAf8EBAMCBkAwDQYJKoZIhvcNAQELBQADggEBAMwABbvtPMrfdiSpfHcJ
+u495gzOHSHyh6yH7GDU2ur5yXuq/HA8lU3/ZSlP4wf7yO3740pYFBQ81RcFBOUdio9+e9Zl8Lj0p
+2UQ7DzK82rcn/HePi/h925o1TR4SUFF9RvVVN/tFOT7Bdwx5/r4sufhkYESb6aImSnvPR8LzZmMJ
+J6fT6SE5F5S12TekDUk3FhuzhnP9ygxjTPFSb3GroVOOyDgjKlWs/SwpHQc5p8sndGDEDHxFj+NB
+MvtskUsoLmaC+TfqMv+cXFCct/ch/aYEC6ZWgwp0KsmDf6f86cF3rft7ogFguL10K66oCbyEtUBK
+4QFrHiF4YHgMU5hLpQ4=</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" Target="#Signature1"><xades:SignedProperties Id="SignedProperties_1"><xades:SignedSignatureProperties><xades:SigningTime>2019-12-16T12:17:31Z</xades:SigningTime></xades:SignedSignatureProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></ns3:FatturaElettronica>
