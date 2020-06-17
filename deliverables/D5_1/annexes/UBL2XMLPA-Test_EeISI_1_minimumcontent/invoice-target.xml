@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns3:FatturaElettronica versione="FPA12" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2">
+    <FatturaElettronicaHeader>
+        <DatiTrasmissione>
+            <IdTrasmittente>
+                <IdPaese>IT</IdPaese>
+                <IdCodice>07945211006</IdCodice>
+            </IdTrasmittente>
+            <ProgressivoInvio>00001</ProgressivoInvio>
+            <FormatoTrasmissione>FPA12</FormatoTrasmissione>
+            <CodiceDestinatario>999999</CodiceDestinatario>
+        </DatiTrasmissione>
+        <CedentePrestatore>
+            <DatiAnagrafici>
+                <IdFiscaleIVA>
+                    <IdPaese>IT</IdPaese>
+                    <IdCodice>07945211006</IdCodice>
+                </IdFiscaleIVA>
+                <Anagrafica>
+                    <Denominazione>The seller company name</Denominazione>
+                </Anagrafica>
+                <RegimeFiscale>RF01</RegimeFiscale>
+            </DatiAnagrafici>
+            <Sede>
+                <Indirizzo>Street seller Additional street seller Line seller</Indirizzo>
+                <CAP>20124</CAP>
+                <Comune>City seller</Comune>
+                <Provincia>MI</Provincia>
+                <Nazione>IT</Nazione>
+            </Sede>
+        </CedentePrestatore>
+        <CessionarioCommittente>
+            <DatiAnagrafici>
+                <IdFiscaleIVA>
+                    <IdPaese>IT</IdPaese>
+                    <IdCodice>809163160B01</IdCodice>
+                </IdFiscaleIVA>
+                <Anagrafica>
+                    <Denominazione>The buyer company name</Denominazione>
+                </Anagrafica>
+            </DatiAnagrafici>
+            <Sede>
+                <Indirizzo>Street customer Additional street customer Line customer</Indirizzo>
+                <CAP>34100</CAP>
+                <Comune>City customer</Comune>
+                <Provincia>TN</Provincia>
+                <Nazione>IT</Nazione>
+            </Sede>
+        </CessionarioCommittente>
+    </FatturaElettronicaHeader>
+    <FatturaElettronicaBody>
+        <DatiGenerali>
+            <DatiGeneraliDocumento>
+                <TipoDocumento>TD01</TipoDocumento>
+                <Divisa>EUR</Divisa>
+                <Data>2019-09-12</Data>
+                <Numero>Test_EeISI_1</Numero>
+                <ImportoTotaleDocumento>3520.00</ImportoTotaleDocumento>
+            </DatiGeneraliDocumento>
+        </DatiGenerali>
+        <DatiBeniServizi>
+            <DettaglioLinee>
+                <NumeroLinea>1</NumeroLinea>
+                <Descrizione>Article 1</Descrizione>
+                <Quantita>1.00000000</Quantita>
+                <UnitaMisura>1.00 EA</UnitaMisura>
+                <PrezzoUnitario>3200.00000000</PrezzoUnitario>
+                <PrezzoTotale>3200.00000000</PrezzoTotale>
+                <AliquotaIVA>10.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DatiRiepilogo>
+                <AliquotaIVA>10.00</AliquotaIVA>
+                <ImponibileImporto>3200.00</ImponibileImporto>
+                <Imposta>320.00</Imposta>
+                <EsigibilitaIVA>I</EsigibilitaIVA>
+            </DatiRiepilogo>
+        </DatiBeniServizi>
+        <DatiPagamento>
+            <CondizioniPagamento>TP02</CondizioniPagamento>
+            <DettaglioPagamento>
+                <ModalitaPagamento>MP19</ModalitaPagamento>
+                <DataScadenzaPagamento>2019-10-30</DataScadenzaPagamento>
+                <ImportoPagamento>3520.00</ImportoPagamento>
+            </DettaglioPagamento>
+        </DatiPagamento>
+        <Allegati>
+            <NomeAttachment>not-mapped-values.txt</NomeAttachment>
+            <FormatoAttachment>txt</FormatoAttachment>
+            <Attachment>QlQwMDEwOiBCVC0xMCBidXllciByZWZlcmVuY2UNCkJUMDAzNDogOTkwNjpJVDA3OTQ1MjExMDA2DQo=</Attachment>
+        </Allegati>
+    </FatturaElettronicaBody>
+</ns3:FatturaElettronica>

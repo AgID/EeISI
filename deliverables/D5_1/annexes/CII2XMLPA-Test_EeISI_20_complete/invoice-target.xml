@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns3:FatturaElettronica xmlns:ns3="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" versione="FPA12">
+  <FatturaElettronicaHeader>
+    <DatiTrasmissione>
+      <IdTrasmittente>
+        <IdPaese>GB</IdPaese>
+        <IdCodice>123456789</IdCodice>
+      </IdTrasmittente>
+      <ProgressivoInvio>00001</ProgressivoInvio>
+      <FormatoTrasmissione>FPA12</FormatoTrasmissione>
+      <CodiceDestinatario>ABC123</CodiceDestinatario>
+    </DatiTrasmissione>
+    <CedentePrestatore>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>GB</IdPaese>
+          <IdCodice>123456789</IdCodice>
+        </IdFiscaleIVA>
+        <Anagrafica>
+          <Denominazione>Seller name</Denominazione>
+        </Anagrafica>
+        <RegimeFiscale>RF01</RegimeFiscale>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>Seller street line 1 Seller street line 2 Seller street line</Indirizzo>
+        <CAP>01345</CAP>
+        <Comune>Seller City</Comune>
+        <Nazione>DE</Nazione>
+      </Sede>
+      <Contatti>
+        <Telefono>++4130482883</Telefono>
+        <Email>seller@contact.de</Email>
+      </Contatti>
+      <RiferimentoAmministrazione>BT-19BuyerAccRef</RiferimentoAmministrazione>
+    </CedentePrestatore>
+    <RappresentanteFiscale>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>DE</IdPaese>
+          <IdCodice>97735020584</IdCodice>
+        </IdFiscaleIVA>
+        <Anagrafica>
+          <Denominazione>Seller tax representative name</Denominazione>
+        </Anagrafica>
+      </DatiAnagrafici>
+    </RappresentanteFiscale>
+    <CessionarioCommittente>
+      <DatiAnagrafici>
+        <IdFiscaleIVA>
+          <IdPaese>IT</IdPaese>
+          <IdCodice>97735020584</IdCodice>
+        </IdFiscaleIVA>
+        <Anagrafica>
+          <Denominazione>Buyer name</Denominazione>
+          <CodEORI>1111111111111</CodEORI>
+        </Anagrafica>
+      </DatiAnagrafici>
+      <Sede>
+        <Indirizzo>Buyer street line 1 Buyer street line 2 Buyer street line 3</Indirizzo>
+        <CAP>01345</CAP>
+        <Comune>Buyer City</Comune>
+        <Provincia>BZ</Provincia>
+        <Nazione>IT</Nazione>
+      </Sede>
+    </CessionarioCommittente>
+  </FatturaElettronicaHeader>
+  <FatturaElettronicaBody>
+    <DatiGenerali>
+      <DatiGeneraliDocumento>
+        <TipoDocumento>TD01</TipoDocumento>
+        <Divisa>EUR</Divisa>
+        <Data>2019-04-01</Data>
+        <Numero>Test EeISI 20 CII</Numero>
+        <ImportoTotaleDocumento>277.87</ImportoTotaleDocumento>
+        <Arrotondamento>0.00</Arrotondamento>
+        <Causale>AAA Invoice note text</Causale>
+        <Causale>payment means text</Causale>
+      </DatiGeneraliDocumento>
+      <DatiOrdineAcquisto>
+        <RiferimentoNumeroLinea>1</RiferimentoNumeroLinea>
+        <IdDocumento>OrderDocID</IdDocumento>
+        <NumItem>55</NumItem>
+      </DatiOrdineAcquisto>
+      <DatiContratto>
+        <IdDocumento>ContractDocID</IdDocumento>
+        <CodiceCUP>ContractCUPID</CodiceCUP>
+        <CodiceCIG>ContractCIGID</CodiceCIG>
+      </DatiContratto>
+      <DatiRicezione>
+        <IdDocumento>ReceiptDocID</IdDocumento>
+      </DatiRicezione>
+      <DatiFattureCollegate>
+        <IdDocumento>PrecInvoiceID</IdDocumento>
+        <Data>2019-03-01</Data>
+      </DatiFattureCollegate>
+      <DatiDDT>
+        <NumeroDDT>DDTIdentifier</NumeroDDT>
+        <DataDDT>2000-01-01</DataDDT>
+      </DatiDDT>
+      <DatiTrasporto>
+        <IndirizzoResa>
+          <Indirizzo>Deliver  street line 1 Deliver  street line 2 Deliver  stree</Indirizzo>
+          <CAP>02245</CAP>
+          <Comune>Deliver  City</Comune>
+          <Nazione>DE</Nazione>
+        </IndirizzoResa>
+        <DataOraConsegna>2019-04-30T00:00:00</DataOraConsegna>
+      </DatiTrasporto>
+    </DatiGenerali>
+    <DatiBeniServizi>
+      <DettaglioLinee>
+        <NumeroLinea>1</NumeroLinea>
+        <CodiceArticolo>
+          <CodiceTipo>ABN</CodiceTipo>
+          <CodiceValore>43456AV</CodiceValore>
+        </CodiceArticolo>
+        <CodiceArticolo>
+          <CodiceTipo>Seller</CodiceTipo>
+          <CodiceValore>JB007</CodiceValore>
+        </CodiceArticolo>
+        <CodiceArticolo>
+          <CodiceTipo>Buyer</CodiceTipo>
+          <CodiceValore>6578489</CodiceValore>
+        </CodiceArticolo>
+        <CodiceArticolo>
+          <CodiceTipo>0110</CodiceTipo>
+          <CodiceValore>1234567890124</CodiceValore>
+        </CodiceArticolo>
+        <CodiceArticolo>
+          <CodiceTipo>STU 16B</CodiceTipo>
+          <CodiceValore>12344321</CodiceValore>
+        </CodiceArticolo>
+        <CodiceArticolo>
+          <CodiceTipo>STH 16B</CodiceTipo>
+          <CodiceValore>34553e55</CodiceValore>
+        </CodiceArticolo>
+        <Descrizione>Product Invoice item description</Descrizione>
+        <Quantita>3.00000000</Quantita>
+        <UnitaMisura>1.00 EA</UnitaMisura>
+        <DataInizioPeriodo>2019-04-01</DataInizioPeriodo>
+        <DataFinePeriodo>2019-04-30</DataFinePeriodo>
+        <PrezzoUnitario>49.00000000</PrezzoUnitario>
+        <PrezzoTotale>147.00000000</PrezzoTotale>
+        <AliquotaIVA>21.00</AliquotaIVA>
+        <RiferimentoAmministrazione>5555</RiferimentoAmministrazione>
+        <AltriDatiGestionali>
+          <TipoDato>BT-127</TipoDato>
+          <RiferimentoTesto>Invoice line note</RiferimentoTesto>
+        </AltriDatiGestionali>
+        <AltriDatiGestionali>
+          <TipoDato>147.00</TipoDato>
+        </AltriDatiGestionali>
+        <AltriDatiGestionali>
+          <TipoDato>10.00</TipoDato>
+        </AltriDatiGestionali>
+        <AltriDatiGestionali>
+          <TipoDato>BT-147</TipoDato>
+          <RiferimentoNumero>1.00000000</RiferimentoNumero>
+        </AltriDatiGestionali>
+        <AltriDatiGestionali>
+          <TipoDato>BT-159</TipoDato>
+          <RiferimentoTesto>DE</RiferimentoTesto>
+        </AltriDatiGestionali>
+        <AltriDatiGestionali>
+          <TipoDato>Color</TipoDato>
+          <RiferimentoTesto>Black</RiferimentoTesto>
+        </AltriDatiGestionali>
+        <AltriDatiGestionali>
+          <TipoDato>Size</TipoDato>
+          <RiferimentoTesto>XL</RiferimentoTesto>
+        </AltriDatiGestionali>
+        <AltriDatiGestionali>
+          <TipoDato>BT-70</TipoDato>
+          <RiferimentoTesto>Deliver party name</RiferimentoTesto>
+        </AltriDatiGestionali>
+        <AltriDatiGestionali>
+          <TipoDato>BT-71</TipoDato>
+          <RiferimentoTesto>6754238987648</RiferimentoTesto>
+        </AltriDatiGestionali>
+        <AltriDatiGestionali>
+          <TipoDato>BT-71-1</TipoDato>
+          <RiferimentoTesto>0095</RiferimentoTesto>
+        </AltriDatiGestionali>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>2</NumeroLinea>
+        <Descrizione>Product exempt</Descrizione>
+        <Quantita>4.00000000</Quantita>
+        <UnitaMisura>1.00 EA</UnitaMisura>
+        <DataInizioPeriodo>2019-04-01</DataInizioPeriodo>
+        <DataFinePeriodo>2019-04-30</DataFinePeriodo>
+        <PrezzoUnitario>25.00000000</PrezzoUnitario>
+        <PrezzoTotale>100.00000000</PrezzoTotale>
+        <AliquotaIVA>0.00</AliquotaIVA>
+        <Natura>N4</Natura>
+        <AltriDatiGestionali>
+          <TipoDato>BT-70</TipoDato>
+          <RiferimentoTesto>Deliver party name</RiferimentoTesto>
+        </AltriDatiGestionali>
+        <AltriDatiGestionali>
+          <TipoDato>BT-71</TipoDato>
+          <RiferimentoTesto>6754238987648</RiferimentoTesto>
+        </AltriDatiGestionali>
+        <AltriDatiGestionali>
+          <TipoDato>BT-71-1</TipoDato>
+          <RiferimentoTesto>0095</RiferimentoTesto>
+        </AltriDatiGestionali>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>9999</NumeroLinea>
+        <TipoCessionePrestazione>SC</TipoCessionePrestazione>
+        <Descrizione>Sales discount BT-0140: 66</Descrizione>
+        <PrezzoUnitario>-14.70000000</PrezzoUnitario>
+        <PrezzoTotale>-14.70000000</PrezzoTotale>
+        <AliquotaIVA>21.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>9998</NumeroLinea>
+        <TipoCessionePrestazione>SC</TipoCessionePrestazione>
+        <Descrizione>Packing cost BT-0145: AAA</Descrizione>
+        <PrezzoUnitario>14.70000000</PrezzoUnitario>
+        <PrezzoTotale>14.70000000</PrezzoTotale>
+        <AliquotaIVA>21.00</AliquotaIVA>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>9997</NumeroLinea>
+        <TipoCessionePrestazione>SC</TipoCessionePrestazione>
+        <Descrizione>Sales discount BT-98=66 - Base Amount: 147.00 Percentage: 10.00%</Descrizione>
+        <Quantita>1.00000000</Quantita>
+        <PrezzoUnitario>-14.70000000</PrezzoUnitario>
+        <PrezzoTotale>-14.70000000</PrezzoTotale>
+        <AliquotaIVA>25.00</AliquotaIVA>
+        <AltriDatiGestionali>
+          <TipoDato>BT-93</TipoDato>
+          <RiferimentoTesto>147.00</RiferimentoTesto>
+        </AltriDatiGestionali>
+        <AltriDatiGestionali>
+          <TipoDato>BT-94</TipoDato>
+          <RiferimentoTesto>10.00</RiferimentoTesto>
+        </AltriDatiGestionali>
+        <AltriDatiGestionali>
+          <TipoDato>BT-97</TipoDato>
+          <RiferimentoTesto>Sales discount</RiferimentoTesto>
+        </AltriDatiGestionali>
+      </DettaglioLinee>
+      <DettaglioLinee>
+        <NumeroLinea>9996</NumeroLinea>
+        <TipoCessionePrestazione>SC</TipoCessionePrestazione>
+        <Descrizione>Sales charge - Base Amount: 147.00 Percentage 10.00%</Descrizione>
+        <Quantita>1.00000000</Quantita>
+        <PrezzoUnitario>14.70000000</PrezzoUnitario>
+        <PrezzoTotale>14.70000000</PrezzoTotale>
+        <AliquotaIVA>25.00</AliquotaIVA>
+        <RiferimentoAmministrazione>TC01</RiferimentoAmministrazione>
+        <AltriDatiGestionali>
+          <TipoDato>BT-100</TipoDato>
+          <RiferimentoTesto>147.00</RiferimentoTesto>
+        </AltriDatiGestionali>
+        <AltriDatiGestionali>
+          <TipoDato>BT-101</TipoDato>
+          <RiferimentoTesto>10.00</RiferimentoTesto>
+        </AltriDatiGestionali>
+        <AltriDatiGestionali>
+          <TipoDato>BT-104</TipoDato>
+          <RiferimentoTesto>Sales charge</RiferimentoTesto>
+        </AltriDatiGestionali>
+        <AltriDatiGestionali>
+          <TipoDato>BT-105</TipoDato>
+          <RiferimentoTesto>TC01</RiferimentoTesto>
+        </AltriDatiGestionali>
+      </DettaglioLinee>
+      <DatiRiepilogo>
+        <AliquotaIVA>21.00</AliquotaIVA>
+        <ImponibileImporto>147.00</ImponibileImporto>
+        <Imposta>30.87</Imposta>
+        <EsigibilitaIVA>I</EsigibilitaIVA>
+      </DatiRiepilogo>
+      <DatiRiepilogo>
+        <AliquotaIVA>25.00</AliquotaIVA>
+        <ImponibileImporto>0.00</ImponibileImporto>
+        <Imposta>0.00</Imposta>
+        <EsigibilitaIVA>I</EsigibilitaIVA>
+      </DatiRiepilogo>
+      <DatiRiepilogo>
+        <AliquotaIVA>0.00</AliquotaIVA>
+        <Natura>N4</Natura>
+        <ImponibileImporto>100.00</ImponibileImporto>
+        <Imposta>0.00</Imposta>
+        <EsigibilitaIVA>I</EsigibilitaIVA>
+        <RiferimentoNormativo>exemption reason text in VAT breakdwon vatex-eu-143-1g</RiferimentoNormativo>
+      </DatiRiepilogo>
+    </DatiBeniServizi>
+    <DatiPagamento>
+      <CondizioniPagamento>TP02</CondizioniPagamento>
+      <DettaglioPagamento>
+        <Beneficiario>Payee name</Beneficiario>
+        <ModalitaPagamento>MP02</ModalitaPagamento>
+        <DataScadenzaPagamento>2019-05-01</DataScadenzaPagamento>
+        <ImportoPagamento>276.87</ImportoPagamento>
+        <CodicePagamento>2015 0483 0000 0000</CodicePagamento>
+      </DettaglioPagamento>
+      <DettaglioPagamento>
+        <Beneficiario>Payment account name</Beneficiario>
+        <ModalitaPagamento>MP02</ModalitaPagamento>
+        <ImportoPagamento>276.87</ImportoPagamento>
+        <IBAN>IT1212341234123412</IBAN>
+        <BIC>ITITABCD</BIC>
+      </DettaglioPagamento>
+    </DatiPagamento>
+    <Allegati>
+      <NomeAttachment>not-mapped-values.txt</NomeAttachment>
+      <FormatoAttachment>txt</FormatoAttachment>
+      <Attachment>QlQwMDA2OiBJc280MjE3Q3VycmVuY2llc0Z1bmRzQ29kZXN7Y29kZT0nTk9LJ3wgbnVtPTU3OHwgbnVtYmVyT2ZEZWNpbWFsRGlnaXRzPTJ8IGN1cnJlbmN5PSdOb3J3ZWdpYW4ga3JvbmUnfQ0KQlQwMDEwOiBCVC0xMCBidXllciByZWZlcmVuY2UNCkJUMDAxNDogU2FsZXNPcmRlcklEDQpCVDAwMTg6IFpaWjpCVC0xOCBJbnZvaWNlIG9iamVjdCBpZA0KQlQwMDIwOiAzMCBkYXlzDQpCVDAwMjM6IEJULTIzIEJ1c2luZXNzIFByb2Nlc3MgVHlwZQ0KQlQwMDI4OiBTZWxsZXIgdHJhZGluZyBuYW1lDQpCVDAwMzM6IFNlbGxlciBhZGRpdGlvbmFsIGxlZ2FsIGluZm9ybWF0aW9uDQpCVDAwMzQ6IDAwODg6U2VsbGVyIGVsZWN0cm9uaWMgYWRkcmVzcw0KQlQwMDQxOiBTZWxsZXIgY29udGFjdCBwb2ludCBTZWxsZXIgY29udGFjdCBwb2ludCAyDQpCVDAwNDU6IFRoZSBidXllciB0cmFkaW5nIG5hbWUNCkJUMDA1NjogQnV5ZXIgY29udGFjdCBwb2ludCBCdXllciBjb250YWN0IHBvaW50IG5hbWUyDQpCVDAwNTc6ICsrMzkzMDQ4Mjg4MzQzDQpCVDAwNTg6IGJ1eWVyQGNvbnRhY3QuaXQNCkJUMDA2MDogMDA1OTpQYXllZSBpZGVudGlmaWVyIDINCkJUMDA2MTogMDAzNDpQYXllZSBsZWdhbCBpZGVudGlmaWVyDQpCVDAwNjQ6IFNlbGxlciB0YXggcmVwcmVzZW50YXRpdmUgIHN0cmVldCBsaW5lIDENCkJUMDA2NTogU2VsbGVyIHRheCByZXByZXNlbnRhdGl2ZSAgc3RyZWV0IGxpbmUgMg0KQlQwMDY2OiBTZWxsZXIgdGF4IHJlcHJlc2VudGF0aXZlICBDaXR5DQpCVDAwNjc6IDAxMzQ1DQpCVDAwNjg6IFNlbGxlciB0YXggcmVwcmVzZW50YXRpdmUgIGNvdW50cnkgc3ViZGl2aXNpb24NCkJUMDA2OTogSXNvMzE2NjFDb3VudHJ5Q29kZXN7Y291bnRyeU5hbWVJbkVuZ2xpc2g9J0dlcm1hbnknfCBpc28yY2hhckNvZGU9J0RFJ3wgaXNvM2NoYXJDb2RlPSdERVUnfCBpbmRleD0yNzZ9DQpCVDAxNjQ6IFNlbGxlciB0YXggcmVwcmVzZW50YXRpdmUgIHN0cmVldCBsaW5lIDMNCkJUMDA4NzogMTIzNA0KQlQwMDg4OiBQYXltZW50IGNhcmQgaG9sZGVyIG5hbWUNCkJUMDA4OTogbWFuZGF0ZXJlZmVyZW5jZWlkZW50aWZpZXINCkJUMDA5MDogYmFuayBhc3NpZ25lZCBjcmVkaXRvciBpZGVudGlmaWVyDQpCVDAwOTE6IGRlYml0YWNjb3VudGlkZW50aWZpZXINCkJUMDExMTogMjIuMTENCkJUMDExMzogMS4wMA0KDQpCVDAwMzI6IFNlbGxlciB0YXggcmVnaXN0cmF0aW9uIGlkZW50aWZpZXINCkJUMDAyOTogMDAzODpTZWxlbHIgaWRlbnRpZmllciAyDQpCVDAwMzA6IDAxMjM6MDEyMzpTZWxsZXIgbGVnYWwgaWRlbnRpZmllcg0KDQpCVDAwMzk6IFNlbGxlciBjb3VudHJ5IHN1YmRpdmlzaW9uDQpCVDAwNDY6IDAwMzk6MDAzOTpCdXllciBpZGVudGlmaWVyIDINCkJUMDA3OTogRGVsaXZlciBjb3VudHJ5IHN1YmRpdmlzaW9u</Attachment>
+    </Allegati>
+    <Allegati>
+      <NomeAttachment>EeISI.csv.link.txt</NomeAttachment>
+      <FormatoAttachment>csv</FormatoAttachment>
+      <DescrizioneAttachment>Timesheet</DescrizioneAttachment>
+      <Attachment>bG9jYWxuZXR3b3JrL2ludm9pY2UvYXR0YWNobWVudC9FZUlTSS5jc3Y=</Attachment>
+    </Allegati>
+    <Allegati>
+      <NomeAttachment>EeISI.csv-EeISI.csv</NomeAttachment>
+      <FormatoAttachment>csv</FormatoAttachment>
+      <DescrizioneAttachment>Timesheet</DescrizioneAttachment>
+      <Attachment>WlVsSFQxSWdZWFIwWVdOb2JXVnVkQ0IwWlhOMA==</Attachment>
+    </Allegati>
+    <Allegati>
+      <NomeAttachment>document-reference</NomeAttachment>
+      <FormatoAttachment>csv</FormatoAttachment>
+      <Attachment>Q29udHJhY3RDSUdJRA==</Attachment>
+    </Allegati>
+    <Allegati>
+      <NomeAttachment>trimmed_fields.csv</NomeAttachment>
+      <FormatoAttachment>csv</FormatoAttachment>
+      <Attachment>WFBhdGgsTWF4TGVuZ3RoLE9yaWdpbmFsIHZhbHVlLFRyaW1tZWQgdmFsdWUNCkZhdHR1cmFFbGV0dHJvbmljYUJvZHkvRGF0aUdlbmVyYWxpL0RhdGlUcmFzcG9ydG8vSW5kaXJpenpvUmVzYS9JbmRpcml6em8sNjAsRGVsaXZlciAgc3RyZWV0IGxpbmUgMSBEZWxpdmVyICBzdHJlZXQgbGluZSAyIERlbGl2ZXIgIHN0cmVldCBsaW5lIDIsRGVsaXZlciAgc3RyZWV0IGxpbmUgMSBEZWxpdmVyICBzdHJlZXQgbGluZSAyIERlbGl2ZXIgIHN0cmVlDQpGYXR0dXJhRWxldHRyb25pY2FIZWFkZXIvQ2VkZW50ZVByZXN0YXRvcmUvQ29udGF0dGkvVGVsZWZvbm8sMTIsKys0MTMwNDgyODgzNDMsKys0MTMwNDgyODgzDQpGYXR0dXJhRWxldHRyb25pY2FIZWFkZXIvQ2VkZW50ZVByZXN0YXRvcmUvU2VkZS9JbmRpcml6em8sNjAsU2VsbGVyIHN0cmVldCBsaW5lIDEgU2VsbGVyIHN0cmVldCBsaW5lIDIgU2VsbGVyIHN0cmVldCBsaW5lIDMsU2VsbGVyIHN0cmVldCBsaW5lIDEgU2VsbGVyIHN0cmVldCBsaW5lIDIgU2VsbGVyIHN0cmVldCBsaW5lDQo=</Attachment>
+    </Allegati>
+  </FatturaElettronicaBody>
+</ns3:FatturaElettronica>

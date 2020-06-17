@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SEMANTIC-INVOICE>
+  <BT-1>Test_EeISI_1</BT-1>
+  <BT-2>2019-09-12</BT-2>
+  <BT-3>380</BT-3>
+  <BT-5>EUR</BT-5>
+  <BT-9>2019-10-30</BT-9>
+  <BT-10>BT-10 buyer reference</BT-10>
+  <BG-2>
+    <BT-24>urn:cen.eu:en16931:2017</BT-24>
+  </BG-2>
+  <BG-4>
+    <BT-27>The seller company name</BT-27>
+    <BT-31>IT07945211006</BT-31>
+    <BT-34 scheme="9906">IT07945211006</BT-34>
+    <BG-5>
+      <BT-35>Street seller</BT-35>
+      <BT-36>Additional street seller</BT-36>
+      <BT-162>Line seller</BT-162>
+      <BT-37>City seller</BT-37>
+      <BT-38>20124</BT-38>
+      <BT-39>MI</BT-39>
+      <BT-40>IT</BT-40>
+    </BG-5>
+  </BG-4>
+  <BG-7>
+    <BT-44>The buyer company name</BT-44>
+    <BT-48>IT809163160B01</BT-48>
+    <BT-49 scheme="0201">999999</BT-49>
+    <BG-8>
+      <BT-50>Street customer</BT-50>
+      <BT-51>Additional street customer</BT-51>
+      <BT-163>Line customer</BT-163>
+      <BT-52>City customer</BT-52>
+      <BT-53>34100</BT-53>
+      <BT-54>TN</BT-54>
+      <BT-55>IT</BT-55>
+    </BG-8>
+  </BG-7>
+  <BG-16>
+    <BT-81>2</BT-81>
+  </BG-16>
+  <BG-22>
+    <BT-106>3200.00</BT-106>
+    <BT-109>3200.00</BT-109>
+    <BT-110>320.00</BT-110>
+    <BT-112>3520.00</BT-112>
+    <BT-115>3520.00</BT-115>
+  </BG-22>
+  <BG-23>
+    <BT-116>3200.00</BT-116>
+    <BT-117>320.00</BT-117>
+    <BT-118>S</BT-118>
+    <BT-119>10.00</BT-119>
+  </BG-23>
+  <BG-25>
+    <BT-126>1</BT-126>
+    <BT-129>1</BT-129>
+    <BT-130>EA</BT-130>
+    <BT-131>3200.00</BT-131>
+    <BG-29>
+      <BT-146>3200.00</BT-146>
+      <BT-149>1</BT-149>
+    </BG-29>
+    <BG-30>
+      <BT-151>S</BT-151>
+      <BT-152>10.00</BT-152>
+    </BG-30>
+    <BG-31>
+      <BT-153>Article 1</BT-153>
+    </BG-31>
+  </BG-25>
+</SEMANTIC-INVOICE>

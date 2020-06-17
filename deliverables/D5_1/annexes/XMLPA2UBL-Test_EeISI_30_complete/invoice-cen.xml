@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SEMANTIC-INVOICE>
+  <BT-1>Test EeISI 30</BT-1>
+  <BT-2>2019-01-18</BT-2>
+  <BT-3>380</BT-3>
+  <BT-5>EUR</BT-5>
+  <BT-8>3</BT-8>
+  <BT-9>2019-02-18</BT-9>
+  <BT-11>11d22</BT-11>
+  <BT-12>123</BT-12>
+  <BT-13>123</BT-13>
+  <BT-15>123</BT-15>
+  <BT-16>12345:2019-01-08</BT-16>
+  <BT-17>aadbb</BT-17>
+  <BT-19>ABCF45667</BT-19>
+  <BT-20>Condizioni di Pagamento=TP01, Data Decorrenza Penale=2019-03-15, Data Limite Pagamento Anticipato=2019-02-01, Data Riferimento Termini Pagamento=2019-01-18, Giorni Termini Pagamento=30, Penalita Pagamenti Ritardati=10.00, Sconto Pagamento Anticipato=10.00, BT-113 represents Withholding tax amount</BT-20>
+  <BG-1>
+    <BT-22>Causale 1 per la fattura:SI</BT-22>
+  </BG-1>
+  <BG-1>
+    <BT-22>Causale 2 per la fattura:SI</BT-22>
+  </BG-1>
+  <BG-2>
+    <BT-24>urn:cen.eu:en16931:2017</BT-24>
+  </BG-2>
+  <BG-3>
+    <BT-25>123</BT-25>
+    <BT-26>2019-01-10</BT-26>
+  </BG-3>
+  <BG-3>
+    <BT-25>12345</BT-25>
+    <BT-26>2019-01-10</BT-26>
+  </BG-3>
+  <BG-4>
+    <BT-27>ALPHA SRL</BT-27>
+    <BT-29 scheme="">IT:EORI:0123456789012</BT-29>
+    <BT-29 scheme="">IT:ALBO:Ordine Commercialisti:43DDD</BT-29>
+    <BT-30 scheme="">IT:REA:BG:2344tf566</BT-30>
+    <BT-31>IT07945211006</BT-31>
+    <BT-32>BGRGDN77T10L117F</BT-32>
+    <BT-33>150000.00 SM LN</BT-33>
+    <BG-5>
+      <BT-35>VIALE ROMA</BT-35>
+      <BT-36>543</BT-36>
+      <BT-37>SASSARI</BT-37>
+      <BT-38>07100</BT-38>
+      <BT-39>SS</BT-39>
+      <BT-40>IT</BT-40>
+    </BG-5>
+    <BG-6>
+      <BT-42>035204938</BT-42>
+      <BT-43>cedente@gmail.com</BT-43>
+    </BG-6>
+  </BG-4>
+  <BG-7>
+    <BT-44>Mario Verdi</BT-44>
+    <BT-46>IT:CF:BGRGDN77T10L117F</BT-46>
+    <BT-47 scheme="">IT:EORI:2123456789012</BT-47>
+    <BT-48>IT07945211006</BT-48>
+    <BT-49 scheme="0201">99YJBO</BT-49>
+    <BG-8>
+      <BT-50>VIA TORINO</BT-50>
+      <BT-51>38 B</BT-51>
+      <BT-52>ROMA</BT-52>
+      <BT-53>00145</BT-53>
+      <BT-54>RM</BT-54>
+      <BT-55>IT</BT-55>
+    </BG-8>
+    <BG-9>
+      <BT-56>Mario Verdi</BT-56>
+    </BG-9>
+  </BG-7>
+  <BG-10>
+    <BT-59>Nome del beneficiario</BT-59>
+  </BG-10>
+  <BG-11>
+    <BT-62>ALPHA Rappresentante fiscale</BT-62>
+    <BT-63>IT07945211006</BT-63>
+    <BG-12>
+      <BT-69>IT</BT-69>
+    </BG-12>
+  </BG-11>
+  <BG-13>
+    <BT-70>Vettore</BT-70>
+    <BT-72>2019-01-10</BT-72>
+    <BG-14>
+      <BT-73>2019-01-18</BT-73>
+      <BT-74>2019-01-18</BT-74>
+    </BG-14>
+    <BG-15>
+      <BT-75>VIA Paglia</BT-75>
+      <BT-76>16</BT-76>
+      <BT-77>Castro</BT-77>
+      <BT-78>24065</BT-78>
+      <BT-79>BG</BT-79>
+      <BT-80>IT</BT-80>
+    </BG-15>
+  </BG-13>
+  <BG-16>
+    <BT-81>30</BT-81>
+    <BT-83>codpag123</BT-83>
+    <BG-17>
+      <BT-84>IT02L1234512345123456789012</BT-84>
+      <BT-86>BLOPIT22XXX</BT-86>
+    </BG-17>
+  </BG-16>
+  <BG-20>
+    <BT-92>10.00</BT-92>
+    <BT-95>G</BT-95>
+    <BT-96>0.00</BT-96>
+    <BT-97>DESCRIZIONE DELLA LINEA di sconto</BT-97>
+    <BT-98>95</BT-98>
+  </BG-20>
+  <BG-20>
+    <BT-92>10.00</BT-92>
+    <BT-95>S</BT-95>
+    <BT-96>22.00</BT-96>
+    <BT-97>DESCRIZIONE DELLA LINEA sconto con iva</BT-97>
+    <BT-98>95</BT-98>
+  </BG-20>
+  <BG-21>
+    <BT-99>10.00</BT-99>
+    <BT-102>S</BT-102>
+    <BT-103>22.00</BT-103>
+    <BT-104>DESCRIZIONE DELLA LINEA spesa accessoria</BT-104>
+    <BT-105>ABK</BT-105>
+  </BG-21>
+  <BG-21>
+    <BT-99>0</BT-99>
+    <BT-100>2.00</BT-100>
+    <BT-101>0</BT-101>
+    <BT-102>E</BT-102>
+    <BT-103>0</BT-103>
+    <BT-104>SI</BT-104>
+  </BG-21>
+  <BG-21>
+    <BT-99>40.00</BT-99>
+    <BT-100>1000.00</BT-100>
+    <BT-101>4.00</BT-101>
+    <BT-102>E</BT-102>
+    <BT-103>0.00</BT-103>
+    <BT-105>ABK</BT-105>
+  </BG-21>
+  <BG-21>
+    <BT-99>0</BT-99>
+    <BT-100>200.00</BT-100>
+    <BT-101>20.00</BT-101>
+    <BT-102>E</BT-102>
+    <BT-103>0</BT-103>
+    <BT-104>RT01 A</BT-104>
+  </BG-21>
+  <BG-22>
+    <BT-106>1010.00</BT-106>
+    <BT-107>20.00</BT-107>
+    <BT-108>50.00</BT-108>
+    <BT-109>1040.00</BT-109>
+    <BT-110>220.00</BT-110>
+    <BT-111>220.00</BT-111>
+    <BT-112>1260.00</BT-112>
+    <BT-113>200.00</BT-113>
+    <BT-114>0.00</BT-114>
+    <BT-115>1060.00</BT-115>
+  </BG-22>
+  <BG-23>
+    <BT-116>1000.00</BT-116>
+    <BT-117>220.00</BT-117>
+    <BT-118>S</BT-118>
+    <BT-119>22.00</BT-119>
+  </BG-23>
+  <BG-23>
+    <BT-116>0.00</BT-116>
+    <BT-117>0.00</BT-117>
+    <BT-118>G</BT-118>
+    <BT-119>0.00</BT-119>
+    <BT-121>vatex-eu-g</BT-121>
+  </BG-23>
+  <BG-23>
+    <BT-116>40.00</BT-116>
+    <BT-117>0.00</BT-117>
+    <BT-118>E</BT-118>
+    <BT-119>0.00</BT-119>
+    <BT-121>vatex-eu-151-1b</BT-121>
+  </BG-23>
+  <BG-24>
+    <BT-122>Allegato 1</BT-122>
+    <BT-123>Descrizione allegato uno</BT-123>
+    <BT-125 mime="text/csv" filename="Allegato 1">ZUlHT1IgYXR0YWNobWVudCB0ZXN0</BT-125>
+  </BG-24>
+  <BG-24>
+    <BT-122>Allegato 2</BT-122>
+    <BT-123>Descrizione allegato due</BT-123>
+    <BT-125 mime="text/csv" filename="Allegato 2">ZUlHT1IgYXR0YWNobWVudCB0ZXN0</BT-125>
+  </BG-24>
+  <BG-24>
+    <BT-122>not-mapped-values.txt</BT-122>
+    <BT-125 mime="text/csv" filename="not-mapped-values.txt">MS4xLjEuMSBJZFBhZXNlOiBJVAoxLjEuMS4yIElkQ29kaWNlOiA5NzczNTAyMDU4NAoxLjEuMiBQcm9ncmVzc2l2b0ludmlvOiAwMDAwMQoxLjEuMyBGb3JtYXRvVHJhc21pc3Npb25lOiBGUEExMgoxLjEuNS4xIFRlbGVmb25vOiAwMjEyMjQ5NTAzMAoxLjEuNS4yIEVtYWlsOiB0cmFzbWl0dGVudGVAZ21haWwuY29tCjEuNS4xLjEuMSBJZFBhZXNlOiBJVAoxLjUuMS4xLjIgSWRDb2RpY2U6IDk3NzM1MDIwNTg0CjEuNS4xLjIgQ29kaWNlRmlzY2FsZTogQkdSR0RONzdUMTBMMTE3RgoxLjUuMS4zLjEgRGVub21pbmF6aW9uZTogR0FNTUEgaW50ZXJtZWRpYXJpbwoxLjUuMS4zLjQgVGl0b2xvOiBTdXBlcgoxLjUuMS4zLjUgQ29kRU9SSTogMzEyMzQ1Njc4OTAxMgoyLjEuMS41LjIgSW1wb3J0b1JpdGVudXRhOiAyMDAuMDAKMi4zLjEgRGF0YTogMTk5MC0wMS0wMQoyLjMuMiBUb3RhbGVQZXJjb3JzbzogNDgwMAoxLjYgU29nZ2V0dG9FbWl0dGVudGU6IFRaCjIuMS4xLjUuMSBUaXBvUml0ZW51dGE6IFJUMDEKMi4xLjEuNS4yIEltcG9ydG9SaXRlbnV0YTogMjAwLjAwCjIuMS4xLjUuMyBBbGlxdW90YVJpdGVudXRhOiAyMC4wMAoyLjEuMS41LjQgQ2F1c2FsZVBhZ2FtZW50bzogQQoyLjEuMS43LjYgUml0ZW51dGE6IFNJCjIuMi4xLjEzIFJpdGVudXRhOiBTSSAyLjIuMS4xIE51bWVyb0xpbmVhOiAxCjIuMS4yLjUgQ29kaWNlQ29tbWVzc2FDb252ZW56aW9uZTogamtsMzQKMi4xLjIuNiBDb2RpY2VDVVA6IDExMjIKMi4xLjIuNyBDb2RpY2VDSUc6IGFhYmIK</BT-125>
+  </BG-24>
+  <BG-25>
+    <BT-126>1</BT-126>
+    <BT-128 scheme="ZZZ">klji12</BT-128>
+    <BT-129>2.00</BT-129>
+    <BT-130>C62</BT-130>
+    <BT-131>1000.00</BT-131>
+    <BT-133>rifamm123</BT-133>
+    <BG-26>
+      <BT-134>2019-01-18</BT-134>
+      <BT-135>2019-01-18</BT-135>
+    </BG-26>
+    <BG-27>
+      <BT-136>10.00</BT-136>
+      <BT-138>2.00</BT-138>
+      <BT-140>95</BT-140>
+    </BG-27>
+    <BG-29>
+      <BT-146>500.00</BT-146>
+      <BT-149>1</BT-149>
+      <BT-150>C62</BT-150>
+    </BG-29>
+    <BG-30>
+      <BT-151>S</BT-151>
+      <BT-152>22.00</BT-152>
+    </BG-30>
+    <BG-31>
+      <BT-153>DESCRIZIONE DELLA LINEA 1</BT-153>
+      <BG-32>
+        <BT-160>colore</BT-160>
+        <BT-161>bianco</BT-161>
+      </BG-32>
+      <BG-32>
+        <BT-160>causale del trasporto</BT-160>
+        <BT-161>causale del trasporto</BT-161>
+      </BG-32>
+    </BG-31>
+  </BG-25>
+  <BG-25>
+    <BT-126>2</BT-126>
+    <BT-128 scheme="ZZZ">klji12</BT-128>
+    <BT-129>10.00</BT-129>
+    <BT-130>C62</BT-130>
+    <BT-131>10.00</BT-131>
+    <BG-26>
+      <BT-134>2019-01-18</BT-134>
+      <BT-135>2019-01-18</BT-135>
+    </BG-26>
+    <BG-29>
+      <BT-146>1.00</BT-146>
+      <BT-149>1</BT-149>
+      <BT-150>C62</BT-150>
+    </BG-29>
+    <BG-30>
+      <BT-151>G</BT-151>
+      <BT-152>0.00</BT-152>
+    </BG-30>
+    <BG-31>
+      <BT-153>DESCRIZIONE DELLA LINEA 2</BT-153>
+      <BG-32>
+        <BT-160>materiale</BT-160>
+        <BT-161>carta</BT-161>
+      </BG-32>
+      <BG-32>
+        <BT-160>causale del trasporto</BT-160>
+        <BT-161>causale del trasporto</BT-161>
+      </BG-32>
+    </BG-31>
+  </BG-25>
+</SEMANTIC-INVOICE>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><ns3:NotificaEsito xmlns:ns3="http://www.fatturapa.gov.it/sdi/messaggi/v1.0" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" versione="1.0">
+    <IdentificativoSdI>2139090388</IdentificativoSdI>
+    <NomeFile>IT01598570354_1CDBJ.xml</NomeFile>
+    <EsitoCommittente versione="1.0">
+        <IdentificativoSdI>2139090388</IdentificativoSdI>
+        <Esito>EC01</Esito>
+    </EsitoCommittente>
+    <MessageId>6049196321</MessageId>
+<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="Signature1"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><ds:Reference Id="reference-document" URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2002/06/xmldsig-filter2"><XPath xmlns="http://www.w3.org/2002/06/xmldsig-filter2" Filter="subtract">/descendant::ds:Signature</XPath></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>NlT9A5q1tcgnuiN3W+SRMnYJnnwVYQ5UtnhdQTi5Xu4=</ds:DigestValue></ds:Reference><ds:Reference Id="reference-signedpropeties" Type="http://uri.etsi.org/01903#SignedProperties" URI="#SignedProperties_1"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>oMkPmK/SVi/5md0w2OgtkLEyfrm37FniRRs5v3zPUf4=</ds:DigestValue></ds:Reference><ds:Reference Id="reference-keyinfo" URI="#KeyInfoId"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>a8kJS5DTRP/htj4YsPbUP6BpiZ8Ex/W0fymdE/8Okpk=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="SignatureValue1">AolPAz9sAGmkYDh/nAyg44juMYXtDLVLsju1kGuJDob+bucBDC0hWCal5Gk8lVA3+hNVGLERy41l
+g/wQgf8Tuq7SclYtlb/C1NRmmPQOq6U7hSSSHvUgq+++YRBEUd4xcyvOoMB5HWbkWwNrcGsGBNZM
+rRnwERuwK/ScrcQiowai71KfuYvVx9Yonr0Zuj0CupN/7LEAC7R4f5nyjdJ3dXwG4WWZCZk24Zvn
+mBi13QMvBDYj8P1Qp+3hO+bR3XgeZaBwrnNdFC+8bhD85KKsIvYOeCG1iZJSvrJU18iKBW4P0ArG
++YlzP8BzWS282u748Z+A4i1Ev0bXcVBnG1VE8A==</ds:SignatureValue><ds:KeyInfo Id="KeyInfoId"><ds:X509Data><ds:X509Certificate>MIIEZTCCA02gAwIBAgIITPn9utyy2GMwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCSVQxHjAc
+BgNVBAoTFUFnZW56aWEgZGVsbGUgRW50cmF0ZTEbMBkGA1UECxMSU2Vydml6aSBUZWxlbWF0aWNp
+MSEwHwYDVQQDExhDQSBBZ2VuemlhIGRlbGxlIEVudHJhdGUwHhcNMTcwNTI0MTIzNDE3WhcNMjAw
+NTI0MTIzNDE3WjB0MQswCQYDVQQGEwJJVDEeMBwGA1UECgwVQWdlbnppYSBkZWxsZSBFbnRyYXRl
+MRswGQYDVQQLDBJTZXJ2aXppIFRlbGVtYXRpY2kxKDAmBgNVBAMMH1Npc3RlbWEgSW50ZXJzY2Ft
+YmlvIEZhdHR1cmEgUEEwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCLJQZHLMe7PybW
+stb/sLv0kk8dewRdDZ4VDAWtxuE7AOCXzSeuTOj3RLW3V53jYYLnjvUFO4v/q8/Y70sG+D9/3xt7
+7E4Q+my42qfGnjDFa5CNNvmm/Bh707k/8RVQtaDmFNCu0qq+z8lk9Nqy+rwEX7fPJ5M0a3jK4alH
+1P25thEGFHsJi51swuddW2jc5TLLpDce6dMAFu7ysRQcosXEKOpY9zGimZ51m+emX1cGa2sUpuGF
+VYrRywd97trU+8qPmvJlYUlSV3h05TZW6imrvjonO3k2bHIjnk/ttkdNoO5kp0PeUN0XVAEHi+fZ
+6q8LfJQJZPJV6jYFqx6OjyehAgMBAAGjggEAMIH9MB8GA1UdIwQYMBaAFOpEPx8Z4zc+q6qUgqWf
+6/wWun+1MIGqBgNVHR8EgaIwgZ8wgZyggZmggZaGgZNsZGFwOi8vY2Fkcy5lbnRyYXRlLmZpbmFu
+emUuaXQvQ049Q0ElMjBBZ2VuemlhJTIwZGVsbGUlMjBFbnRyYXRlLE9VPVNlcnZpemklMjBUZWxl
+bWF0aWNpLE89QWdlbnppYSUyMGRlbGxlJTIwRW50cmF0ZSxDPWl0P2NlcnRpZmljYXRlUmV2b2Nh
+dGlvbkxpc3QwHQYDVR0OBBYEFPvx4ds7h8HRgUpb4YbAY/nVZ/OqMA4GA1UdDwEB/wQEAwIGQDAN
+BgkqhkiG9w0BAQsFAAOCAQEAMp2EYR25WLlVBbf2mUKxVJwN0/zkEc8Ejz0po5RTMuskjbbU1JR1
+t72PDTNVAkuouj3X6Fx8TiO6CaEG9ShGdJHosMwekj5S7Iqd0xS66KlKuQkmPyHBPguS2/WLdLiT
+IFn5J8hnKUrXzOr48s48K5iY4QcFcA6wa2PcmLmBFj/uRHqzdrwPmY0orEZkJo9Zh+W1/BCMVGL+
+Ai5j5vaTmcRU4d6z7TekrfSthjxaYY1v8PVeS6YOpYb2MwPXr9MPm/4cpP2tZqhtWFRkUhqBVQ69
+Nf+6rShNRNk9kwWgyQvuJI4y50d5tcMvca6tin4WzrHoe6I2+DtVpQxx5wtvZg==</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" Target="#Signature1"><xades:SignedProperties Id="SignedProperties_1"><xades:SignedSignatureProperties><xades:SigningTime>2019-11-25T08:42:58Z</xades:SigningTime></xades:SignedSignatureProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></ns3:NotificaEsito>

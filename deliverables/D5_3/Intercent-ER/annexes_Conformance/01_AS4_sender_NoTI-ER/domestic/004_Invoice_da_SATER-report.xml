@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestStepReport xmlns="http://www.gitb.com/tr/v1/"
+                xmlns:ns2="http://www.gitb.com/core/v1/"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:type="TAR">
+   <date>2020-04-02T07:56:22.989Z</date>
+   <result>SUCCESS</result>
+   <counters>
+      <nrOfAssertions>0</nrOfAssertions>
+      <nrOfErrors>0</nrOfErrors>
+      <nrOfWarnings>3</nrOfWarnings>
+   </counters>
+   <context type="map">
+      <ns2:item embeddingMethod="STRING" name="XML" type="object">
+         <ns2:value><![CDATA[<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+         xmlns:ccts="urn:un:unece:uncefact:documentation:2"
+         xmlns:cr="http://www.ubl-italia.org/ns/CrossReference"
+         xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+         xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2"
+         xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 UBL-Invoice-2.1.xsd">
+   <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</cbc:CustomizationID>
+   <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+   <cbc:ID>1003/85</cbc:ID>
+   <cbc:IssueDate>2019-12-09</cbc:IssueDate>
+   <cbc:DueDate>2019-12-20</cbc:DueDate>
+   <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+   <cbc:Note>Consegnato a: AZIENDA UNITA SANITARIA LOCALE DI REGGIO EMILIA VIA VERTOIBA N.10/A -REGGIO EMILIA
+</cbc:Note>
+   <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+   <cac:OrderReference>
+      <cbc:ID>S126346</cbc:ID>
+   </cac:OrderReference>
+   <cac:DespatchDocumentReference>
+      <cbc:ID>1196</cbc:ID>
+   </cac:DespatchDocumentReference>
+   <cac:AccountingSupplierParty>
+      <cac:Party>
+         <cbc:EndpointID schemeID="9907">lnefrc86s29l682k</cbc:EndpointID>
+         <cac:PartyName>
+            <cbc:Name>Federico Leone S.P.A.</cbc:Name>
+         </cac:PartyName>
+         <cac:PostalAddress>
+            <cbc:StreetName>Via S. Leonardo, 120</cbc:StreetName>
+            <cbc:CityName>Salerno</cbc:CityName>
+            <cbc:PostalZone>84100</cbc:PostalZone>
+            <cbc:CountrySubentity>SA</cbc:CountrySubentity>
+            <cac:Country>
+               <cbc:IdentificationCode>IT</cbc:IdentificationCode>
+            </cac:Country>
+         </cac:PostalAddress>
+         <cac:PartyTaxScheme>
+            <cbc:CompanyID>IT02483810392</cbc:CompanyID>
+            <cac:TaxScheme>
+               <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+         </cac:PartyTaxScheme>
+         <cac:PartyLegalEntity>
+            <cbc:RegistrationName>Federico Leone S.P.A.</cbc:RegistrationName>
+         </cac:PartyLegalEntity>
+         <cac:Contact>
+            <cbc:Name>MARIA GRAZIA IANDIORIO</cbc:Name>
+            <cbc:ElectronicMail>M.IANDIORIO@AFSOLUZIONI.IT</cbc:ElectronicMail>
+         </cac:Contact>
+      </cac:Party>
+   </cac:AccountingSupplierParty>
+   <cac:AccountingCustomerParty>
+      <cac:Party>
+         <cbc:EndpointID schemeID="0201">4YXHOT</cbc:EndpointID>
+         <cac:PartyName>
+            <cbc:Name>Azienda USL di Reggio Emilia</cbc:Name>
+         </cac:PartyName>
+         <cac:PostalAddress>
+            <cbc:StreetName>VIA AMENDOLA 2</cbc:StreetName>
+            <cbc:CityName>REGGIO NELLEMILIA</cbc:CityName>
+            <cbc:PostalZone>42100</cbc:PostalZone>
+            <cbc:CountrySubentity>RE</cbc:CountrySubentity>
+            <cac:Country>
+               <cbc:IdentificationCode>IT</cbc:IdentificationCode>
+            </cac:Country>
+         </cac:PostalAddress>
+         <cac:PartyTaxScheme>
+            <cbc:CompanyID>IT00463020651</cbc:CompanyID>
+            <cac:TaxScheme>
+               <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+         </cac:PartyTaxScheme>
+         <cac:PartyLegalEntity>
+            <cbc:RegistrationName>Azienda USL di Reggio Emilia</cbc:RegistrationName>
+         </cac:PartyLegalEntity>
+         <cac:Contact>
+            <cbc:Name>MARCO ROSSI</cbc:Name>
+            <cbc:Telephone>087460561</cbc:Telephone>
+            <cbc:ElectronicMail>marco.rossi@ausl.re.it</cbc:ElectronicMail>
+         </cac:Contact>
+      </cac:Party>
+   </cac:AccountingCustomerParty>
+   <cac:Delivery>
+      <cac:DeliveryLocation>
+         <cac:Address>
+            <cbc:ID>02</cbc:ID>
+            <cbc:StreetName>VIA VERTOIBA N.10/A</cbc:StreetName>
+            <cbc:CityName>REGGIO EMILIA</cbc:CityName>
+            <cbc:PostalZone>42100</cbc:PostalZone>
+            <cbc:CountrySubentity>RE</cbc:CountrySubentity>
+            <cac:Country>
+               <cbc:IdentificationCode>IT</cbc:IdentificationCode>
+            </cac:Country>
+         </cac:Address>
+      </cac:DeliveryLocation>
+      <cac:DeliveryParty>
+         <cac:PartyName>
+            <cbc:Name>AZIENDA UNITA SANITARIA LOCALE DI REGGIO EMILIA</cbc:Name>
+         </cac:PartyName>
+      </cac:DeliveryParty>
+   </cac:Delivery>
+   <cac:PaymentMeans>
+      <cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+      <cac:PayeeFinancialAccount>
+         <cbc:ID>IT09G0305901004100000101550</cbc:ID>
+      </cac:PayeeFinancialAccount>
+   </cac:PaymentMeans>
+   <cac:PaymentTerms>
+      <cbc:Note>D.LGS. 231/2002 S.M.</cbc:Note>
+   </cac:PaymentTerms>
+   <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="EUR">251.68</cbc:TaxAmount>
+      <cac:TaxSubtotal>
+         <cbc:TaxableAmount currencyID="EUR">1144.00</cbc:TaxableAmount>
+         <cbc:TaxAmount currencyID="EUR">251.68</cbc:TaxAmount>
+         <cac:TaxCategory>
+            <cbc:ID schemeID="UNCL5305">S</cbc:ID>
+            <cbc:Percent>22</cbc:Percent>
+            <cac:TaxScheme>
+               <cbc:ID schemeID="UNCL5154">VAT</cbc:ID>
+            </cac:TaxScheme>
+         </cac:TaxCategory>
+      </cac:TaxSubtotal>
+   </cac:TaxTotal>
+   <cac:LegalMonetaryTotal>
+      <cbc:LineExtensionAmount currencyID="EUR">1144</cbc:LineExtensionAmount>
+      <cbc:TaxExclusiveAmount currencyID="EUR">1144</cbc:TaxExclusiveAmount>
+      <cbc:TaxInclusiveAmount currencyID="EUR">1395.68</cbc:TaxInclusiveAmount>
+      <cbc:PayableAmount currencyID="EUR">1395.68</cbc:PayableAmount>
+   </cac:LegalMonetaryTotal>
+   <cac:InvoiceLine>
+      <cbc:ID>1</cbc:ID>
+      <cbc:Note>RIV 2,3MM 180CM CON AGO MORSO DENTATO</cbc:Note>
+      <cbc:InvoicedQuantity unitCode="C62">20</cbc:InvoicedQuantity>
+      <cbc:LineExtensionAmount currencyID="EUR">1144</cbc:LineExtensionAmount>
+      <cac:OrderLineReference>
+         <cbc:LineID>3</cbc:LineID>
+         <cac:OrderReference>
+            <cbc:ID>S126346</cbc:ID>
+         </cac:OrderReference>
+      </cac:OrderLineReference>
+      <cac:Item>
+         <cbc:Name>PINZA DA BIOPSIA</cbc:Name>
+         <cac:SellersItemIdentification>
+            <cbc:ID>377108/R</cbc:ID>
+         </cac:SellersItemIdentification>
+         <cac:CommodityClassification>
+            <cbc:ItemClassificationCode listID="ZZZ">1:377108/R</cbc:ItemClassificationCode>
+         </cac:CommodityClassification>
+         <cac:ClassifiedTaxCategory>
+            <cbc:ID schemeID="UNCL5305">S</cbc:ID>
+            <cbc:Percent>22</cbc:Percent>
+            <cac:TaxScheme>
+               <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+         </cac:ClassifiedTaxCategory>
+      </cac:Item>
+      <cac:Price>
+         <cbc:PriceAmount currencyID="EUR">57.2</cbc:PriceAmount>
+      </cac:Price>
+   </cac:InvoiceLine>
+</Invoice>
+]]></ns2:value>
+      </ns2:item>
+   </context>
+   <reports>
+      <warning xsi:type="BAR">
+         <description>[UBL-CR-359]-A UBL invoice should not include the Delivery DeliveryLocation Address ID</description>
+         <location>xml:1:0</location>
+         <test>not(cac:Delivery/cac:DeliveryLocation/cac:Address/cbc:ID)</test>
+      </warning>
+      <warning xsi:type="BAR">
+         <description>[UBL-CR-678]-A UBL invoice should not include the TaxCategory/ID schemeID</description>
+         <location>xml:1:0</location>
+         <test>not(//cac:TaxCategory/cbc:ID/@schemeID)</test>
+      </warning>
+      <warning xsi:type="BAR">
+         <description>[UBL-CR-679]-A UBL invoice should not include the ClassifiedTaxCategory/ID schemeID</description>
+         <location>xml:1:0</location>
+         <test>not(//cac:ClassifiedTaxCategory/cbc:ID/@schemeID)</test>
+      </warning>
+   </reports>
+</TestStepReport>

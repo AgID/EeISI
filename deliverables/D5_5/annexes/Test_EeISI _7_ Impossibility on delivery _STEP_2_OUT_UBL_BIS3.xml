@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationResponse xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+                     xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"
+                     xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                     xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                     xmlns:types="http://www.fatturapa.gov.it/sdi/messaggi/v1.0">
+   <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:invoice_response:3</cbc:CustomizationID>
+   <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:invoice_response:3</cbc:ProfileID>
+   <cbc:ID>1420719893</cbc:ID>
+   <cbc:IssueDate>2019/11/25</cbc:IssueDate>
+   <cbc:IssueTime>03:22:11</cbc:IssueTime>
+   <cbc:Note>Se la fattura e' indirizzata ad una PA, la presente attestazione puo' essere utilizzata come titolo da presentare o inoltrare alla PA (attraverso canali diversi dal SdI) al fine di sottoporre la fattura in essa contenuta al dovuto controllo da parte dell'amministrazione interessata e all'eventuale liquidazione della stessa. Qualora invece la fattura sia indirizzata a soggetto privato, la presente attestazione certifica soltanto l'impossibilita' di consegna del file al soggetto destinatario.Se infine la fattura e' stata inviata in ottemperanza agli obblighi di trasmissione dei 'Dati Fattura', la presente attestazione certifica l'avvenuto recapito al Sistema dell'Agenzia delle Entrate.</cbc:Note>
+   <cac:SenderParty>
+      <cbc:EndpointID schemeID="0202">sdi01@pec.fatturapa.it</cbc:EndpointID>
+      <cac:PartyLegalEntity>
+         <cbc:RegistrationName>Agenzia delle Entrate</cbc:RegistrationName>
+      </cac:PartyLegalEntity>
+   </cac:SenderParty>
+   <cac:ReceiverParty>
+      <cbc:EndpointID schemeID=""/>
+      <cac:PartyLegalEntity>
+         <cbc:RegistrationName/>
+      </cac:PartyLegalEntity>
+   </cac:ReceiverParty>
+   <cac:DocumentResponse>
+      <cac:Response>
+         <cbc:ResponseCode>AP</cbc:ResponseCode>
+         <cac:Status>
+            <cbc:StatusReasonCode listID="OPStatusReason">OTH</cbc:StatusReasonCode>
+            <cbc:StatusReason>Avvenuta trasmissione con impossibilità di recapito</cbc:StatusReason>
+         </cac:Status>
+      </cac:Response>
+      <cac:DocumentReference>
+         <cbc:ID/>
+         <cbc:IssueDate/>
+         <cbc:DocumentTypeCode>380</cbc:DocumentTypeCode>
+      </cac:DocumentReference>
+   </cac:DocumentResponse>
+</ApplicationResponse>

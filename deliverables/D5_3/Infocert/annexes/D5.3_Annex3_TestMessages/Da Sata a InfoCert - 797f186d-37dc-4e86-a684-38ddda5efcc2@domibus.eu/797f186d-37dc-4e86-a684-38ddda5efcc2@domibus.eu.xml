@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<eb:Messaging xmlns:eb="http://docs.oasis-open.org/ebxml-msg/ebms/v3.0/ns/core/200704/"
+    xmlns:ns2="http://www.w3.org/2003/05/soap-envelope" ns2:mustUnderstand="true">
+    <eb:UserMessage mpc="http://docs.oasis-open.org/ebxml-msg/ebms/v3.0/ns/core/200704/defaultMPC">
+        <eb:MessageInfo>
+            <eb:Timestamp>2019-04-12T12:19:55.000Z</eb:Timestamp>
+            <eb:MessageId>797f186d-37dc-4e86-a684-38ddda5efcc2@domibus.eu</eb:MessageId>
+        </eb:MessageInfo>
+        <eb:PartyInfo>
+            <eb:From>
+                <eb:PartyId type="urn:fdc:peppol.eu:2017:identifiers:ap">PIT000109</eb:PartyId>
+                <eb:Role>http://docs.oasis-open.org/ebxml-msg/ebms/v3.0/ns/core/200704/initiator</eb:Role>
+            </eb:From>
+            <eb:To>
+                <eb:PartyId type="urn:fdc:peppol.eu:2017:identifiers:ap">PIT000212</eb:PartyId>
+                <eb:Role>urn:fdc:peppol.eu:2017:roles:ap:as4</eb:Role>
+            </eb:To>
+        </eb:PartyInfo>
+        <eb:CollaborationInfo>
+            <eb:AgreementRef>urn:fdc:peppol.eu:2017:agreements:tia:ap_provider</eb:AgreementRef>
+            <eb:Service type="urn:fdc:peppol.eu:2017:identifiers:proc-id"
+                >urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</eb:Service>
+            <eb:Action>busdox-docid-qns::urn:oasis:names:specification:ubl:schema:xsd:Invoice-2::Invoice##urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0::2.1</eb:Action>
+            <eb:ConversationId>f2939e53-a3a5-40b0-98bb-b070d5a98b4a</eb:ConversationId>
+        </eb:CollaborationInfo>
+        <eb:MessageProperties>
+            <eb:Property name="originalSender" type="iso6523-actorid-upis"
+                >9906:it01260340482</eb:Property>
+            <eb:Property name="finalRecipient" type="iso6523-actorid-upis"
+                >9906:it07945211006</eb:Property>
+        </eb:MessageProperties>
+        <eb:PayloadInfo>
+            <eb:PartInfo href="cid:message">
+                <eb:PartProperties>
+                    <eb:Property name="MimeType">application/xml</eb:Property>
+                </eb:PartProperties>
+            </eb:PartInfo>
+        </eb:PayloadInfo>
+    </eb:UserMessage>
+</eb:Messaging>

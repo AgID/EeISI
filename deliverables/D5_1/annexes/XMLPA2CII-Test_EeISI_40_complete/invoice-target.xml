@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsm:CrossIndustryInvoice xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" xmlns:qdt="urn:un:unece:uncefact:data:standard:QualifiedDataType:100" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100">
+  <rsm:ExchangedDocumentContext>
+    <ram:BusinessProcessSpecifiedDocumentContextParameter>
+      <ram:ID />
+    </ram:BusinessProcessSpecifiedDocumentContextParameter>
+    <ram:GuidelineSpecifiedDocumentContextParameter>
+      <ram:ID>urn:cen.eu:en16931:2017</ram:ID>
+    </ram:GuidelineSpecifiedDocumentContextParameter>
+  </rsm:ExchangedDocumentContext>
+  <rsm:ExchangedDocument>
+    <ram:ID>Test EeISI 40</ram:ID>
+    <ram:TypeCode>380</ram:TypeCode>
+    <ram:IssueDateTime>
+      <udt:DateTimeString format="102">20190118</udt:DateTimeString>
+    </ram:IssueDateTime>
+    <ram:IncludedNote>
+      <ram:Content>Causale 1 per la fattura:SI</ram:Content>
+    </ram:IncludedNote>
+    <ram:IncludedNote>
+      <ram:Content>Causale 2 per la fattura:SI</ram:Content>
+    </ram:IncludedNote>
+  </rsm:ExchangedDocument>
+  <rsm:SupplyChainTradeTransaction>
+    <ram:IncludedSupplyChainTradeLineItem>
+      <ram:AssociatedDocumentLineDocument>
+        <ram:LineID>1</ram:LineID>
+      </ram:AssociatedDocumentLineDocument>
+      <ram:SpecifiedTradeProduct>
+        <ram:Name>DESCRIZIONE DELLA LINEA 1</ram:Name>
+        <ram:ApplicableProductCharacteristic>
+          <ram:Description>colore</ram:Description>
+          <ram:Value>bianco</ram:Value>
+        </ram:ApplicableProductCharacteristic>
+        <ram:ApplicableProductCharacteristic>
+          <ram:Description>causale del trasporto</ram:Description>
+          <ram:Value>causale del trasporto</ram:Value>
+        </ram:ApplicableProductCharacteristic>
+      </ram:SpecifiedTradeProduct>
+      <ram:SpecifiedLineTradeAgreement>
+        <ram:NetPriceProductTradePrice>
+          <ram:ChargeAmount>500.00</ram:ChargeAmount>
+          <ram:BasisQuantity unitCode="C62">1.00</ram:BasisQuantity>
+        </ram:NetPriceProductTradePrice>
+      </ram:SpecifiedLineTradeAgreement>
+      <ram:SpecifiedLineTradeDelivery>
+        <ram:BilledQuantity unitCode="C62">2.00</ram:BilledQuantity>
+      </ram:SpecifiedLineTradeDelivery>
+      <ram:SpecifiedLineTradeSettlement>
+        <ram:ApplicableTradeTax>
+          <ram:TypeCode>VAT</ram:TypeCode>
+          <ram:CategoryCode>S</ram:CategoryCode>
+          <ram:RateApplicablePercent>22.00</ram:RateApplicablePercent>
+        </ram:ApplicableTradeTax>
+        <ram:BillingSpecifiedPeriod>
+          <ram:StartDateTime>
+            <udt:DateTimeString format="102">20190118</udt:DateTimeString>
+          </ram:StartDateTime>
+          <ram:EndDateTime>
+            <udt:DateTimeString format="102">20190118</udt:DateTimeString>
+          </ram:EndDateTime>
+        </ram:BillingSpecifiedPeriod>
+        <ram:SpecifiedTradeAllowanceCharge>
+          <ram:ChargeIndicator>
+            <udt:Indicator>false</udt:Indicator>
+          </ram:ChargeIndicator>
+          <ram:CalculationPercent>2.00</ram:CalculationPercent>
+          <ram:ActualAmount>10.00</ram:ActualAmount>
+          <ram:ReasonCode>95</ram:ReasonCode>
+        </ram:SpecifiedTradeAllowanceCharge>
+        <ram:SpecifiedTradeSettlementLineMonetarySummation>
+          <ram:LineTotalAmount>1000.00</ram:LineTotalAmount>
+        </ram:SpecifiedTradeSettlementLineMonetarySummation>
+        <ram:AdditionalReferencedDocument>
+          <ram:IssuerAssignedID>klji12</ram:IssuerAssignedID>
+          <ram:TypeCode>130</ram:TypeCode>
+          <ram:ReferenceTypeCode>ZZZ</ram:ReferenceTypeCode>
+        </ram:AdditionalReferencedDocument>
+        <ram:ReceivableSpecifiedTradeAccountingAccount>
+          <ram:ID>rifamm123</ram:ID>
+        </ram:ReceivableSpecifiedTradeAccountingAccount>
+      </ram:SpecifiedLineTradeSettlement>
+    </ram:IncludedSupplyChainTradeLineItem>
+    <ram:IncludedSupplyChainTradeLineItem>
+      <ram:AssociatedDocumentLineDocument>
+        <ram:LineID>2</ram:LineID>
+      </ram:AssociatedDocumentLineDocument>
+      <ram:SpecifiedTradeProduct>
+        <ram:Name>DESCRIZIONE DELLA LINEA 2</ram:Name>
+        <ram:ApplicableProductCharacteristic>
+          <ram:Description>materiale</ram:Description>
+          <ram:Value>carta</ram:Value>
+        </ram:ApplicableProductCharacteristic>
+        <ram:ApplicableProductCharacteristic>
+          <ram:Description>causale del trasporto</ram:Description>
+          <ram:Value>causale del trasporto</ram:Value>
+        </ram:ApplicableProductCharacteristic>
+      </ram:SpecifiedTradeProduct>
+      <ram:SpecifiedLineTradeAgreement>
+        <ram:NetPriceProductTradePrice>
+          <ram:ChargeAmount>1.00</ram:ChargeAmount>
+          <ram:BasisQuantity unitCode="C62">1.00</ram:BasisQuantity>
+        </ram:NetPriceProductTradePrice>
+      </ram:SpecifiedLineTradeAgreement>
+      <ram:SpecifiedLineTradeDelivery>
+        <ram:BilledQuantity unitCode="C62">10.00</ram:BilledQuantity>
+      </ram:SpecifiedLineTradeDelivery>
+      <ram:SpecifiedLineTradeSettlement>
+        <ram:ApplicableTradeTax>
+          <ram:TypeCode>VAT</ram:TypeCode>
+          <ram:CategoryCode>G</ram:CategoryCode>
+          <ram:RateApplicablePercent>0.00</ram:RateApplicablePercent>
+        </ram:ApplicableTradeTax>
+        <ram:BillingSpecifiedPeriod>
+          <ram:StartDateTime>
+            <udt:DateTimeString format="102">20190118</udt:DateTimeString>
+          </ram:StartDateTime>
+          <ram:EndDateTime>
+            <udt:DateTimeString format="102">20190118</udt:DateTimeString>
+          </ram:EndDateTime>
+        </ram:BillingSpecifiedPeriod>
+        <ram:SpecifiedTradeSettlementLineMonetarySummation>
+          <ram:LineTotalAmount>10.00</ram:LineTotalAmount>
+        </ram:SpecifiedTradeSettlementLineMonetarySummation>
+        <ram:AdditionalReferencedDocument>
+          <ram:IssuerAssignedID>klji12</ram:IssuerAssignedID>
+          <ram:TypeCode>130</ram:TypeCode>
+          <ram:ReferenceTypeCode>ZZZ</ram:ReferenceTypeCode>
+        </ram:AdditionalReferencedDocument>
+      </ram:SpecifiedLineTradeSettlement>
+    </ram:IncludedSupplyChainTradeLineItem>
+    <ram:ApplicableHeaderTradeAgreement>
+      <ram:SellerTradeParty>
+        <ram:ID>IT:EORI:0123456789012</ram:ID>
+        <ram:ID>IT:ALBO:Ordine Commercialisti:43DDD</ram:ID>
+        <ram:Name>ALPHA SRL</ram:Name>
+        <ram:Description>150000.00 SM LN</ram:Description>
+        <ram:SpecifiedLegalOrganization>
+          <ram:ID>IT:REA:BG:2344tf566</ram:ID>
+        </ram:SpecifiedLegalOrganization>
+        <ram:DefinedTradeContact>
+          <ram:TelephoneUniversalCommunication>
+            <ram:CompleteNumber>035204938</ram:CompleteNumber>
+          </ram:TelephoneUniversalCommunication>
+          <ram:EmailURIUniversalCommunication>
+            <ram:URIID>cedente@gmail.com</ram:URIID>
+          </ram:EmailURIUniversalCommunication>
+        </ram:DefinedTradeContact>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>07100</ram:PostcodeCode>
+          <ram:LineOne>VIALE ROMA</ram:LineOne>
+          <ram:LineTwo>543</ram:LineTwo>
+          <ram:CityName>SASSARI</ram:CityName>
+          <ram:CountryID>IT</ram:CountryID>
+          <ram:CountrySubDivisionName>SS</ram:CountrySubDivisionName>
+        </ram:PostalTradeAddress>
+        <ram:SpecifiedTaxRegistration>
+          <ram:ID schemeID="VA">IT07945211006</ram:ID>
+        </ram:SpecifiedTaxRegistration>
+        <ram:SpecifiedTaxRegistration>
+          <ram:ID schemeID="FC">BGRGDN77T10L117F</ram:ID>
+        </ram:SpecifiedTaxRegistration>
+      </ram:SellerTradeParty>
+      <ram:BuyerTradeParty>
+        <ram:ID>IT:CF:BGRGDN77T10L117F</ram:ID>
+        <ram:Name>Mario Verdi</ram:Name>
+        <ram:SpecifiedLegalOrganization>
+          <ram:ID>IT:EORI:2123456789012</ram:ID>
+        </ram:SpecifiedLegalOrganization>
+        <ram:DefinedTradeContact>
+          <ram:PersonName>Mario Verdi</ram:PersonName>
+        </ram:DefinedTradeContact>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>00145</ram:PostcodeCode>
+          <ram:LineOne>VIA TORINO</ram:LineOne>
+          <ram:LineTwo>38 B</ram:LineTwo>
+          <ram:CityName>ROMA</ram:CityName>
+          <ram:CountryID>IT</ram:CountryID>
+          <ram:CountrySubDivisionName>RM</ram:CountrySubDivisionName>
+        </ram:PostalTradeAddress>
+        <ram:URIUniversalCommunication>
+          <ram:URIID schemeID="0201">99YJBO</ram:URIID>
+        </ram:URIUniversalCommunication>
+        <ram:SpecifiedTaxRegistration>
+          <ram:ID schemeID="VA">IT07945211006</ram:ID>
+        </ram:SpecifiedTaxRegistration>
+      </ram:BuyerTradeParty>
+      <ram:SellerTaxRepresentativeTradeParty>
+        <ram:Name>ALPHA Rappresentante fiscale</ram:Name>
+        <ram:PostalTradeAddress>
+          <ram:CountryID>IT</ram:CountryID>
+        </ram:PostalTradeAddress>
+        <ram:SpecifiedTaxRegistration>
+          <ram:ID schemeID="VA">IT07945211006</ram:ID>
+        </ram:SpecifiedTaxRegistration>
+      </ram:SellerTaxRepresentativeTradeParty>
+      <ram:BuyerOrderReferencedDocument>
+        <ram:IssuerAssignedID>123</ram:IssuerAssignedID>
+      </ram:BuyerOrderReferencedDocument>
+      <ram:ContractReferencedDocument>
+        <ram:IssuerAssignedID>123</ram:IssuerAssignedID>
+      </ram:ContractReferencedDocument>
+      <ram:AdditionalReferencedDocument>
+        <ram:IssuerAssignedID>Allegato 1</ram:IssuerAssignedID>
+        <ram:TypeCode>916</ram:TypeCode>
+        <ram:Name>Descrizione allegato uno</ram:Name>
+        <ram:AttachmentBinaryObject mimeCode="text/csv" filename="Allegato 1">ZUlHT1IgYXR0YWNobWVudCB0ZXN0</ram:AttachmentBinaryObject>
+      </ram:AdditionalReferencedDocument>
+      <ram:AdditionalReferencedDocument>
+        <ram:IssuerAssignedID>Allegato 2</ram:IssuerAssignedID>
+        <ram:TypeCode>916</ram:TypeCode>
+        <ram:Name>Descrizione allegato due</ram:Name>
+        <ram:AttachmentBinaryObject mimeCode="text/csv" filename="Allegato 2">ZUlHT1IgYXR0YWNobWVudCB0ZXN0</ram:AttachmentBinaryObject>
+      </ram:AdditionalReferencedDocument>
+      <ram:AdditionalReferencedDocument>
+        <ram:IssuerAssignedID>not-mapped-values.txt</ram:IssuerAssignedID>
+        <ram:TypeCode>916</ram:TypeCode>
+        <ram:AttachmentBinaryObject mimeCode="text/csv" filename="not-mapped-values.txt">MS4xLjEuMSBJZFBhZXNlOiBJVAoxLjEuMS4yIElkQ29kaWNlOiA5NzczNTAyMDU4NAoxLjEuMiBQcm9ncmVzc2l2b0ludmlvOiAwMDAwMQoxLjEuMyBGb3JtYXRvVHJhc21pc3Npb25lOiBGUEExMgoxLjEuNS4xIFRlbGVmb25vOiAwMjEyMjQ5NTAzMAoxLjEuNS4yIEVtYWlsOiB0cmFzbWl0dGVudGVAZ21haWwuY29tCjEuNS4xLjEuMSBJZFBhZXNlOiBJVAoxLjUuMS4xLjIgSWRDb2RpY2U6IDk3NzM1MDIwNTg0CjEuNS4xLjIgQ29kaWNlRmlzY2FsZTogQkdSR0RONzdUMTBMMTE3RgoxLjUuMS4zLjEgRGVub21pbmF6aW9uZTogR0FNTUEgaW50ZXJtZWRpYXJpbwoxLjUuMS4zLjQgVGl0b2xvOiBTdXBlcgoxLjUuMS4zLjUgQ29kRU9SSTogMzEyMzQ1Njc4OTAxMgoyLjEuMS41LjIgSW1wb3J0b1JpdGVudXRhOiAyMDAuMDAKMi4zLjEgRGF0YTogMTk5MC0wMS0wMQoyLjMuMiBUb3RhbGVQZXJjb3JzbzogNDgwMAoxLjYgU29nZ2V0dG9FbWl0dGVudGU6IFRaCjIuMS4xLjUuMSBUaXBvUml0ZW51dGE6IFJUMDEKMi4xLjEuNS4yIEltcG9ydG9SaXRlbnV0YTogMjAwLjAwCjIuMS4xLjUuMyBBbGlxdW90YVJpdGVudXRhOiAyMC4wMAoyLjEuMS41LjQgQ2F1c2FsZVBhZ2FtZW50bzogQQoyLjEuMS43LjYgUml0ZW51dGE6IFNJCjIuMi4xLjEzIFJpdGVudXRhOiBTSSAyLjIuMS4xIE51bWVyb0xpbmVhOiAxCjIuMS4yLjUgQ29kaWNlQ29tbWVzc2FDb252ZW56aW9uZTogamtsMzQKMi4xLjIuNiBDb2RpY2VDVVA6IDExMjIKMi4xLjIuNyBDb2RpY2VDSUc6IGFhYmIK</ram:AttachmentBinaryObject>
+      </ram:AdditionalReferencedDocument>
+      <ram:SpecifiedProcuringProject>
+        <ram:ID>11d22</ram:ID>
+        <ram:Name>Project reference</ram:Name>
+      </ram:SpecifiedProcuringProject>
+    </ram:ApplicableHeaderTradeAgreement>
+    <ram:ApplicableHeaderTradeDelivery>
+      <ram:ShipToTradeParty>
+        <ram:Name>Vettore</ram:Name>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>24065</ram:PostcodeCode>
+          <ram:LineOne>VIA Paglia</ram:LineOne>
+          <ram:LineTwo>16</ram:LineTwo>
+          <ram:CityName>Castro</ram:CityName>
+          <ram:CountryID>IT</ram:CountryID>
+          <ram:CountrySubDivisionName>BG</ram:CountrySubDivisionName>
+        </ram:PostalTradeAddress>
+      </ram:ShipToTradeParty>
+      <ram:ActualDeliverySupplyChainEvent>
+        <ram:OccurrenceDateTime>
+          <udt:DateTimeString format="102">20190110</udt:DateTimeString>
+        </ram:OccurrenceDateTime>
+      </ram:ActualDeliverySupplyChainEvent>
+      <ram:DespatchAdviceReferencedDocument>
+        <ram:IssuerAssignedID>12345:2019-01-08</ram:IssuerAssignedID>
+      </ram:DespatchAdviceReferencedDocument>
+      <ram:ReceivingAdviceReferencedDocument>
+        <ram:IssuerAssignedID>123</ram:IssuerAssignedID>
+      </ram:ReceivingAdviceReferencedDocument>
+    </ram:ApplicableHeaderTradeDelivery>
+    <ram:ApplicableHeaderTradeSettlement>
+      <ram:PaymentReference>codpag123</ram:PaymentReference>
+      <ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
+      <ram:PayeeTradeParty>
+        <ram:Name>Nome del beneficiario</ram:Name>
+      </ram:PayeeTradeParty>
+      <ram:SpecifiedTradeSettlementPaymentMeans>
+        <ram:TypeCode>30</ram:TypeCode>
+        <ram:PayeePartyCreditorFinancialAccount>
+          <ram:IBANID>IT02L1234512345123456789012</ram:IBANID>
+        </ram:PayeePartyCreditorFinancialAccount>
+        <ram:PayerSpecifiedDebtorFinancialInstitution>
+          <ram:BICID>BLOPIT22XXX</ram:BICID>
+        </ram:PayerSpecifiedDebtorFinancialInstitution>
+      </ram:SpecifiedTradeSettlementPaymentMeans>
+      <ram:ApplicableTradeTax>
+        <ram:CalculatedAmount>220.00</ram:CalculatedAmount>
+        <ram:TypeCode>VAT</ram:TypeCode>
+        <ram:BasisAmount>1000.00</ram:BasisAmount>
+        <ram:CategoryCode>S</ram:CategoryCode>
+        <ram:DueDateTypeCode>5</ram:DueDateTypeCode>
+        <ram:RateApplicablePercent>22.00</ram:RateApplicablePercent>
+      </ram:ApplicableTradeTax>
+      <ram:ApplicableTradeTax>
+        <ram:CalculatedAmount>0.00</ram:CalculatedAmount>
+        <ram:TypeCode>VAT</ram:TypeCode>
+        <ram:BasisAmount>0.00</ram:BasisAmount>
+        <ram:CategoryCode>G</ram:CategoryCode>
+        <ram:ExemptionReasonCode>vatex-eu-g</ram:ExemptionReasonCode>
+        <ram:DueDateTypeCode>5</ram:DueDateTypeCode>
+        <ram:RateApplicablePercent>0.00</ram:RateApplicablePercent>
+      </ram:ApplicableTradeTax>
+      <ram:ApplicableTradeTax>
+        <ram:CalculatedAmount>0.00</ram:CalculatedAmount>
+        <ram:TypeCode>VAT</ram:TypeCode>
+        <ram:ExemptionReason>Exempt from tax</ram:ExemptionReason>
+        <ram:BasisAmount>40.00</ram:BasisAmount>
+        <ram:CategoryCode>E</ram:CategoryCode>
+        <ram:ExemptionReasonCode>vatex-eu-151-1b</ram:ExemptionReasonCode>
+        <ram:DueDateTypeCode>5</ram:DueDateTypeCode>
+        <ram:RateApplicablePercent>0.00</ram:RateApplicablePercent>
+      </ram:ApplicableTradeTax>
+      <ram:BillingSpecifiedPeriod>
+        <ram:StartDateTime>
+          <udt:DateTimeString format="102">20190118</udt:DateTimeString>
+        </ram:StartDateTime>
+        <ram:EndDateTime>
+          <udt:DateTimeString format="102">20190118</udt:DateTimeString>
+        </ram:EndDateTime>
+      </ram:BillingSpecifiedPeriod>
+      <ram:SpecifiedTradeAllowanceCharge>
+        <ram:ChargeIndicator>
+          <udt:Indicator>false</udt:Indicator>
+        </ram:ChargeIndicator>
+        <ram:ActualAmount>10.00</ram:ActualAmount>
+        <ram:ReasonCode>95</ram:ReasonCode>
+        <ram:Reason>DESCRIZIONE DELLA LINEA di sconto</ram:Reason>
+        <ram:CategoryTradeTax>
+          <ram:TypeCode>VAT</ram:TypeCode>
+          <ram:CategoryCode>G</ram:CategoryCode>
+          <ram:RateApplicablePercent>0.00</ram:RateApplicablePercent>
+        </ram:CategoryTradeTax>
+      </ram:SpecifiedTradeAllowanceCharge>
+      <ram:SpecifiedTradeAllowanceCharge>
+        <ram:ChargeIndicator>
+          <udt:Indicator>false</udt:Indicator>
+        </ram:ChargeIndicator>
+        <ram:ActualAmount>10.00</ram:ActualAmount>
+        <ram:ReasonCode>95</ram:ReasonCode>
+        <ram:Reason>DESCRIZIONE DELLA LINEA sconto con iva</ram:Reason>
+        <ram:CategoryTradeTax>
+          <ram:TypeCode>VAT</ram:TypeCode>
+          <ram:CategoryCode>S</ram:CategoryCode>
+          <ram:RateApplicablePercent>22.00</ram:RateApplicablePercent>
+        </ram:CategoryTradeTax>
+      </ram:SpecifiedTradeAllowanceCharge>
+      <ram:SpecifiedTradeAllowanceCharge>
+        <ram:ChargeIndicator>
+          <udt:Indicator>true</udt:Indicator>
+        </ram:ChargeIndicator>
+        <ram:ActualAmount>10.00</ram:ActualAmount>
+        <ram:ReasonCode>ABK</ram:ReasonCode>
+        <ram:Reason>DESCRIZIONE DELLA LINEA spesa accessoria</ram:Reason>
+        <ram:CategoryTradeTax>
+          <ram:TypeCode>VAT</ram:TypeCode>
+          <ram:CategoryCode>S</ram:CategoryCode>
+          <ram:RateApplicablePercent>22.00</ram:RateApplicablePercent>
+        </ram:CategoryTradeTax>
+      </ram:SpecifiedTradeAllowanceCharge>
+      <ram:SpecifiedTradeAllowanceCharge>
+        <ram:ChargeIndicator>
+          <udt:Indicator>true</udt:Indicator>
+        </ram:ChargeIndicator>
+        <ram:CalculationPercent>0.00</ram:CalculationPercent>
+        <ram:BasisAmount>2.00</ram:BasisAmount>
+        <ram:ActualAmount>0.00</ram:ActualAmount>
+        <ram:Reason>SI</ram:Reason>
+        <ram:CategoryTradeTax>
+          <ram:TypeCode>VAT</ram:TypeCode>
+          <ram:CategoryCode>E</ram:CategoryCode>
+          <ram:RateApplicablePercent>0.00</ram:RateApplicablePercent>
+        </ram:CategoryTradeTax>
+      </ram:SpecifiedTradeAllowanceCharge>
+      <ram:SpecifiedTradeAllowanceCharge>
+        <ram:ChargeIndicator>
+          <udt:Indicator>true</udt:Indicator>
+        </ram:ChargeIndicator>
+        <ram:CalculationPercent>4.00</ram:CalculationPercent>
+        <ram:BasisAmount>1000.00</ram:BasisAmount>
+        <ram:ActualAmount>40.00</ram:ActualAmount>
+        <ram:ReasonCode>ABK</ram:ReasonCode>
+        <ram:CategoryTradeTax>
+          <ram:TypeCode>VAT</ram:TypeCode>
+          <ram:CategoryCode>E</ram:CategoryCode>
+          <ram:RateApplicablePercent>0.00</ram:RateApplicablePercent>
+        </ram:CategoryTradeTax>
+      </ram:SpecifiedTradeAllowanceCharge>
+      <ram:SpecifiedTradeAllowanceCharge>
+        <ram:ChargeIndicator>
+          <udt:Indicator>true</udt:Indicator>
+        </ram:ChargeIndicator>
+        <ram:CalculationPercent>20.00</ram:CalculationPercent>
+        <ram:BasisAmount>200.00</ram:BasisAmount>
+        <ram:ActualAmount>0.00</ram:ActualAmount>
+        <ram:Reason>RT01 A</ram:Reason>
+        <ram:CategoryTradeTax>
+          <ram:TypeCode>VAT</ram:TypeCode>
+          <ram:CategoryCode>E</ram:CategoryCode>
+          <ram:RateApplicablePercent>0.00</ram:RateApplicablePercent>
+        </ram:CategoryTradeTax>
+      </ram:SpecifiedTradeAllowanceCharge>
+      <ram:SpecifiedTradePaymentTerms>
+        <ram:Description>Condizioni di Pagamento=TP01, Data Decorrenza Penale=2019-03-15, Data Limite Pagamento Anticipato=2019-02-01, Data Riferimento Termini Pagamento=2019-01-18, Giorni Termini Pagamento=30, Penalita Pagamenti Ritardati=10.00, Sconto Pagamento Anticipato=10.00, BT-113 represents Withholding tax amount</ram:Description>
+        <ram:DueDateDateTime>
+          <udt:DateTimeString format="102">20190218</udt:DateTimeString>
+        </ram:DueDateDateTime>
+      </ram:SpecifiedTradePaymentTerms>
+      <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+        <ram:LineTotalAmount>1010.00</ram:LineTotalAmount>
+        <ram:ChargeTotalAmount>50.00</ram:ChargeTotalAmount>
+        <ram:AllowanceTotalAmount>20.00</ram:AllowanceTotalAmount>
+        <ram:TaxBasisTotalAmount>1040.00</ram:TaxBasisTotalAmount>
+        <ram:TaxTotalAmount currencyID="EUR">220.00</ram:TaxTotalAmount>
+        <ram:RoundingAmount>0.00</ram:RoundingAmount>
+        <ram:GrandTotalAmount>1260.00</ram:GrandTotalAmount>
+        <ram:TotalPrepaidAmount>200.00</ram:TotalPrepaidAmount>
+        <ram:DuePayableAmount>1060.00</ram:DuePayableAmount>
+      </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+      <ram:InvoiceReferencedDocument>
+        <ram:IssuerAssignedID>123</ram:IssuerAssignedID>
+        <ram:FormattedIssueDateTime>
+          <qdt:DateTimeString format="102">20190110</qdt:DateTimeString>
+        </ram:FormattedIssueDateTime>
+      </ram:InvoiceReferencedDocument>
+      <ram:ReceivableSpecifiedTradeAccountingAccount>
+        <ram:ID>ABCF45667</ram:ID>
+      </ram:ReceivableSpecifiedTradeAccountingAccount>
+    </ram:ApplicableHeaderTradeSettlement>
+  </rsm:SupplyChainTradeTransaction>
+</rsm:CrossIndustryInvoice>

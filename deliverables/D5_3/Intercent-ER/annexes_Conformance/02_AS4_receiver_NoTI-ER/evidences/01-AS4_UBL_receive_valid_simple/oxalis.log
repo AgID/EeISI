@@ -1,0 +1,927 @@
+13:03:53.468 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.r.DefaultResourceManager - resolving resource <> type <class java.lang.ClassLoader>
+13:03:53.471 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.t.servlet.ServletController - Service http request on thread: Thread[https-jsse-nio-9480-exec-6,5,main]
+13:03:53.471 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.t.http.AbstractHTTPDestination - Create a new message for processing
+13:03:53.480 [https-jsse-nio-9480-exec-6] DEBUG o.apache.cxf.transport.http.Headers - Request Headers: {Accept=[*/*], Authorization=[***], cache-control=[no-cache], connection=[keep-alive], Content-Length=[8690], content-type=[multipart/related; type="application/soap+xml"; boundary="uuid:fdce9f55-e951-48c7-8964-012467d3e571"; start="<root.message@cxf.apache.org>"; start-info="application/soap+xml"], host=[test-notier.regione.emilia-romagna.it], pragma=[no-cache], Proxy-Authorization=[***], user-agent=[Apache-CXF/3.2.4], x-forwarded-for=[13.80.11.48]}
+13:03:53.493 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.ws.policy.PolicyInInterceptor@93a3828 to phase receive
+13:03:53.493 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.attachment.As4AttachmentInInterceptor@4ce4f0e1 to phase receive
+13:03:53.493 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.interceptor.StaxInInterceptor@1b9b4640 to phase post-stream
+13:03:53.493 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.interceptor.StaxInEndingInterceptor@7fcd7b23 to phase pre-invoke
+13:03:53.494 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.jaxws.handler.soap.SOAPHandlerFaultInInterceptor@276ef78a to phase pre-protocol-frontend
+13:03:53.494 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.binding.soap.interceptor.ReadHeadersInterceptor@4c66687e to phase read
+13:03:53.494 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.binding.soap.interceptor.StartBodyInterceptor@d0e8ef4 to phase read
+13:03:53.494 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.binding.soap.interceptor.CheckFaultInterceptor@190ee815 to phase post-protocol
+13:03:53.494 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor no.difi.oxalis.as4.inbound.As4EndpointSelector@498c8e19 to phase read
+13:03:53.495 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@21f66c71 was created. Current flow:
+  receive [PolicyInInterceptor, As4AttachmentInInterceptor]
+  post-stream [StaxInInterceptor]
+  read [ReadHeadersInterceptor, StartBodyInterceptor, As4EndpointSelector]
+  pre-protocol-frontend [SOAPHandlerFaultInInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  pre-invoke [StaxInEndingInterceptor]
+
+13:03:53.495 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.ws.policy.PolicyInInterceptor@93a3828
+13:03:53.497 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.ws.policy.PolicyInInterceptor - No endpoint.
+13:03:53.498 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.attachment.As4AttachmentInInterceptor@4ce4f0e1
+13:03:53.521 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxInInterceptor@1b9b4640
+13:03:53.586 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.interceptor.StaxInEndingInterceptor@8e1d3a0 to phase pre-invoke
+13:03:53.586 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.ReadHeadersInterceptor@4c66687e
+13:03:53.625 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.StartBodyInterceptor@d0e8ef4
+13:03:53.625 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor no.difi.oxalis.as4.inbound.As4EndpointSelector@498c8e19
+13:03:53.625 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.jaxws.interceptors.SwAInInterceptor@df841c to phase pre-invoke
+13:03:53.625 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@21f66c71 was modified. Current flow:
+  receive [PolicyInInterceptor, As4AttachmentInInterceptor]
+  post-stream [StaxInInterceptor]
+  read [ReadHeadersInterceptor, StartBodyInterceptor, As4EndpointSelector]
+  pre-protocol-frontend [SOAPHandlerFaultInInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor]
+
+13:03:53.625 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.binding.soap.saaj.SAAJInInterceptor@c8e1ac to phase pre-protocol
+13:03:53.625 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@21f66c71 was modified. Current flow:
+  receive [PolicyInInterceptor, As4AttachmentInInterceptor]
+  post-stream [StaxInInterceptor]
+  read [ReadHeadersInterceptor, StartBodyInterceptor, As4EndpointSelector]
+  pre-protocol [SAAJInInterceptor]
+  pre-protocol-frontend [SOAPHandlerFaultInInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor]
+
+13:03:53.626 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.binding.soap.saaj.SAAJInInterceptor$SAAJPreInInterceptor@1f724c44 to phase read
+13:03:53.626 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@21f66c71 was modified. Current flow:
+  receive [PolicyInInterceptor, As4AttachmentInInterceptor]
+  post-stream [StaxInInterceptor]
+  read [SAAJPreInInterceptor, ReadHeadersInterceptor, StartBodyInterceptor, As4EndpointSelector]
+  pre-protocol [SAAJInInterceptor]
+  pre-protocol-frontend [SOAPHandlerFaultInInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor]
+
+13:03:53.626 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.jaxws.interceptors.MessageModeInInterceptor@5f42a2a6 to phase post-logical
+13:03:53.626 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@21f66c71 was modified. Current flow:
+  receive [PolicyInInterceptor, As4AttachmentInInterceptor]
+  post-stream [StaxInInterceptor]
+  read [SAAJPreInInterceptor, ReadHeadersInterceptor, StartBodyInterceptor, As4EndpointSelector]
+  pre-protocol [SAAJInInterceptor]
+  pre-protocol-frontend [SOAPHandlerFaultInInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  post-logical [MessageModeInInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor]
+
+13:03:53.626 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.frontend.WSDLGetInterceptor@23413236 to phase read
+13:03:53.626 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@21f66c71 was modified. Current flow:
+  receive [PolicyInInterceptor, As4AttachmentInInterceptor]
+  post-stream [StaxInInterceptor]
+  read [SAAJPreInInterceptor, ReadHeadersInterceptor, StartBodyInterceptor, As4EndpointSelector, WSDLGetInterceptor]
+  pre-protocol [SAAJInInterceptor]
+  pre-protocol-frontend [SOAPHandlerFaultInInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  post-logical [MessageModeInInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor]
+
+13:03:53.626 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.ext.logging.LoggingInInterceptor@64436273 to phase pre-invoke
+13:03:53.626 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@21f66c71 was modified. Current flow:
+  receive [PolicyInInterceptor, As4AttachmentInInterceptor]
+  post-stream [StaxInInterceptor]
+  read [SAAJPreInInterceptor, ReadHeadersInterceptor, StartBodyInterceptor, As4EndpointSelector, WSDLGetInterceptor]
+  pre-protocol [SAAJInInterceptor]
+  pre-protocol-frontend [SOAPHandlerFaultInInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  post-logical [MessageModeInInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor, LoggingInInterceptor]
+
+13:03:53.628 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.ext.logging.WireTapIn@6f476b25 to phase receive
+13:03:53.628 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@21f66c71 was modified. Current flow:
+  receive [PolicyInInterceptor, As4AttachmentInInterceptor, WireTapIn]
+  post-stream [StaxInInterceptor]
+  read [SAAJPreInInterceptor, ReadHeadersInterceptor, StartBodyInterceptor, As4EndpointSelector, WSDLGetInterceptor]
+  pre-protocol [SAAJInInterceptor]
+  pre-protocol-frontend [SOAPHandlerFaultInInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  post-logical [MessageModeInInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor, LoggingInInterceptor]
+
+13:03:53.628 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.jaxws.handler.logical.LogicalHandlerInInterceptor@52ef49bb to phase pre-protocol-frontend
+13:03:53.628 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@21f66c71 was modified. Current flow:
+  receive [PolicyInInterceptor, As4AttachmentInInterceptor, WireTapIn]
+  post-stream [StaxInInterceptor]
+  read [SAAJPreInInterceptor, ReadHeadersInterceptor, StartBodyInterceptor, As4EndpointSelector, WSDLGetInterceptor]
+  pre-protocol [SAAJInInterceptor]
+  pre-protocol-frontend [SOAPHandlerFaultInInterceptor, LogicalHandlerInInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  post-logical [MessageModeInInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor, LoggingInInterceptor]
+
+13:03:53.628 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor@17f316fa to phase pre-protocol-frontend
+13:03:53.628 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@21f66c71 was modified. Current flow:
+  receive [PolicyInInterceptor, As4AttachmentInInterceptor, WireTapIn]
+  post-stream [StaxInInterceptor]
+  read [SAAJPreInInterceptor, ReadHeadersInterceptor, StartBodyInterceptor, As4EndpointSelector, WSDLGetInterceptor]
+  pre-protocol [SAAJInInterceptor]
+  pre-protocol-frontend [SOAPHandlerFaultInInterceptor, SOAPHandlerInterceptor, LogicalHandlerInInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  post-logical [MessageModeInInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor, LoggingInInterceptor]
+
+13:03:53.628 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor no.difi.oxalis.as4.inbound.As4Interceptor@501f787d to phase pre-protocol
+13:03:53.629 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@21f66c71 was modified. Current flow:
+  receive [PolicyInInterceptor, As4AttachmentInInterceptor, WireTapIn]
+  post-stream [StaxInInterceptor]
+  read [SAAJPreInInterceptor, ReadHeadersInterceptor, StartBodyInterceptor, As4EndpointSelector, WSDLGetInterceptor]
+  pre-protocol [As4Interceptor, SAAJInInterceptor]
+  pre-protocol-frontend [SOAPHandlerFaultInInterceptor, SOAPHandlerInterceptor, LogicalHandlerInInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  post-logical [MessageModeInInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor, LoggingInInterceptor]
+
+13:03:53.629 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor no.difi.oxalis.as4.inbound.SetPolicyInInterceptor@4552f18 to phase receive
+13:03:53.629 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@21f66c71 was modified. Current flow:
+  receive [SetPolicyInInterceptor, PolicyInInterceptor, As4AttachmentInInterceptor, WireTapIn]
+  post-stream [StaxInInterceptor]
+  read [SAAJPreInInterceptor, ReadHeadersInterceptor, StartBodyInterceptor, As4EndpointSelector, WSDLGetInterceptor]
+  pre-protocol [As4Interceptor, SAAJInInterceptor]
+  pre-protocol-frontend [SOAPHandlerFaultInInterceptor, SOAPHandlerInterceptor, LogicalHandlerInInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  post-logical [MessageModeInInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor, LoggingInInterceptor]
+
+13:03:53.629 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor no.difi.oxalis.as4.inbound.AttachmentCleanupInterceptor@2cdf1cb8 to phase post-invoke
+13:03:53.629 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@21f66c71 was modified. Current flow:
+  receive [SetPolicyInInterceptor, PolicyInInterceptor, As4AttachmentInInterceptor, WireTapIn]
+  post-stream [StaxInInterceptor]
+  read [SAAJPreInInterceptor, ReadHeadersInterceptor, StartBodyInterceptor, As4EndpointSelector, WSDLGetInterceptor]
+  pre-protocol [As4Interceptor, SAAJInInterceptor]
+  pre-protocol-frontend [SOAPHandlerFaultInInterceptor, SOAPHandlerInterceptor, LogicalHandlerInInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  post-logical [MessageModeInInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor, LoggingInInterceptor]
+  post-invoke [AttachmentCleanupInterceptor]
+
+13:03:53.629 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.ws.security.wss4j.PolicyBasedWSS4JInInterceptor@23149b1f to phase pre-protocol
+13:03:53.629 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@21f66c71 was modified. Current flow:
+  receive [SetPolicyInInterceptor, PolicyInInterceptor, As4AttachmentInInterceptor, WireTapIn]
+  post-stream [StaxInInterceptor]
+  read [SAAJPreInInterceptor, ReadHeadersInterceptor, StartBodyInterceptor, As4EndpointSelector, WSDLGetInterceptor]
+  pre-protocol [As4Interceptor, SAAJInInterceptor, PolicyBasedWSS4JInInterceptor]
+  pre-protocol-frontend [SOAPHandlerFaultInInterceptor, SOAPHandlerInterceptor, LogicalHandlerInInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  post-logical [MessageModeInInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor, LoggingInInterceptor]
+  post-invoke [AttachmentCleanupInterceptor]
+
+13:03:53.629 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.interceptor.AttachmentInInterceptor@863c390 to phase receive
+13:03:53.629 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@21f66c71 was modified. Current flow:
+  receive [SetPolicyInInterceptor, PolicyInInterceptor, As4AttachmentInInterceptor, WireTapIn, AttachmentInInterceptor]
+  post-stream [StaxInInterceptor]
+  read [SAAJPreInInterceptor, ReadHeadersInterceptor, StartBodyInterceptor, As4EndpointSelector, WSDLGetInterceptor]
+  pre-protocol [As4Interceptor, SAAJInInterceptor, PolicyBasedWSS4JInInterceptor]
+  pre-protocol-frontend [SOAPHandlerFaultInInterceptor, SOAPHandlerInterceptor, LogicalHandlerInInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  post-logical [MessageModeInInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor, LoggingInInterceptor]
+  post-invoke [AttachmentCleanupInterceptor]
+
+13:03:53.630 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.interceptor.StaxInInterceptor@25e3006b to phase post-stream
+13:03:53.630 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapActionInInterceptor@710df2b3 to phase read
+13:03:53.630 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@21f66c71 was modified. Current flow:
+  receive [SetPolicyInInterceptor, PolicyInInterceptor, As4AttachmentInInterceptor, WireTapIn, AttachmentInInterceptor]
+  post-stream [StaxInInterceptor]
+  read [SAAJPreInInterceptor, ReadHeadersInterceptor, StartBodyInterceptor, As4EndpointSelector, WSDLGetInterceptor, SoapActionInInterceptor]
+  pre-protocol [As4Interceptor, SAAJInInterceptor, PolicyBasedWSS4JInInterceptor]
+  pre-protocol-frontend [SOAPHandlerFaultInInterceptor, SOAPHandlerInterceptor, LogicalHandlerInInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  post-logical [MessageModeInInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor, LoggingInInterceptor]
+  post-invoke [AttachmentCleanupInterceptor]
+
+13:03:53.630 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.wsdl.interceptors.DocLiteralInInterceptor@76c653ee to phase unmarshal
+13:03:53.630 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@21f66c71 was modified. Current flow:
+  receive [SetPolicyInInterceptor, PolicyInInterceptor, As4AttachmentInInterceptor, WireTapIn, AttachmentInInterceptor]
+  post-stream [StaxInInterceptor]
+  read [SAAJPreInInterceptor, ReadHeadersInterceptor, StartBodyInterceptor, As4EndpointSelector, WSDLGetInterceptor, SoapActionInInterceptor]
+  pre-protocol [As4Interceptor, SAAJInInterceptor, PolicyBasedWSS4JInInterceptor]
+  pre-protocol-frontend [SOAPHandlerFaultInInterceptor, SOAPHandlerInterceptor, LogicalHandlerInInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  unmarshal [DocLiteralInInterceptor]
+  post-logical [MessageModeInInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor, LoggingInInterceptor]
+  post-invoke [AttachmentCleanupInterceptor]
+
+13:03:53.630 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderInterceptor@60af61e5 to phase unmarshal
+13:03:53.630 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@21f66c71 was modified. Current flow:
+  receive [SetPolicyInInterceptor, PolicyInInterceptor, As4AttachmentInInterceptor, WireTapIn, AttachmentInInterceptor]
+  post-stream [StaxInInterceptor]
+  read [SAAJPreInInterceptor, ReadHeadersInterceptor, StartBodyInterceptor, As4EndpointSelector, WSDLGetInterceptor, SoapActionInInterceptor]
+  pre-protocol [As4Interceptor, SAAJInInterceptor, PolicyBasedWSS4JInInterceptor]
+  pre-protocol-frontend [SOAPHandlerFaultInInterceptor, SOAPHandlerInterceptor, LogicalHandlerInInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  unmarshal [DocLiteralInInterceptor, SoapHeaderInterceptor]
+  post-logical [MessageModeInInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor, LoggingInInterceptor]
+  post-invoke [AttachmentCleanupInterceptor]
+
+13:03:53.630 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.binding.soap.interceptor.ReadHeadersInterceptor@5df2d5c3 to phase read
+13:03:53.630 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.binding.soap.interceptor.StartBodyInterceptor@43743ca4 to phase read
+13:03:53.630 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.binding.soap.interceptor.CheckFaultInterceptor@7695e07 to phase post-protocol
+13:03:53.630 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.binding.soap.interceptor.MustUnderstandInterceptor@1cd2a746 to phase pre-protocol
+13:03:53.631 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@21f66c71 was modified. Current flow:
+  receive [SetPolicyInInterceptor, PolicyInInterceptor, As4AttachmentInInterceptor, WireTapIn, AttachmentInInterceptor]
+  post-stream [StaxInInterceptor]
+  read [SAAJPreInInterceptor, ReadHeadersInterceptor, StartBodyInterceptor, As4EndpointSelector, WSDLGetInterceptor, SoapActionInInterceptor]
+  pre-protocol [As4Interceptor, SAAJInInterceptor, PolicyBasedWSS4JInInterceptor, MustUnderstandInterceptor]
+  pre-protocol-frontend [SOAPHandlerFaultInInterceptor, SOAPHandlerInterceptor, LogicalHandlerInInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  unmarshal [DocLiteralInInterceptor, SoapHeaderInterceptor]
+  post-logical [MessageModeInInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor, LoggingInInterceptor]
+  post-invoke [AttachmentCleanupInterceptor]
+
+13:03:53.631 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.interceptor.ServiceInvokerInterceptor@57c525d2 to phase invoke
+13:03:53.631 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@21f66c71 was modified. Current flow:
+  receive [SetPolicyInInterceptor, PolicyInInterceptor, As4AttachmentInInterceptor, WireTapIn, AttachmentInInterceptor]
+  post-stream [StaxInInterceptor]
+  read [SAAJPreInInterceptor, ReadHeadersInterceptor, StartBodyInterceptor, As4EndpointSelector, WSDLGetInterceptor, SoapActionInInterceptor]
+  pre-protocol [As4Interceptor, SAAJInInterceptor, PolicyBasedWSS4JInInterceptor, MustUnderstandInterceptor]
+  pre-protocol-frontend [SOAPHandlerFaultInInterceptor, SOAPHandlerInterceptor, LogicalHandlerInInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  unmarshal [DocLiteralInInterceptor, SoapHeaderInterceptor]
+  post-logical [MessageModeInInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor, LoggingInInterceptor]
+  invoke [ServiceInvokerInterceptor]
+  post-invoke [AttachmentCleanupInterceptor]
+
+13:03:53.631 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.interceptor.OutgoingChainInterceptor@3536b292 to phase post-invoke
+13:03:53.631 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@21f66c71 was modified. Current flow:
+  receive [SetPolicyInInterceptor, PolicyInInterceptor, As4AttachmentInInterceptor, WireTapIn, AttachmentInInterceptor]
+  post-stream [StaxInInterceptor]
+  read [SAAJPreInInterceptor, ReadHeadersInterceptor, StartBodyInterceptor, As4EndpointSelector, WSDLGetInterceptor, SoapActionInInterceptor]
+  pre-protocol [As4Interceptor, SAAJInInterceptor, PolicyBasedWSS4JInInterceptor, MustUnderstandInterceptor]
+  pre-protocol-frontend [SOAPHandlerFaultInInterceptor, SOAPHandlerInterceptor, LogicalHandlerInInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  unmarshal [DocLiteralInInterceptor, SoapHeaderInterceptor]
+  post-logical [MessageModeInInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor, LoggingInInterceptor]
+  invoke [ServiceInvokerInterceptor]
+  post-invoke [AttachmentCleanupInterceptor, OutgoingChainInterceptor]
+
+13:03:53.631 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.interceptor.OneWayProcessorInterceptor@78625b55 to phase pre-logical
+13:03:53.631 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@21f66c71 was modified. Current flow:
+  receive [SetPolicyInInterceptor, PolicyInInterceptor, As4AttachmentInInterceptor, WireTapIn, AttachmentInInterceptor]
+  post-stream [StaxInInterceptor]
+  read [SAAJPreInInterceptor, ReadHeadersInterceptor, StartBodyInterceptor, As4EndpointSelector, WSDLGetInterceptor, SoapActionInInterceptor]
+  pre-protocol [As4Interceptor, SAAJInInterceptor, PolicyBasedWSS4JInInterceptor, MustUnderstandInterceptor]
+  pre-protocol-frontend [SOAPHandlerFaultInInterceptor, SOAPHandlerInterceptor, LogicalHandlerInInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  unmarshal [DocLiteralInInterceptor, SoapHeaderInterceptor]
+  pre-logical [OneWayProcessorInterceptor]
+  post-logical [MessageModeInInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor, LoggingInInterceptor]
+  invoke [ServiceInvokerInterceptor]
+  post-invoke [AttachmentCleanupInterceptor, OutgoingChainInterceptor]
+
+13:03:53.631 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.frontend.WSDLGetInterceptor@23413236
+13:03:53.631 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapActionInInterceptor@710df2b3
+13:03:53.631 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor no.difi.oxalis.as4.inbound.As4Interceptor@501f787d
+13:03:53.649 [https-jsse-nio-9480-exec-6] DEBUG n.difi.oxalis.as4.util.PolicyService - Policy classpath: /eDeliveryAS4Policy.xml
+13:03:53.687 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.saaj.SAAJInInterceptor@c8e1ac
+13:03:53.730 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.ws.security.wss4j.PolicyBasedWSS4JInInterceptor@23149b1f
+13:03:53.737 [https-jsse-nio-9480-exec-6] DEBUG o.a.wss4j.dom.util.WSSecurityUtil - Can't load class com.sun.xml.messaging.saaj.soap.SOAPDocumentImpl
+java.lang.ClassNotFoundException: com.sun.xml.messaging.saaj.soap.SOAPDocumentImpl
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1365)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1188)
+	at org.apache.wss4j.dom.util.WSSecurityUtil.<clinit>(WSSecurityUtil.java:102)
+	at org.apache.cxf.ws.security.wss4j.PolicyBasedWSS4JInInterceptor.containsSecurityHeader(PolicyBasedWSS4JInInterceptor.java:149)
+	at org.apache.cxf.ws.security.wss4j.PolicyBasedWSS4JInInterceptor.handleMessage(PolicyBasedWSS4JInInterceptor.java:100)
+	at org.apache.cxf.ws.security.wss4j.PolicyBasedWSS4JInInterceptor.handleMessage(PolicyBasedWSS4JInInterceptor.java:76)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.transport.MultipleEndpointObserver.onMessage(MultipleEndpointObserver.java:98)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:267)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:225)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:301)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:220)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:276)
+	at com.google.inject.servlet.ServletDefinition.doServiceImpl(ServletDefinition.java:290)
+	at com.google.inject.servlet.ServletDefinition.doService(ServletDefinition.java:280)
+	at com.google.inject.servlet.ServletDefinition.service(ServletDefinition.java:184)
+	at com.google.inject.servlet.ManagedServletPipeline.service(ManagedServletPipeline.java:89)
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:85)
+	at io.opentracing.contrib.web.servlet.filter.TracingFilter.doFilter(TracingFilter.java:189)
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82)
+	at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:121)
+	at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:133)
+	at no.difi.oxalis.dist.war.WarGuiceFilter.doFilter(WarGuiceFilter.java:21)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:688)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+13:03:53.748 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.w.s.wss4j.WSS4JInInterceptor - WSS4JInInterceptor: enter handleMessage()
+13:03:53.775 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from URL: jar:file:/opt/tomcat-icent-as4/webapps/oxalis/WEB-INF/lib/cxf-rt-ws-security-3.3.5.jar!/cxf-ehcache.xml
+13:03:53.775 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.config.ConfigurationFactory - Configuring ehcache from InputStream
+13:03:53.789 [https-jsse-nio-9480-exec-6] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+13:03:53.790 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.config.DiskStoreConfiguration - Disk Store Path: /opt/tomcat-icent-as4/temp
+13:03:53.803 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.config.DiskStoreConfiguration - Disk Store Path: /opt/tomcat-icent-as4/temp/cxf2031560756
+13:03:53.804 [https-jsse-nio-9480-exec-6] DEBUG net.sf.ehcache.CacheManager - Creating new CacheManager with Configuration Object
+13:03:53.805 [https-jsse-nio-9480-exec-6] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+13:03:53.813 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+13:03:53.858 [https-jsse-nio-9480-exec-6] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+13:03:53.858 [https-jsse-nio-9480-exec-6] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+13:03:53.858 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+13:03:53.863 [https-jsse-nio-9480-exec-6] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+13:03:53.864 [https-jsse-nio-9480-exec-6] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+13:03:53.864 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+13:03:53.880 [https-jsse-nio-9480-exec-6] DEBUG net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for org.apache.cxf.ws.security.tokenstore.TokenStore
+13:03:53.911 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+13:03:53.912 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+13:03:53.913 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+13:03:53.913 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+13:03:53.913 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+13:03:53.913 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+13:03:53.913 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+13:03:53.926 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+13:03:53.927 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+13:03:53.928 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+13:03:53.928 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+13:03:53.928 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+13:03:53.928 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+13:03:53.929 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+13:03:53.929 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+13:03:53.929 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+13:03:53.930 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+13:03:53.930 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+13:03:53.937 [https-jsse-nio-9480-exec-6] DEBUG net.sf.ehcache.Cache - Initialised cache: org.apache.cxf.ws.security.tokenstore.TokenStore
+13:03:53.937 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'org.apache.cxf.ws.security.tokenstore.TokenStore'.
+13:03:53.937 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'org.apache.cxf.ws.security.tokenstore.TokenStore'.
+13:03:53.940 [https-jsse-nio-9480-exec-6] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+13:03:53.940 [https-jsse-nio-9480-exec-6] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+13:03:53.941 [https-jsse-nio-9480-exec-6] DEBUG net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.MemoryStore for org.apache.cxf.ws.security.tokenstore.TokenStore-330254953
+13:03:53.942 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+13:03:53.942 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+13:03:53.942 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+13:03:53.942 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+13:03:53.942 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+13:03:53.942 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+13:03:53.943 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+13:03:53.944 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+13:03:53.944 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+13:03:53.944 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+13:03:53.945 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_GET
+13:03:53.945 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_PUT
+13:03:53.945 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Operation Statistic: DISK_REMOVE
+13:03:53.945 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+13:03:53.945 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+13:03:53.946 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+13:03:53.946 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+13:03:53.947 [https-jsse-nio-9480-exec-6] DEBUG n.s.e.s.e.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+13:03:53.950 [https-jsse-nio-9480-exec-6] DEBUG net.sf.ehcache.Cache - Initialised cache: org.apache.cxf.ws.security.tokenstore.TokenStore-330254953
+13:03:53.971 [https-jsse-nio-9480-exec-6] DEBUG o.a.w.d.p.EncryptedKeyProcessor - Found encrypted key element
+13:03:53.973 [https-jsse-nio-9480-exec-6] DEBUG org.apache.wss4j.dom.util.X509Util - Sym Enc Algo: http://www.w3.org/2009/xmlenc11#rsa-oaep
+13:03:53.985 [https-jsse-nio-9480-exec-6] DEBUG o.apache.wss4j.common.crypto.Merlin - Searching keystore for cert using Subject Key Identifier bytes
+13:03:53.987 [https-jsse-nio-9480-exec-6] DEBUG o.apache.wss4j.common.crypto.Merlin - SKI match found using keystore alias einvoicingct_11_gw
+13:03:53.991 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.algorithms.JCEMapper - Request for URI http://www.w3.org/2009/xmlenc11#rsa-oaep
+13:03:54.469 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.algorithms.JCEMapper - Request for URI http://www.w3.org/2001/04/xmlenc#sha256
+13:03:54.474 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.algorithms.JCEMapper - Request for URI http://www.w3.org/2009/xmlenc11#rsa-oaep
+13:03:54.488 [https-jsse-nio-9480-exec-6] DEBUG o.a.w.d.p.EncryptedKeyProcessor - found data reference: ED-7b8585b9-1873-4ea1-a6b5-c351d302665f
+13:03:54.488 [https-jsse-nio-9480-exec-6] DEBUG org.apache.wss4j.dom.util.X509Util - Sym Enc Algo: http://www.w3.org/2009/xmlenc11#aes128-gcm
+13:03:54.488 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.algorithms.JCEMapper - Request for URI http://www.w3.org/2009/xmlenc11#aes128-gcm
+13:03:54.488 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.algorithms.JCEMapper - Request for URI http://www.w3.org/2009/xmlenc11#aes128-gcm
+13:03:54.493 [https-jsse-nio-9480-exec-6] DEBUG org.apache.wss4j.dom.util.X509Util - Sym Enc Algo: http://www.w3.org/2009/xmlenc11#aes128-gcm
+13:03:54.493 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.algorithms.JCEMapper - Request for URI http://www.w3.org/2009/xmlenc11#aes128-gcm
+13:03:54.499 [https-jsse-nio-9480-exec-6] DEBUG o.a.w.d.processor.SignatureProcessor - Found signature element
+13:03:54.500 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.algorithms.JCEMapper - Request for URI http://www.w3.org/2001/04/xmldsig-more#rsa-sha256
+13:03:54.502 [https-jsse-nio-9480-exec-6] DEBUG o.apache.wss4j.common.crypto.Merlin - Searching keystore for cert using Subject Key Identifier bytes
+13:03:54.502 [https-jsse-nio-9480-exec-6] DEBUG o.apache.wss4j.common.crypto.Merlin - No SKI match found in keystore
+13:03:54.502 [https-jsse-nio-9480-exec-6] DEBUG o.apache.wss4j.common.crypto.Merlin - Searching truststore for cert using Subject Key Identifier bytes
+13:03:54.503 [https-jsse-nio-9480-exec-6] DEBUG o.apache.wss4j.common.crypto.Merlin - SKI match found using keystore alias gitb-engine
+13:03:54.504 [https-jsse-nio-9480-exec-6] DEBUG o.apache.wss4j.common.crypto.Merlin - Searching keystore for cert with issuer CN=gitb-engine,OU=GITB,O=GITB and serial 12029229685213811914
+13:03:54.505 [https-jsse-nio-9480-exec-6] DEBUG o.apache.wss4j.common.crypto.Merlin - Keystore alias einvoicingct_11_gw has issuer C=BE,O=eInvoicingCT,CN=einvoicingct_11_gw and serial 15684025309855761609
+13:03:54.506 [https-jsse-nio-9480-exec-6] DEBUG o.apache.wss4j.common.crypto.Merlin - No issuer serial match found in keystore
+13:03:54.506 [https-jsse-nio-9480-exec-6] DEBUG o.apache.wss4j.common.crypto.Merlin - Searching truststore for cert with issuer CN=gitb-engine,OU=GITB,O=GITB and serial 12029229685213811914
+13:03:54.506 [https-jsse-nio-9480-exec-6] DEBUG o.apache.wss4j.common.crypto.Merlin - Keystore alias gitb-engine has issuer CN=gitb-engine,OU=GITB,O=GITB and serial 12029229685213811914
+13:03:54.506 [https-jsse-nio-9480-exec-6] DEBUG o.apache.wss4j.common.crypto.Merlin - Issuer Serial match found using keystore alias gitb-engine
+13:03:54.507 [https-jsse-nio-9480-exec-6] DEBUG o.apache.wss4j.common.crypto.Merlin - Direct trust for certificate with CN=gitb-engine,OU=GITB,O=GITB
+13:03:54.507 [https-jsse-nio-9480-exec-6] DEBUG o.a.w.d.v.SignatureTrustValidator - Certificate path has been verified for certificate with subject CN=gitb-engine,OU=GITB,O=GITB
+13:03:54.508 [https-jsse-nio-9480-exec-6] DEBUG o.a.w.d.processor.SignatureProcessor - Verify XML Signature
+13:03:54.533 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.DOMSignatureMethod - Signature provider: SunRsaSign version 1.8
+13:03:54.533 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.DOMSignatureMethod - Verifying with key: Sun RSA public key, 2048 bits
+  modulus: 21361341726221950258873596771196701065784297281402037621006491535271777970389380901944347456739191274602674923169888879010787954430557305050359051205589334269328171125183725239000191100872667460304803794593130874933314284188989713204698400601736172203533065462538395219789391864132819295319082563473353315467821662312506547758631331570716400633764521875955859599134616464689038154103167608329515100590852328344382107308113622765505302492142264521322857953528069970283459177607099670219928099608882127978173593032288824008006655522607209873961171875143466300543678488250862460251135568551830601114566994961314825872401
+  public exponent: 65537
+13:03:54.534 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.DOMSignatureMethod - JCA Algorithm: SHA256withRSA
+13:03:54.534 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.DOMSignatureMethod - Signature Bytes length: 256
+13:03:54.535 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.transforms.Transform - Create URI "http://www.w3.org/2001/10/xml-exc-c14n#" class "class org.apache.xml.security.transforms.implementations.TransformC14NExclusive"
+13:03:54.535 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.transforms.Transform - The NodeList is [ds:CanonicalizationMethod: null]
+13:03:54.535 [https-jsse-nio-9480-exec-6] DEBUG o.a.xml.security.utils.ElementProxy - setElement(ds:CanonicalizationMethod, "null")
+13:03:54.535 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.ApacheCanonicalizer - Created transform for algorithm: http://www.w3.org/2001/10/xml-exc-c14n#
+13:03:54.536 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.ApacheCanonicalizer - isNodeSet() = true
+13:03:54.539 [https-jsse-nio-9480-exec-6] DEBUG o.a.xml.security.utils.ElementProxy - setElement("ec:InclusiveNamespaces", "null")
+13:03:54.546 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMSignedInfo - Canonicalized SignedInfo:
+13:03:54.546 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMSignedInfo - <ds:SignedInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:env="http://www.w3.org/2003/05/soap-envelope"><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"><ec:InclusiveNamespaces xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#" PrefixList="env"></ec:InclusiveNamespaces></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></ds:SignatureMethod><ds:Reference URI="#_08c22a2c-9f1a-4606-84fd-9d142ad05b88"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></ds:DigestMethod><ds:DigestValue>awtpT114hoF3pzqjzxFwca/H3d/Sus1Y2dELM6oM+Bs=</ds:DigestValue></ds:Reference><ds:Reference URI="#_6b2e7c9a-91d9-4e6a-b0ff-fcb29b0b8712"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></ds:DigestMethod><ds:DigestValue>TDc111FbZx9zs+6YGDdQ8ajtaSXv5/I6S08rcDl3l9U=</ds:DigestValue></ds:Reference><ds:Reference URI="cid:message"><ds:Transforms><ds:Transform Algorithm="http://docs.oasis-open.org/wss/oasis-wss-SwAProfile-1.1#Attachment-Content-Signature-Transform"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></ds:DigestMethod><ds:DigestValue>jtW5RfJ8/LGJt4O4XT602I5ys7zMtQ//IrFHMqNVAkw=</ds:DigestValue></ds:Reference></ds:SignedInfo>
+13:03:54.547 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMSignedInfo - Data to be signed/verified:PGRzOlNpZ25lZEluZm8geG1sbnM6ZHM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyMiIHhtbG5zOmVudj0iaHR0cDovL3d3dy53My5vcmcvMjAwMy8wNS9zb2FwLWVudmVsb3BlIj48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyI+PGVjOkluY2x1c2l2ZU5hbWVzcGFjZXMgeG1sbnM6ZWM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIgUHJlZml4TGlzdD0iZW52Ij48L2VjOkluY2x1c2l2ZU5hbWVzcGFjZXM+PC9kczpDYW5vbmljYWxpemF0aW9uTWV0aG9kPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2Ij48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iI18wOGMyMmEyYy05ZjFhLTQ2MDYtODRmZC05ZDE0MmFkMDViODgiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS8wNC94bWxlbmMjc2hhMjU2Ij48L2RzOkRpZ2VzdE1ldGhvZD48ZHM6RGlnZXN0VmFsdWU+YXd0cFQxMTRob0YzcHpxanp4RndjYS9IM2QvU3VzMVkyZEVMTTZvTStCcz08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjxkczpSZWZlcmVuY2UgVVJJPSIjXzZiMmU3YzlhLTkxZDktNGU2YS1iMGZmLWZjYjI5YjBiODcxMiI+PGRzOlRyYW5zZm9ybXM+PGRzOlRyYW5zZm9ybSBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyI+PC9kczpUcmFuc2Zvcm0+PC9kczpUcmFuc2Zvcm1zPjxkczpEaWdlc3RNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGVuYyNzaGEyNTYiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT5URGMxMTFGYlp4OXpzKzZZR0RkUThhanRhU1h2NS9JNlMwOHJjRGwzbDlVPTwvZHM6RGlnZXN0VmFsdWU+PC9kczpSZWZlcmVuY2U+PGRzOlJlZmVyZW5jZSBVUkk9ImNpZDptZXNzYWdlIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL2RvY3Mub2FzaXMtb3Blbi5vcmcvd3NzL29hc2lzLXdzcy1Td0FQcm9maWxlLTEuMSNBdHRhY2htZW50LUNvbnRlbnQtU2lnbmF0dXJlLVRyYW5zZm9ybSI+PC9kczpUcmFuc2Zvcm0+PC9kczpUcmFuc2Zvcm1zPjxkczpEaWdlc3RNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGVuYyNzaGEyNTYiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT5qdFc1UmZKOC9MR0p0NE80WFQ2MDJJNXlzN3pNdFEvL0lyRkhNcU5WQWt3PTwvZHM6RGlnZXN0VmFsdWU+PC9kczpSZWZlcmVuY2U+PC9kczpTaWduZWRJbmZvPg==
+13:03:54.549 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - URIDereferencer class name: org.apache.jcp.xml.dsig.internal.dom.DOMURIDereferencer
+13:03:54.550 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - Data class name: org.apache.jcp.xml.dsig.internal.dom.ApacheNodeSetData
+13:03:54.550 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.transforms.Transform - Create URI "http://www.w3.org/2001/10/xml-exc-c14n#" class "class org.apache.xml.security.transforms.implementations.TransformC14NExclusive"
+13:03:54.550 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.transforms.Transform - The NodeList is [ds:Transform: null]
+13:03:54.550 [https-jsse-nio-9480-exec-6] DEBUG o.a.xml.security.utils.ElementProxy - setElement(ds:Transform, "null")
+13:03:54.550 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.ApacheCanonicalizer - Created transform for algorithm: http://www.w3.org/2001/10/xml-exc-c14n#
+13:03:54.550 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.ApacheCanonicalizer - ApacheData = true
+13:03:54.551 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.DigesterOutputStream - Pre-digested input:
+13:03:54.551 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.DigesterOutputStream - <env:Body xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="_08c22a2c-9f1a-4606-84fd-9d142ad05b88"></env:Body>
+13:03:54.551 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - Expected digest: awtpT114hoF3pzqjzxFwca/H3d/Sus1Y2dELM6oM+Bs=
+13:03:54.551 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - Actual digest: awtpT114hoF3pzqjzxFwca/H3d/Sus1Y2dELM6oM+Bs=
+13:03:54.551 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.DOMXMLSignature - Reference [#_08c22a2c-9f1a-4606-84fd-9d142ad05b88] is valid: true
+13:03:54.551 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - URIDereferencer class name: org.apache.jcp.xml.dsig.internal.dom.DOMURIDereferencer
+13:03:54.551 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - Data class name: org.apache.jcp.xml.dsig.internal.dom.ApacheNodeSetData
+13:03:54.552 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.transforms.Transform - Create URI "http://www.w3.org/2001/10/xml-exc-c14n#" class "class org.apache.xml.security.transforms.implementations.TransformC14NExclusive"
+13:03:54.552 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.transforms.Transform - The NodeList is [ds:Transform: null]
+13:03:54.552 [https-jsse-nio-9480-exec-6] DEBUG o.a.xml.security.utils.ElementProxy - setElement(ds:Transform, "null")
+13:03:54.552 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.ApacheCanonicalizer - Created transform for algorithm: http://www.w3.org/2001/10/xml-exc-c14n#
+13:03:54.552 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.ApacheCanonicalizer - ApacheData = true
+13:03:54.552 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.DigesterOutputStream - Pre-digested input:
+13:03:54.553 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.DigesterOutputStream - <eb:Messaging xmlns:eb="http://docs.oasis-open.org/ebxml-msg/ebms/v3.0/ns/core/200704/" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="_6b2e7c9a-91d9-4e6a-b0ff-fcb29b0b8712" env:mustUnderstand="true"><eb:UserMessage mpc="http://docs.oasis-open.org/ebxml-msg/ebms/v3.0/ns/core/200704/defaultMPC"><eb:MessageInfo><eb:Timestamp>2020-03-10T11:56:19.000Z</eb:Timestamp><eb:MessageId>4332bc50-3206-4d2a-bcf5-a53729d50c4b@domibus.eu</eb:MessageId></eb:MessageInfo><eb:PartyInfo><eb:From><eb:PartyId type="urn:oasis:names:tc:ebcore:partyid-type:unregistered">domibus-gitb</eb:PartyId><eb:Role>http://docs.oasis-open.org/ebxml-msg/ebms/v3.0/ns/core/200704/initiator</eb:Role></eb:From><eb:To><eb:PartyId type="urn:oasis:names:tc:ebcore:partyid-type:unregistered">einvoicingct_11_gw</eb:PartyId><eb:Role>http://docs.oasis-open.org/ebxml-msg/ebms/v3.0/ns/core/200704/responder</eb:Role></eb:To></eb:PartyInfo><eb:CollaborationInfo><eb:Service type="tc1">bdx:noprocess</eb:Service><eb:Action>TC1Leg1</eb:Action><eb:ConversationId>de55d1f6-0059-4ec7-8dda-236e7036c8d4@domibus.eu</eb:ConversationId></eb:CollaborationInfo><eb:MessageProperties><eb:Property name="originalSender">urn:oasis:names:tc:ebcore:partyid-type:unregistered:C1</eb:Property><eb:Property name="finalRecipient">urn:oasis:names:tc:ebcore:partyid-type:unregistered:C4</eb:Property></eb:MessageProperties><eb:PayloadInfo><eb:PartInfo href="cid:message"><eb:PartProperties><eb:Property name="PayloadName">invoice.xml</eb:Property><eb:Property name="MimeType">text/xml</eb:Property><eb:Property name="CompressionType">application/gzip</eb:Property></eb:PartProperties></eb:PartInfo></eb:PayloadInfo></eb:UserMessage></eb:Messaging>
+13:03:54.553 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - Expected digest: TDc111FbZx9zs+6YGDdQ8ajtaSXv5/I6S08rcDl3l9U=
+13:03:54.553 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - Actual digest: TDc111FbZx9zs+6YGDdQ8ajtaSXv5/I6S08rcDl3l9U=
+13:03:54.553 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.DOMXMLSignature - Reference [#_6b2e7c9a-91d9-4e6a-b0ff-fcb29b0b8712] is valid: true
+13:03:54.554 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.s.u.resolver.ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+13:03:54.554 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.s.u.r.i.ResolverFragment - Do not seem to be able to resolve reference: "cid:message"
+13:03:54.554 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.s.u.resolver.ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+13:03:54.554 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.s.u.r.i.ResolverLocalFilesystem - I was asked whether I can resolve cid:message
+13:03:54.555 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.s.u.r.i.ResolverLocalFilesystem - null
+java.lang.NullPointerException: null
+	at org.apache.xml.security.utils.resolver.implementations.ResolverLocalFilesystem.engineCanResolveURI(ResolverLocalFilesystem.java:122)
+	at org.apache.xml.security.utils.resolver.ResourceResolver.canResolve(ResourceResolver.java:337)
+	at org.apache.xml.security.utils.resolver.ResourceResolver.internalGetInstance(ResourceResolver.java:95)
+	at org.apache.xml.security.utils.resolver.ResourceResolver.getInstance(ResourceResolver.java:74)
+	at org.apache.jcp.xml.dsig.internal.dom.DOMURIDereferencer.dereference(DOMURIDereferencer.java:109)
+	at org.apache.jcp.xml.dsig.internal.dom.DOMReference.dereference(DOMReference.java:414)
+	at org.apache.jcp.xml.dsig.internal.dom.DOMReference.validate(DOMReference.java:382)
+	at org.apache.jcp.xml.dsig.internal.dom.DOMXMLSignature.validate(DOMXMLSignature.java:277)
+	at org.apache.wss4j.dom.processor.SignatureProcessor.verifyXMLSignature(SignatureProcessor.java:372)
+	at org.apache.wss4j.dom.processor.SignatureProcessor.handleToken(SignatureProcessor.java:232)
+	at org.apache.wss4j.dom.engine.WSSecurityEngine.processSecurityHeader(WSSecurityEngine.java:340)
+	at org.apache.cxf.ws.security.wss4j.WSS4JInInterceptor.handleMessageInternal(WSS4JInInterceptor.java:320)
+	at org.apache.cxf.ws.security.wss4j.WSS4JInInterceptor.handleMessage(WSS4JInInterceptor.java:212)
+	at org.apache.cxf.ws.security.wss4j.PolicyBasedWSS4JInInterceptor.handleMessage(PolicyBasedWSS4JInInterceptor.java:123)
+	at org.apache.cxf.ws.security.wss4j.PolicyBasedWSS4JInInterceptor.handleMessage(PolicyBasedWSS4JInInterceptor.java:76)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308)
+	at org.apache.cxf.transport.MultipleEndpointObserver.onMessage(MultipleEndpointObserver.java:98)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:267)
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208)
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160)
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:225)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:301)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:220)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:276)
+	at com.google.inject.servlet.ServletDefinition.doServiceImpl(ServletDefinition.java:290)
+	at com.google.inject.servlet.ServletDefinition.doService(ServletDefinition.java:280)
+	at com.google.inject.servlet.ServletDefinition.service(ServletDefinition.java:184)
+	at com.google.inject.servlet.ManagedServletPipeline.service(ManagedServletPipeline.java:89)
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:85)
+	at io.opentracing.contrib.web.servlet.filter.TracingFilter.doFilter(TracingFilter.java:189)
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:82)
+	at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:121)
+	at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:133)
+	at no.difi.oxalis.dist.war.WarGuiceFilter.doFilter(WarGuiceFilter.java:21)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:688)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+13:03:54.555 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.s.u.r.i.ResolverLocalFilesystem - But I can't
+13:03:54.555 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.s.u.resolver.ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+13:03:54.555 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.s.u.resolver.ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+13:03:54.555 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.s.u.r.i.ResolverDirectHTTP - I was asked whether I can resolve cid:message
+13:03:54.556 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.s.u.r.i.ResolverDirectHTTP - I state that I can't resolve cid:message
+13:03:54.556 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.s.u.resolver.ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+13:03:54.557 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - URIDereferencer class name: org.apache.jcp.xml.dsig.internal.dom.DOMURIDereferencer
+13:03:54.557 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - Data class name: org.apache.jcp.xml.dsig.internal.dom.ApacheOctetStreamData
+13:03:54.558 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.algorithms.JCEMapper - Request for URI http://www.w3.org/2009/xmlenc11#aes128-gcm
+13:03:54.559 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.s.encryption.XMLCipherUtil - Saw AES-GCM block cipher, attempting to create GCMParameterSpec: http://www.w3.org/2009/xmlenc11#aes128-gcm
+13:03:54.560 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.s.encryption.XMLCipherUtil - Successfully created GCMParameterSpec
+13:03:54.564 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.DigesterOutputStream - Pre-digested input:
+13:03:54.565 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.DigesterOutputStream - ﾋ       ￭W[oￛ6~ﾶ￫￧￸ﾚﾥￍGﾀcﾻﾛﾁ$￭gﾯMￛ$R%ﾩT￞ﾯ￟%Kﾲ.n=ﾠ{ﾚaￏￇ￯ￜ>￑ￓw�>￩ﾮ￷\￼RAddﾈￜￍdﾄﾋ7￉\ﾑoￜ￬￉ﾟﾳ5aￒ￲i￐ￍﾶﾤv1B￈ﾞjﾲ$TR￙￈|￹qﾐﾸ(`RhﾣﾨMt@}ﾴ!ﾡￔﾚo￼ￜ3ZﾩAﾧﾸﾍ#ﾶkﾤￅ/ﾟ￈￸�ﾯￗcﾢUﾉ4;k{ﾽ ￺ ﾍ￉ﾆﾗ￑{w2￟￶ￇﾣ￾￤ﾇ￼R￭￈=W;ﾮﾵW￤ﾑ{
+Sﾇ�v￐￭￷￝￩*sﾾ￐wﾽH	GRￍﾵ#h ￚ￑!0ﾾ￥ﾌ.ﾅm|Gﾳ=ￔﾉﾵ￧d{￻ﾓ^ﾗ?ﾖￇaﾔ]￈5ﾗjﾶￛ)￘aﾭ￰1ﾔﾄ￑M￬ﾛￇ~ﾏpvﾞﾙﾙﾬQ￲￸ￋ`Kﾙq<￉ﾢ ￷ﾥ￪{﾿z￦ￂﾨ￾ﾈﾨﾏF￰ￔ￐￵!ﾄﾦﾐﾢﾋi_ￅￗ&bￗ2Oﾱxￎ<ￒF￼oﾻ}ﾵpzb ﾑￂﾪￍA}ﾘﾛ￀>ﾠv﾿@￼e4ﾧ￠Sﾻￖ`￠%ﾙￃrKﾷﾓﾁ￨￸&ﾅￗKﾴﾩ￬ﾒﾼ￦xD￝￫ￛQￆZ1ￜY￫￦ﾑR ￘￁Zﾗﾯￏﾙﾇ&k￦ﾎ2gￆﾘﾌﾄ￁ￃ￵ﾅ￉￙Tﾟﾩ27oﾔEekﾝNﾧﾺﾸ￲ﾐ;oVﾱﾭ￘ﾞￖm<ﾹ>ﾭa￾W￪Q￢ﾘ￰gﾞﾧ@￫_/Fﾘ'ﾒ￻Hy2ﾜ￰ﾑﾌﾯ￈Lﾌ￼&ￒ(Jﾨt5OﾪﾢukﾑￔIﾴﾶﾬ￷ￋ,ￇﾺﾩ￮e￘￪&+I{ﾲE￹pﾞ￸KtfBﾵa>ￇdBc$6￟ﾉRﾃzK#lﾐￆ\ￃﾵuﾩ￑e￉ﾞﾉk￸]uU￴ﾗﾞￄﾳ￺ﾫￗ￠2Aￌﾱ-ﾠ￈Nd￲﾿&ﾎﾽ~Tﾚ,dﾴ1[ﾮ￠g￨ﾡ*ﾇﾆfￛￖ4^KLﾱￜ￿ﾍ]ﾞ￉Vￂﾲ1ﾶZￜ￵pￆ￵ￜ￑`ﾔ￈Tﾮ﾿`jﾧﾴejﾊ￷ﾔ6￺ﾛﾛﾜﾼﾀ5ￓﾴF￘^9ￄ9ﾾvﾲI]ￇ￺ﾩﾠﾝ|￮ﾗ1aￒﾭgﾠxrﾟﾤ!:ￚ￼ￌﾼm￡ﾝ/ﾏﾣ
+mﾖ{Rﾷ￤ﾽￛ ￔrX9quﾲ:haￊﾍ￵ￜﾋ}'ﾝￋﾗK"ﾱﾱZ>￢ￍￇPuhR￐ﾰﾌﾍiﾷ7;Sﾾﾮ￉eￌ|ﾼﾯﾾﾝQOYﾝxﾝo%.￢ﾫ￀+|ﾟ￩￡ﾼﾰsﾪdﾹ￐mUﾵ%ￏ￮#Iﾡ*ﾞﾓￗ}]￥ￛﾍﾇﾗC;1H$ﾸIﾆ￡]￯￷ￛﾽ|_￶sﾛﾙ$c h8ￕv￰}￤ﾂ
+ￆﾩO￘ﾞﾪ]6fﾢ￞>ￅ?>￉￭￴ￒ3]ﾇ￼wg￰|ￔ)￦ﾴD￩￫FaﾓￊfￗDxﾮ￶￪(ﾨ3￷'rﾛﾳgﾷ￻￘H￮￸￹  
+13:03:54.565 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - Expected digest: jtW5RfJ8/LGJt4O4XT602I5ys7zMtQ//IrFHMqNVAkw=
+13:03:54.565 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - Actual digest: jtW5RfJ8/LGJt4O4XT602I5ys7zMtQ//IrFHMqNVAkw=
+13:03:54.565 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.DOMXMLSignature - Reference [cid:message] is valid: true
+13:03:54.612 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.w.s.wss4j.WSS4JInInterceptor - WSS4JInInterceptor: exit handleMessage()
+13:03:54.613 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.MustUnderstandInterceptor@1cd2a746
+13:03:54.615 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.binding.soap.interceptor.MustUnderstandInterceptor$UltimateReceiverMustUnderstandInterceptor@5ed98826 to phase invoke
+13:03:54.615 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@21f66c71 was modified. Current flow:
+  receive [SetPolicyInInterceptor, PolicyInInterceptor, As4AttachmentInInterceptor, WireTapIn, AttachmentInInterceptor]
+  post-stream [StaxInInterceptor]
+  read [SAAJPreInInterceptor, ReadHeadersInterceptor, StartBodyInterceptor, As4EndpointSelector, WSDLGetInterceptor, SoapActionInInterceptor]
+  pre-protocol [As4Interceptor, SAAJInInterceptor, PolicyBasedWSS4JInInterceptor, MustUnderstandInterceptor]
+  pre-protocol-frontend [SOAPHandlerFaultInInterceptor, SOAPHandlerInterceptor, LogicalHandlerInInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  unmarshal [DocLiteralInInterceptor, SoapHeaderInterceptor]
+  pre-logical [OneWayProcessorInterceptor]
+  post-logical [MessageModeInInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor, LoggingInInterceptor]
+  invoke [ServiceInvokerInterceptor, UltimateReceiverMustUnderstandInterceptor]
+  post-invoke [AttachmentCleanupInterceptor, OutgoingChainInterceptor]
+
+13:03:54.615 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.jaxws.handler.soap.SOAPHandlerFaultInInterceptor@276ef78a
+13:03:54.620 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.j.handler.HandlerChainInvoker - invoker for chain size: 2
+13:03:54.626 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.j.handler.HandlerChainInvoker - invoking handlers, direction: inbound
+13:03:54.626 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.j.handler.HandlerChainInvoker - invoking handler of type no.difi.oxalis.as4.inbound.MessagingHandler
+13:03:54.626 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.j.handler.HandlerChainInvoker - invoking handler of type no.difi.oxalis.as4.inbound.As4FaultInHandler
+13:03:54.628 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor@17f316fa
+13:03:54.628 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.j.handler.HandlerChainInvoker - invoking handlers, direction: inbound
+13:03:54.628 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.j.handler.HandlerChainInvoker - invoking handler of type no.difi.oxalis.as4.inbound.MessagingHandler
+13:03:54.629 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.j.handler.HandlerChainInvoker - invoking handler of type no.difi.oxalis.as4.inbound.As4FaultInHandler
+13:03:54.629 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.jaxws.handler.logical.LogicalHandlerInInterceptor@52ef49bb
+13:03:54.629 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.CheckFaultInterceptor@190ee815
+13:03:54.629 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.wsdl.interceptors.DocLiteralInInterceptor@76c653ee
+13:03:54.638 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderInterceptor@60af61e5
+13:03:54.638 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.interceptor.OneWayProcessorInterceptor@78625b55
+13:03:54.638 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.MessageModeInInterceptor@5f42a2a6
+13:03:54.639 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxInEndingInterceptor@7fcd7b23
+13:03:54.639 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.SwAInInterceptor@df841c
+13:03:54.640 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.ext.logging.LoggingInInterceptor@64436273
+13:03:54.643 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.ws.addressing.ContextUtils - retrieving MAPs from context property javax.xml.ws.addressing.context.inbound
+13:03:54.643 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.ws.addressing.ContextUtils - WS-Addressing - failed to retrieve Message Addressing Properties from context
+13:03:54.649 [https-jsse-nio-9480-exec-6] INFO  o.a.cxf.services.As4Provider.REQ_IN - REQ_IN
+    Address: https://test-notier.regione.emilia-romagna.it/oxalis/as4
+    HttpMethod: POST
+    Content-Type: multipart/related; type="application/soap+xml"; boundary="uuid:fdce9f55-e951-48c7-8964-012467d3e571"; start="<root.message@cxf.apache.org>"; start-info="application/soap+xml"
+    ExchangeId: c5f7cf60-110a-408f-a039-0a36548da73d
+    ServiceName: As4ProviderService
+    PortName: As4ProviderPort
+    PortTypeName: As4Provider
+    Headers: {Accept=*/*, host=test-notier.regione.emilia-romagna.it, connection=keep-alive, content-type=multipart/related; type="application/soap+xml"; boundary="uuid:fdce9f55-e951-48c7-8964-012467d3e571"; start="<root.message@cxf.apache.org>"; start-info="application/soap+xml", x-forwarded-for=13.80.11.48, cache-control=no-cache, Content-Length=8690, pragma=no-cache, user-agent=Apache-CXF/3.2.4}
+
+13:03:54.649 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.interceptor.ServiceInvokerInterceptor@57c525d2
+13:03:54.652 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.s.invoker.AbstractInvoker - Invoking method public javax.xml.soap.SOAPMessage no.difi.oxalis.as4.inbound.As4Provider.invoke(javax.xml.soap.SOAPMessage) on object no.difi.oxalis.as4.inbound.As4Provider@3d677f19 with params [com.sun.xml.internal.messaging.saaj.soap.ver1_2.Message1_2Impl@54b05c2e].
+13:03:54.754 [https-jsse-nio-9480-exec-6] DEBUG n.d.o.c.persist.DefaultPersister - Payload persisted to: /home/tomcat/.oxalis/ceftesting/test/einvoicingct_11_gw/domibus-gitb/4332bc50-3206-4d2a-bcf5-a53729d50c4b_domibus.eu.doc.xml
+13:03:55.055 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - Marshalling Reference
+13:03:55.055 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - Adding digestValueElem
+13:03:55.056 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.s.u.resolver.ResourceResolver - check resolvability by class org.apache.xml.security.utils.resolver.ResourceResolver
+13:03:55.056 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.s.u.r.i.ResolverFragment - State I can resolve reference: ""
+13:03:55.056 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.s.u.r.i.ResolverFragment - ResolverFragment with empty URI (means complete document)
+13:03:55.056 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - URIDereferencer class name: org.apache.jcp.xml.dsig.internal.dom.DOMURIDereferencer
+13:03:55.056 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - Data class name: org.apache.jcp.xml.dsig.internal.dom.ApacheNodeSetData
+13:03:55.084 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.transforms.Transform - Create URI "http://www.w3.org/2000/09/xmldsig#enveloped-signature" class "class org.apache.xml.security.transforms.implementations.TransformEnvelopedSignature"
+13:03:55.085 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.transforms.Transform - The NodeList is [Transform: null]
+13:03:55.085 [https-jsse-nio-9480-exec-6] DEBUG o.a.xml.security.utils.ElementProxy - setElement(Transform, "null")
+13:03:55.085 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.ApacheTransform - Created transform for algorithm: http://www.w3.org/2000/09/xmldsig#enveloped-signature
+13:03:55.085 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.ApacheTransform - ApacheData = true
+13:03:55.088 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.DigesterOutputStream - Pre-digested input:
+13:03:55.089 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.DigesterOutputStream - <DeliveryNonDeliveryToRecipient xmlns="http://uri.etsi.org/02640/v2#" xmlns:ns2="http://uri.etsi.org/02231/v2#" xmlns:ns3="http://www.w3.org/2000/09/xmldsig#" xmlns:ns4="http://uri.etsi.org/01903/v1.3.2#" xmlns:ns5="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns6="http://www.w3.org/2001/04/xmlenc#" xmlns:ns7="http://peppol.eu/xsd/ticc/receipt/1.0" version="2"><EventCode>http:uri.etsi.org/02640/Event#Delivery</EventCode><EvidenceIdentifier>684961d3-8d6b-4cb0-8cfe-8f53f70a155c</EvidenceIdentifier><EvidenceIssuerDetails><NamesPostalAddresses><NamePostalAddress><EntityName><Name>Oxalis 4.1.2</Name></EntityName></NamePostalAddress></NamesPostalAddresses></EvidenceIssuerDetails><EventTime>2020-03-10T13:03:54+01:00</EventTime><SenderDetails><AttributedElectronicAddress scheme="iso6523-actorid-upis">domibus-gitb</AttributedElectronicAddress></SenderDetails><RecipientsDetails><EntityDetails><AttributedElectronicAddress scheme="iso6523-actorid-upis">einvoicingct_11_gw</AttributedElectronicAddress></EntityDetails></RecipientsDetails><EvidenceRefersToRecipient>1</EvidenceRefersToRecipient><SenderMessageDetails isNotification="false"><MessageSubject>bdx:noprocess</MessageSubject><UAMessageIdentifier>TC1Leg1</UAMessageIdentifier><MessageIdentifierByREMMD>4332bc50-3206-4d2a-bcf5-a53729d50c4b@domibus.eu</MessageIdentifierByREMMD><ns3:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></ns3:DigestMethod><ns3:DigestValue>anRXNVJmSjgvTEdKdDRPNFhUNjAySTV5czd6TXRRLy9JckZITXFOVkFrdz0=</ns3:DigestValue></SenderMessageDetails><Extensions><Extension><ns7:PeppolRemExtension><ns7:TransmissionProtocol>AS4</ns7:TransmissionProtocol><ns7:TransmissionRole>C3</ns7:TransmissionRole><ns7:OriginalReceipt type="message/disposition-notification">PGVudjpFbnZlbG9wZSB4bWxuczplbnY9Imh0dHA6Ly93d3cudzMub3JnLzIwMDMvMDUvc29hcC1lbnZlbG9wZSI+PGVudjpIZWFkZXI+PGViOk1lc3NhZ2luZyB4bWxuczplYj0iaHR0cDovL2RvY3Mub2FzaXMtb3Blbi5vcmcvZWJ4bWwtbXNnL2VibXMvdjMuMC9ucy9jb3JlLzIwMDcwNC8iIGVudjptdXN0VW5kZXJzdGFuZD0idHJ1ZSI+PGViOlNpZ25hbE1lc3NhZ2UgeG1sbnM6bnMzPSJodHRwOi8vd3d3LnVuZWNlLm9yZy9jZWZhY3QvbmFtZXNwYWNlcy9TdGFuZGFyZEJ1c2luZXNzRG9jdW1lbnRIZWFkZXIiIHhtbG5zOm5zND0iaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvc29hcC9lbnZlbG9wZS8iIHhtbG5zOm5zNj0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6bnM3PSJodHRwOi8vZG9jcy5vYXNpcy1vcGVuLm9yZy9lYnhtbC1icC9lYmJwLXNpZ25hbHMtMi4wIj48ZWI6TWVzc2FnZUluZm8+PGViOlRpbWVzdGFtcD4yMDIwLTAzLTEwVDEzOjAzOjU0LjY1NCswMTowMDwvZWI6VGltZXN0YW1wPjxlYjpNZXNzYWdlSWQ+MDFhYWFiNGMtNDVhNi00NjM5LWIyNGEtNGU5MTA0ZWI0MmVkQHZtMjFsbnguZW50ZS5yZWdpb25lLmVtci5pdDwvZWI6TWVzc2FnZUlkPjxlYjpSZWZUb01lc3NhZ2VJZD40MzMyYmM1MC0zMjA2LTRkMmEtYmNmNS1hNTM3MjlkNTBjNGJAZG9taWJ1cy5ldTwvZWI6UmVmVG9NZXNzYWdlSWQ+PC9lYjpNZXNzYWdlSW5mbz48ZWI6UmVjZWlwdD48bnM3Ok5vblJlcHVkaWF0aW9uSW5mb3JtYXRpb24+PG5zNzpNZXNzYWdlUGFydE5SSW5mb3JtYXRpb24+PG5zNjpSZWZlcmVuY2UgVVJJPSIjXzA4YzIyYTJjLTlmMWEtNDYwNi04NGZkLTlkMTQyYWQwNWI4OCI+PG5zNjpUcmFuc2Zvcm1zPjxuczY6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS8xMC94bWwtZXhjLWMxNG4jIi8+PC9uczY6VHJhbnNmb3Jtcz48bnM2OkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMDQveG1sZW5jI3NoYTI1NiIvPjxuczY6RGlnZXN0VmFsdWU+YXd0cFQxMTRob0YzcHpxanp4RndjYS9IM2QvU3VzMVkyZEVMTTZvTStCcz08L25zNjpEaWdlc3RWYWx1ZT48L25zNjpSZWZlcmVuY2U+PC9uczc6TWVzc2FnZVBhcnROUkluZm9ybWF0aW9uPjxuczc6TWVzc2FnZVBhcnROUkluZm9ybWF0aW9uPjxuczY6UmVmZXJlbmNlIFVSST0iI182YjJlN2M5YS05MWQ5LTRlNmEtYjBmZi1mY2IyOWIwYjg3MTIiPjxuczY6VHJhbnNmb3Jtcz48bnM2OlRyYW5zZm9ybSBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIvPjwvbnM2OlRyYW5zZm9ybXM+PG5zNjpEaWdlc3RNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGVuYyNzaGEyNTYiLz48bnM2OkRpZ2VzdFZhbHVlPlREYzExMUZiWng5enMrNllHRGRROGFqdGFTWHY1L0k2UzA4cmNEbDNsOVU9PC9uczY6RGlnZXN0VmFsdWU+PC9uczY6UmVmZXJlbmNlPjwvbnM3Ok1lc3NhZ2VQYXJ0TlJJbmZvcm1hdGlvbj48bnM3Ok1lc3NhZ2VQYXJ0TlJJbmZvcm1hdGlvbj48bnM2OlJlZmVyZW5jZSBVUkk9ImNpZDptZXNzYWdlIj48bnM2OlRyYW5zZm9ybXM+PG5zNjpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vZG9jcy5vYXNpcy1vcGVuLm9yZy93c3Mvb2FzaXMtd3NzLVN3QVByb2ZpbGUtMS4xI0F0dGFjaG1lbnQtQ29udGVudC1TaWduYXR1cmUtVHJhbnNmb3JtIi8+PC9uczY6VHJhbnNmb3Jtcz48bnM2OkRpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMDQveG1sZW5jI3NoYTI1NiIvPjxuczY6RGlnZXN0VmFsdWU+anRXNVJmSjgvTEdKdDRPNFhUNjAySTV5czd6TXRRLy9JckZITXFOVkFrdz08L25zNjpEaWdlc3RWYWx1ZT48L25zNjpSZWZlcmVuY2U+PC9uczc6TWVzc2FnZVBhcnROUkluZm9ybWF0aW9uPjwvbnM3Ok5vblJlcHVkaWF0aW9uSW5mb3JtYXRpb24+PC9lYjpSZWNlaXB0PjwvZWI6U2lnbmFsTWVzc2FnZT48L2ViOk1lc3NhZ2luZz48L2VudjpIZWFkZXI+PGVudjpCb2R5Lz48L2VudjpFbnZlbG9wZT4=</ns7:OriginalReceipt></ns7:PeppolRemExtension></Extension></Extensions></DeliveryNonDeliveryToRecipient>
+13:03:55.089 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - Reference object uri = 
+13:03:55.089 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - Reference digesting completed
+13:03:55.089 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.DOMSignatureMethod - Signature provider: SunRsaSign version 1.8
+13:03:55.089 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.DOMSignatureMethod - Signing with key: sun.security.rsa.RSAPrivateCrtKeyImpl@ffeb9ef5
+13:03:55.089 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.DOMSignatureMethod - JCA Algorithm: SHA256withRSA
+13:03:55.090 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.transforms.Transform - Create URI "http://www.w3.org/TR/2001/REC-xml-c14n-20010315" class "class org.apache.xml.security.transforms.implementations.TransformC14N"
+13:03:55.090 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.transforms.Transform - The NodeList is [CanonicalizationMethod: null]
+13:03:55.090 [https-jsse-nio-9480-exec-6] DEBUG o.a.xml.security.utils.ElementProxy - setElement(CanonicalizationMethod, "null")
+13:03:55.090 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.ApacheCanonicalizer - Created transform for algorithm: http://www.w3.org/TR/2001/REC-xml-c14n-20010315
+13:03:55.090 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.ApacheCanonicalizer - isNodeSet() = true
+13:03:55.090 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMSignedInfo - Canonicalized SignedInfo:
+13:03:55.090 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMSignedInfo - <SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#" xmlns:ns2="http://uri.etsi.org/02231/v2#" xmlns:ns3="http://www.w3.org/2000/09/xmldsig#" xmlns:ns4="http://uri.etsi.org/01903/v1.3.2#" xmlns:ns5="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns6="http://www.w3.org/2001/04/xmlenc#" xmlns:ns7="http://peppol.eu/xsd/ticc/receipt/1.0"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></CanonicalizationMethod><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></Transform></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod><DigestValue>uuUqB1X7oXq+6onn3tKxI1b0pHLBv+vgpTKeQSl1Waw=</DigestValue></Reference></SignedInfo>
+13:03:55.090 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMSignedInfo - Data to be signed/verified:PFNpZ25lZEluZm8geG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyMiIHhtbG5zOm5zMj0iaHR0cDovL3VyaS5ldHNpLm9yZy8wMjIzMS92MiMiIHhtbG5zOm5zMz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6bnM0PSJodHRwOi8vdXJpLmV0c2kub3JnLzAxOTAzL3YxLjMuMiMiIHhtbG5zOm5zNT0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiIgeG1sbnM6bnM2PSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGVuYyMiIHhtbG5zOm5zNz0iaHR0cDovL3BlcHBvbC5ldS94c2QvdGljYy9yZWNlaXB0LzEuMCI+PENhbm9uaWNhbGl6YXRpb25NZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy14bWwtYzE0bi0yMDAxMDMxNSI+PC9DYW5vbmljYWxpemF0aW9uTWV0aG9kPjxTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2Ij48L1NpZ25hdHVyZU1ldGhvZD48UmVmZXJlbmNlIFVSST0iIj48VHJhbnNmb3Jtcz48VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvVHJhbnNmb3JtPjwvVHJhbnNmb3Jtcz48RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS8wNC94bWxlbmMjc2hhMjU2Ij48L0RpZ2VzdE1ldGhvZD48RGlnZXN0VmFsdWU+dXVVcUIxWDdvWHErNm9ubjN0S3hJMWIwcEhMQnYrdmdwVEtlUVNsMVdhdz08L0RpZ2VzdFZhbHVlPjwvUmVmZXJlbmNlPjwvU2lnbmVkSW5mbz4=
+13:03:55.110 [https-jsse-nio-9480-exec-6] DEBUG n.d.o.c.persist.DefaultPersister - Receipt persisted to: /home/tomcat/.oxalis/ceftesting/test/einvoicingct_11_gw/domibus-gitb/4332bc50-3206-4d2a-bcf5-a53729d50c4b_domibus.eu.receipt.dat
+13:03:55.110 [https-jsse-nio-9480-exec-6] DEBUG n.difi.oxalis.as4.util.PolicyService - Policy classpath: /eDeliveryAS4Policy.xml
+13:03:55.118 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.MustUnderstandInterceptor$UltimateReceiverMustUnderstandInterceptor@5ed98826
+13:03:55.118 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor no.difi.oxalis.as4.inbound.AttachmentCleanupInterceptor@2cdf1cb8
+13:03:55.119 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.interceptor.OutgoingChainInterceptor@3536b292
+13:03:55.122 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.i.OutgoingChainInterceptor - Interceptors contributed by bus: [org.apache.cxf.ws.policy.PolicyOutInterceptor@512758ef]
+13:03:55.122 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.i.OutgoingChainInterceptor - Interceptors contributed by service: []
+13:03:55.122 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.i.OutgoingChainInterceptor - Interceptors contributed by endpoint: [org.apache.cxf.interceptor.MessageSenderInterceptor@565c2f3b, org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@57afa685, org.apache.cxf.binding.soap.saaj.SAAJOutInterceptor@37923c1f, org.apache.cxf.jaxws.interceptors.MessageModeOutInterceptor@5c99ea22, org.apache.cxf.ext.logging.LoggingOutInterceptor@6b0b337d, org.apache.cxf.jaxws.handler.logical.LogicalHandlerOutInterceptor@413a3b17, org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor@17f316fa, no.difi.oxalis.as4.inbound.SetPolicyOutInterceptor@676e85eb, org.apache.cxf.ws.security.wss4j.PolicyBasedWSS4JOutInterceptor@7435bbde]
+13:03:55.122 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.i.OutgoingChainInterceptor - Interceptors contributed by binding: [org.apache.cxf.interceptor.AttachmentOutInterceptor@4617eefe, org.apache.cxf.interceptor.StaxOutInterceptor@566587a8, org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@45370152, org.apache.cxf.wsdl.interceptors.BareOutInterceptor@1c85b961, org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@651cd411, org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@1fbe47dd]
+13:03:55.123 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@512758ef to phase setup
+13:03:55.123 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@565c2f3b to phase prepare-send
+13:03:55.123 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@57afa685 to phase pre-logical
+13:03:55.123 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.binding.soap.saaj.SAAJOutInterceptor@37923c1f to phase pre-protocol
+13:03:55.123 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.jaxws.interceptors.MessageModeOutInterceptor@5c99ea22 to phase prepare-send
+13:03:55.123 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.ext.logging.LoggingOutInterceptor@6b0b337d to phase pre-stream
+13:03:55.123 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.jaxws.handler.logical.LogicalHandlerOutInterceptor@413a3b17 to phase pre-marshal
+13:03:55.123 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor@17f316fa to phase pre-protocol-frontend
+13:03:55.123 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor no.difi.oxalis.as4.inbound.SetPolicyOutInterceptor@676e85eb to phase setup
+13:03:55.123 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.ws.security.wss4j.PolicyBasedWSS4JOutInterceptor@7435bbde to phase pre-protocol
+13:03:55.123 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.interceptor.AttachmentOutInterceptor@4617eefe to phase pre-stream
+13:03:55.123 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.interceptor.StaxOutInterceptor@566587a8 to phase pre-stream
+13:03:55.123 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@45370152 to phase pre-logical
+13:03:55.123 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.wsdl.interceptors.BareOutInterceptor@1c85b961 to phase marshal
+13:03:55.123 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@651cd411 to phase post-logical
+13:03:55.123 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@1fbe47dd to phase write
+13:03:55.124 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@503ef14b was created. Current flow:
+  setup [SetPolicyOutInterceptor, PolicyOutInterceptor]
+  pre-logical [SwAOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor, MessageModeOutInterceptor]
+  pre-stream [LoggingOutInterceptor, AttachmentOutInterceptor, StaxOutInterceptor]
+  pre-protocol [SAAJOutInterceptor, PolicyBasedWSS4JOutInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor]
+  write [SoapOutInterceptor]
+  pre-marshal [LogicalHandlerOutInterceptor]
+  marshal [BareOutInterceptor]
+
+13:03:55.124 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor no.difi.oxalis.as4.inbound.SetPolicyOutInterceptor@676e85eb
+13:03:55.126 [https-jsse-nio-9480-exec-6] DEBUG n.difi.oxalis.as4.util.PolicyService - Policy classpath: /eDeliveryAS4Policy.xml
+13:03:55.131 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@512758ef
+13:03:55.136 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.ws.policy.PolicyEngineImpl - Alternative {http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702}WssX509V3Token10 is not supported
+13:03:55.136 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.ws.policy.PolicyEngineImpl - Alternative {http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702}WssX509V3Token10 is not supported
+13:03:55.137 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.ws.policy.PolicyEngineImpl - Alternative {http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702}Strict is not supported
+13:03:55.137 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.ws.policy.PolicyEngineImpl - Alternative {http://oxalis.difi.no/custom/security-policy}Basic128GCMSha256MgfSha256 is not supported
+13:03:55.137 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.ws.policy.PolicyEngineImpl - Alternative {http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702}MustSupportRefKeyIdentifier is not supported
+13:03:55.137 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.ws.security.wss4j.PolicyBasedWSS4JOutInterceptor@3972d2a8 to phase pre-protocol
+13:03:55.137 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.ws.policy.PolicyOutInterceptor - Added interceptor of type PolicyBasedWSS4JOutInterceptor
+13:03:55.137 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.ws.security.wss4j.PolicyBasedWSS4JStaxOutInterceptor@34156d12 to phase pre-stream
+13:03:55.138 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@503ef14b was modified. Current flow:
+  setup [SetPolicyOutInterceptor, PolicyOutInterceptor]
+  pre-logical [SwAOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor, MessageModeOutInterceptor]
+  pre-stream [LoggingOutInterceptor, AttachmentOutInterceptor, PolicyBasedWSS4JStaxOutInterceptor, StaxOutInterceptor]
+  pre-protocol [SAAJOutInterceptor, PolicyBasedWSS4JOutInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor]
+  write [SoapOutInterceptor]
+  pre-marshal [LogicalHandlerOutInterceptor]
+  marshal [BareOutInterceptor]
+
+13:03:55.138 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.ws.policy.PolicyOutInterceptor - Added interceptor of type PolicyBasedWSS4JStaxOutInterceptor
+13:03:55.138 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.ws.security.wss4j.PolicyBasedWSS4JStaxOutInterceptor@3afccdb2 to phase pre-stream
+13:03:55.138 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.ws.policy.PolicyOutInterceptor - Added interceptor of type PolicyBasedWSS4JStaxOutInterceptor
+13:03:55.138 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.ws.security.policy.interceptors.SecurityVerificationOutInterceptor@38027ec1 to phase pre-logical
+13:03:55.138 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@503ef14b was modified. Current flow:
+  setup [SetPolicyOutInterceptor, PolicyOutInterceptor]
+  pre-logical [SwAOutInterceptor, SoapHeaderOutFilterInterceptor, SecurityVerificationOutInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor, MessageModeOutInterceptor]
+  pre-stream [LoggingOutInterceptor, AttachmentOutInterceptor, PolicyBasedWSS4JStaxOutInterceptor, StaxOutInterceptor]
+  pre-protocol [SAAJOutInterceptor, PolicyBasedWSS4JOutInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor]
+  write [SoapOutInterceptor]
+  pre-marshal [LogicalHandlerOutInterceptor]
+  marshal [BareOutInterceptor]
+
+13:03:55.138 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.ws.policy.PolicyOutInterceptor - Added interceptor of type SecurityVerificationOutInterceptor
+13:03:55.139 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.ws.policy.PolicyVerificationOutInterceptor@54e55307 to phase post-stream
+13:03:55.139 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@503ef14b was modified. Current flow:
+  setup [SetPolicyOutInterceptor, PolicyOutInterceptor]
+  pre-logical [SwAOutInterceptor, SoapHeaderOutFilterInterceptor, SecurityVerificationOutInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor, MessageModeOutInterceptor]
+  pre-stream [LoggingOutInterceptor, AttachmentOutInterceptor, PolicyBasedWSS4JStaxOutInterceptor, StaxOutInterceptor]
+  pre-protocol [SAAJOutInterceptor, PolicyBasedWSS4JOutInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor]
+  write [SoapOutInterceptor]
+  pre-marshal [LogicalHandlerOutInterceptor]
+  marshal [BareOutInterceptor]
+  post-stream [PolicyVerificationOutInterceptor]
+
+13:03:55.139 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@57afa685
+13:03:55.141 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@45370152
+13:03:55.141 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.ws.security.policy.interceptors.SecurityVerificationOutInterceptor@38027ec1
+13:03:55.141 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@651cd411
+13:03:55.141 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@565c2f3b
+13:03:55.142 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@dc3b4e5 to phase prepare-send-ending
+13:03:55.142 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@503ef14b was modified. Current flow:
+  setup [SetPolicyOutInterceptor, PolicyOutInterceptor]
+  pre-logical [SwAOutInterceptor, SoapHeaderOutFilterInterceptor, SecurityVerificationOutInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor, MessageModeOutInterceptor]
+  pre-stream [LoggingOutInterceptor, AttachmentOutInterceptor, PolicyBasedWSS4JStaxOutInterceptor, StaxOutInterceptor]
+  pre-protocol [SAAJOutInterceptor, PolicyBasedWSS4JOutInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor]
+  write [SoapOutInterceptor]
+  pre-marshal [LogicalHandlerOutInterceptor]
+  marshal [BareOutInterceptor]
+  post-stream [PolicyVerificationOutInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+13:03:55.142 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.MessageModeOutInterceptor@5c99ea22
+13:03:55.142 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.jaxws.interceptors.MessageModeOutInterceptor$MessageModeOutInterceptorInternal@5434dfdf to phase pre-protocol
+13:03:55.142 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@503ef14b was modified. Current flow:
+  setup [SetPolicyOutInterceptor, PolicyOutInterceptor]
+  pre-logical [SwAOutInterceptor, SoapHeaderOutFilterInterceptor, SecurityVerificationOutInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor, MessageModeOutInterceptor]
+  pre-stream [LoggingOutInterceptor, AttachmentOutInterceptor, PolicyBasedWSS4JStaxOutInterceptor, StaxOutInterceptor]
+  pre-protocol [MessageModeOutInterceptorInternal, SAAJOutInterceptor, PolicyBasedWSS4JOutInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor]
+  write [SoapOutInterceptor]
+  pre-marshal [LogicalHandlerOutInterceptor]
+  marshal [BareOutInterceptor]
+  post-stream [PolicyVerificationOutInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+13:03:55.142 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.ext.logging.LoggingOutInterceptor@6b0b337d
+13:03:55.143 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.interceptor.AttachmentOutInterceptor@4617eefe
+13:03:55.143 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.ws.security.wss4j.PolicyBasedWSS4JStaxOutInterceptor@34156d12
+13:03:55.143 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxOutInterceptor@566587a8
+13:03:55.160 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.interceptor.StaxOutEndingInterceptor@7c2e68fa to phase pre-stream-ending
+13:03:55.160 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@503ef14b was modified. Current flow:
+  setup [SetPolicyOutInterceptor, PolicyOutInterceptor]
+  pre-logical [SwAOutInterceptor, SoapHeaderOutFilterInterceptor, SecurityVerificationOutInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor, MessageModeOutInterceptor]
+  pre-stream [LoggingOutInterceptor, AttachmentOutInterceptor, PolicyBasedWSS4JStaxOutInterceptor, StaxOutInterceptor]
+  pre-protocol [MessageModeOutInterceptorInternal, SAAJOutInterceptor, PolicyBasedWSS4JOutInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor]
+  write [SoapOutInterceptor]
+  pre-marshal [LogicalHandlerOutInterceptor]
+  marshal [BareOutInterceptor]
+  post-stream [PolicyVerificationOutInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+13:03:55.160 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.MessageModeOutInterceptor$MessageModeOutInterceptorInternal@5434dfdf
+13:03:55.161 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.binding.soap.saaj.SAAJOutInterceptor$SAAJOutEndingInterceptor@51cbb56b to phase pre-protocol-ending
+13:03:55.161 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@503ef14b was modified. Current flow:
+  setup [SetPolicyOutInterceptor, PolicyOutInterceptor]
+  pre-logical [SwAOutInterceptor, SoapHeaderOutFilterInterceptor, SecurityVerificationOutInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor, MessageModeOutInterceptor]
+  pre-stream [LoggingOutInterceptor, AttachmentOutInterceptor, PolicyBasedWSS4JStaxOutInterceptor, StaxOutInterceptor]
+  pre-protocol [MessageModeOutInterceptorInternal, SAAJOutInterceptor, PolicyBasedWSS4JOutInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor]
+  write [SoapOutInterceptor]
+  pre-marshal [LogicalHandlerOutInterceptor]
+  marshal [BareOutInterceptor]
+  post-stream [PolicyVerificationOutInterceptor]
+  pre-protocol-ending [SAAJOutEndingInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+13:03:55.161 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.saaj.SAAJOutInterceptor@37923c1f
+13:03:55.161 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.binding.soap.saaj.SAAJOutInterceptor$SAAJOutEndingInterceptor@51cbb56b to phase pre-protocol-ending
+13:03:55.162 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.ws.security.wss4j.PolicyBasedWSS4JOutInterceptor@7435bbde
+13:03:55.162 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.ws.security.wss4j.PolicyBasedWSS4JOutInterceptor$PolicyBasedWSS4JOutInterceptorInternal@5e2d7e10 to phase post-protocol
+13:03:55.162 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@503ef14b was modified. Current flow:
+  setup [SetPolicyOutInterceptor, PolicyOutInterceptor]
+  pre-logical [SwAOutInterceptor, SoapHeaderOutFilterInterceptor, SecurityVerificationOutInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor, MessageModeOutInterceptor]
+  pre-stream [LoggingOutInterceptor, AttachmentOutInterceptor, PolicyBasedWSS4JStaxOutInterceptor, StaxOutInterceptor]
+  pre-protocol [MessageModeOutInterceptorInternal, SAAJOutInterceptor, PolicyBasedWSS4JOutInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor]
+  write [SoapOutInterceptor]
+  pre-marshal [LogicalHandlerOutInterceptor]
+  marshal [BareOutInterceptor]
+  post-protocol [PolicyBasedWSS4JOutInterceptorInternal]
+  post-stream [PolicyVerificationOutInterceptor]
+  pre-protocol-ending [SAAJOutEndingInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+13:03:55.162 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor@17f316fa
+13:03:55.162 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor$1@5d4e9fd8 to phase user-protocol
+13:03:55.162 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@503ef14b was modified. Current flow:
+  setup [SetPolicyOutInterceptor, PolicyOutInterceptor]
+  pre-logical [SwAOutInterceptor, SoapHeaderOutFilterInterceptor, SecurityVerificationOutInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor, MessageModeOutInterceptor]
+  pre-stream [LoggingOutInterceptor, AttachmentOutInterceptor, PolicyBasedWSS4JStaxOutInterceptor, StaxOutInterceptor]
+  pre-protocol [MessageModeOutInterceptorInternal, SAAJOutInterceptor, PolicyBasedWSS4JOutInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor]
+  write [SoapOutInterceptor]
+  pre-marshal [LogicalHandlerOutInterceptor]
+  marshal [BareOutInterceptor]
+  user-protocol [org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor.ENDING]
+  post-protocol [PolicyBasedWSS4JOutInterceptorInternal]
+  post-stream [PolicyVerificationOutInterceptor]
+  pre-protocol-ending [SAAJOutEndingInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+13:03:55.162 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@1fbe47dd
+13:03:55.164 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor$SoapOutEndingInterceptor@7f49475e to phase write-ending
+13:03:55.165 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Chain org.apache.cxf.phase.PhaseInterceptorChain@503ef14b was modified. Current flow:
+  setup [SetPolicyOutInterceptor, PolicyOutInterceptor]
+  pre-logical [SwAOutInterceptor, SoapHeaderOutFilterInterceptor, SecurityVerificationOutInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor, MessageModeOutInterceptor]
+  pre-stream [LoggingOutInterceptor, AttachmentOutInterceptor, PolicyBasedWSS4JStaxOutInterceptor, StaxOutInterceptor]
+  pre-protocol [MessageModeOutInterceptorInternal, SAAJOutInterceptor, PolicyBasedWSS4JOutInterceptor]
+  pre-protocol-frontend [SOAPHandlerInterceptor]
+  write [SoapOutInterceptor]
+  pre-marshal [LogicalHandlerOutInterceptor]
+  marshal [BareOutInterceptor]
+  user-protocol [org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor.ENDING]
+  post-protocol [PolicyBasedWSS4JOutInterceptorInternal]
+  post-stream [PolicyVerificationOutInterceptor]
+  write-ending [SoapOutEndingInterceptor]
+  pre-protocol-ending [SAAJOutEndingInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+13:03:55.165 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.jaxws.handler.logical.LogicalHandlerOutInterceptor@413a3b17
+13:03:55.165 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.wsdl.interceptors.BareOutInterceptor@1c85b961
+13:03:55.166 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.jaxws.handler.soap.SOAPHandlerInterceptor$1@5d4e9fd8
+13:03:55.167 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.j.handler.HandlerChainInvoker - invoking handlers, direction: outbound
+13:03:55.167 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.j.handler.HandlerChainInvoker - invoking handler of type no.difi.oxalis.as4.inbound.As4FaultInHandler
+13:03:55.167 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.j.handler.HandlerChainInvoker - invoking handler of type no.difi.oxalis.as4.inbound.MessagingHandler
+13:03:55.167 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.j.handler.HandlerChainInvoker - closing protocol handlers - handler count:2
+13:03:55.167 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.ws.security.wss4j.PolicyBasedWSS4JOutInterceptor$PolicyBasedWSS4JOutInterceptorInternal@5e2d7e10
+13:03:55.190 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.w.s.w.p.AbstractCommonBindingHandler - Asserting {http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702}Wss11
+13:03:55.193 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - Marshalling Reference
+13:03:55.193 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - Adding digestValueElem
+13:03:55.193 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - Marshalling Reference
+13:03:55.193 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - Adding digestValueElem
+13:03:55.194 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - URIDereferencer class name: org.apache.jcp.xml.dsig.internal.dom.DOMURIDereferencer
+13:03:55.194 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - Data class name: org.apache.jcp.xml.dsig.internal.dom.ApacheNodeSetData
+13:03:55.194 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.transforms.Transform - Create URI "http://www.w3.org/2001/10/xml-exc-c14n#" class "class org.apache.xml.security.transforms.implementations.TransformC14NExclusive"
+13:03:55.194 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.transforms.Transform - The NodeList is [ds:Transform: null]
+13:03:55.194 [https-jsse-nio-9480-exec-6] DEBUG o.a.xml.security.utils.ElementProxy - setElement(ds:Transform, "null")
+13:03:55.194 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.ApacheCanonicalizer - Created transform for algorithm: http://www.w3.org/2001/10/xml-exc-c14n#
+13:03:55.194 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.ApacheCanonicalizer - ApacheData = true
+13:03:55.194 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.DigesterOutputStream - Pre-digested input:
+13:03:55.194 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.DigesterOutputStream - <env:Body xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="_b8140423-ab45-4f2b-bce5-f913c0dd5e80"></env:Body>
+13:03:55.194 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - Reference object uri = #_b8140423-ab45-4f2b-bce5-f913c0dd5e80
+13:03:55.194 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - Reference digesting completed
+13:03:55.194 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - URIDereferencer class name: org.apache.jcp.xml.dsig.internal.dom.DOMURIDereferencer
+13:03:55.194 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - Data class name: org.apache.jcp.xml.dsig.internal.dom.ApacheNodeSetData
+13:03:55.194 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.transforms.Transform - Create URI "http://www.w3.org/2001/10/xml-exc-c14n#" class "class org.apache.xml.security.transforms.implementations.TransformC14NExclusive"
+13:03:55.194 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.transforms.Transform - The NodeList is [ds:Transform: null]
+13:03:55.194 [https-jsse-nio-9480-exec-6] DEBUG o.a.xml.security.utils.ElementProxy - setElement(ds:Transform, "null")
+13:03:55.194 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.ApacheCanonicalizer - Created transform for algorithm: http://www.w3.org/2001/10/xml-exc-c14n#
+13:03:55.194 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.ApacheCanonicalizer - ApacheData = true
+13:03:55.195 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.DigesterOutputStream - Pre-digested input:
+13:03:55.195 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.DigesterOutputStream - <eb:Messaging xmlns:eb="http://docs.oasis-open.org/ebxml-msg/ebms/v3.0/ns/core/200704/" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="_fe28850a-499c-4cf9-a216-6a33c1658ab4" env:mustUnderstand="true"><eb:SignalMessage><eb:MessageInfo><eb:Timestamp>2020-03-10T13:03:54.654+01:00</eb:Timestamp><eb:MessageId>01aaab4c-45a6-4639-b24a-4e9104eb42ed@vm21lnx.ente.regione.emr.it</eb:MessageId><eb:RefToMessageId>4332bc50-3206-4d2a-bcf5-a53729d50c4b@domibus.eu</eb:RefToMessageId></eb:MessageInfo><eb:Receipt><ns7:NonRepudiationInformation xmlns:ns7="http://docs.oasis-open.org/ebxml-bp/ebbp-signals-2.0"><ns7:MessagePartNRInformation><ns6:Reference xmlns:ns6="http://www.w3.org/2000/09/xmldsig#" URI="#_08c22a2c-9f1a-4606-84fd-9d142ad05b88"><ns6:Transforms><ns6:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></ns6:Transform></ns6:Transforms><ns6:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></ns6:DigestMethod><ns6:DigestValue>awtpT114hoF3pzqjzxFwca/H3d/Sus1Y2dELM6oM+Bs=</ns6:DigestValue></ns6:Reference></ns7:MessagePartNRInformation><ns7:MessagePartNRInformation><ns6:Reference xmlns:ns6="http://www.w3.org/2000/09/xmldsig#" URI="#_6b2e7c9a-91d9-4e6a-b0ff-fcb29b0b8712"><ns6:Transforms><ns6:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></ns6:Transform></ns6:Transforms><ns6:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></ns6:DigestMethod><ns6:DigestValue>TDc111FbZx9zs+6YGDdQ8ajtaSXv5/I6S08rcDl3l9U=</ns6:DigestValue></ns6:Reference></ns7:MessagePartNRInformation><ns7:MessagePartNRInformation><ns6:Reference xmlns:ns6="http://www.w3.org/2000/09/xmldsig#" URI="cid:message"><ns6:Transforms><ns6:Transform Algorithm="http://docs.oasis-open.org/wss/oasis-wss-SwAProfile-1.1#Attachment-Content-Signature-Transform"></ns6:Transform></ns6:Transforms><ns6:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></ns6:DigestMethod><ns6:DigestValue>jtW5RfJ8/LGJt4O4XT602I5ys7zMtQ//IrFHMqNVAkw=</ns6:DigestValue></ns6:Reference></ns7:MessagePartNRInformation></ns7:NonRepudiationInformation></eb:Receipt></eb:SignalMessage></eb:Messaging>
+13:03:55.195 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - Reference object uri = #_fe28850a-499c-4cf9-a216-6a33c1658ab4
+13:03:55.195 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMReference - Reference digesting completed
+13:03:55.195 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.DOMSignatureMethod - Signature provider: SunRsaSign version 1.8
+13:03:55.196 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.DOMSignatureMethod - Signing with key: sun.security.rsa.RSAPrivateCrtKeyImpl@ffeb9ef5
+13:03:55.196 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.DOMSignatureMethod - JCA Algorithm: SHA256withRSA
+13:03:55.196 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.transforms.Transform - Create URI "http://www.w3.org/2001/10/xml-exc-c14n#" class "class org.apache.xml.security.transforms.implementations.TransformC14NExclusive"
+13:03:55.196 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.transforms.Transform - The NodeList is [ds:CanonicalizationMethod: null]
+13:03:55.196 [https-jsse-nio-9480-exec-6] DEBUG o.a.xml.security.utils.ElementProxy - setElement(ds:CanonicalizationMethod, "null")
+13:03:55.196 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.ApacheCanonicalizer - Created transform for algorithm: http://www.w3.org/2001/10/xml-exc-c14n#
+13:03:55.196 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.i.dom.ApacheCanonicalizer - isNodeSet() = true
+13:03:55.196 [https-jsse-nio-9480-exec-6] DEBUG o.a.xml.security.utils.ElementProxy - setElement("ec:InclusiveNamespaces", "null")
+13:03:55.196 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMSignedInfo - Canonicalized SignedInfo:
+13:03:55.197 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMSignedInfo - <ds:SignedInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:env="http://www.w3.org/2003/05/soap-envelope"><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"><ec:InclusiveNamespaces xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#" PrefixList="env"></ec:InclusiveNamespaces></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></ds:SignatureMethod><ds:Reference URI="#_b8140423-ab45-4f2b-bce5-f913c0dd5e80"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></ds:DigestMethod><ds:DigestValue>wVqDcYPz6AEBPxAqyovkBg2FzhCYCQhjD1ZnmYDEFsg=</ds:DigestValue></ds:Reference><ds:Reference URI="#_fe28850a-499c-4cf9-a216-6a33c1658ab4"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></ds:DigestMethod><ds:DigestValue>eF1/uAdmSjrnoPj5YZaTN+PbpGvlx24NyPKdwZUL12k=</ds:DigestValue></ds:Reference></ds:SignedInfo>
+13:03:55.197 [https-jsse-nio-9480-exec-6] DEBUG o.a.j.x.d.internal.dom.DOMSignedInfo - Data to be signed/verified:PGRzOlNpZ25lZEluZm8geG1sbnM6ZHM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyMiIHhtbG5zOmVudj0iaHR0cDovL3d3dy53My5vcmcvMjAwMy8wNS9zb2FwLWVudmVsb3BlIj48ZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyI+PGVjOkluY2x1c2l2ZU5hbWVzcGFjZXMgeG1sbnM6ZWM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyIgUHJlZml4TGlzdD0iZW52Ij48L2VjOkluY2x1c2l2ZU5hbWVzcGFjZXM+PC9kczpDYW5vbmljYWxpemF0aW9uTWV0aG9kPjxkczpTaWduYXR1cmVNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2Ij48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iI19iODE0MDQyMy1hYjQ1LTRmMmItYmNlNS1mOTEzYzBkZDVlODAiPjxkczpUcmFuc2Zvcm1zPjxkczpUcmFuc2Zvcm0gQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzEwL3htbC1leGMtYzE0biMiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS8wNC94bWxlbmMjc2hhMjU2Ij48L2RzOkRpZ2VzdE1ldGhvZD48ZHM6RGlnZXN0VmFsdWU+d1ZxRGNZUHo2QUVCUHhBcXlvdmtCZzJGemhDWUNRaGpEMVpubVlERUZzZz08L2RzOkRpZ2VzdFZhbHVlPjwvZHM6UmVmZXJlbmNlPjxkczpSZWZlcmVuY2UgVVJJPSIjX2ZlMjg4NTBhLTQ5OWMtNGNmOS1hMjE2LTZhMzNjMTY1OGFiNCI+PGRzOlRyYW5zZm9ybXM+PGRzOlRyYW5zZm9ybSBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvMTAveG1sLWV4Yy1jMTRuIyI+PC9kczpUcmFuc2Zvcm0+PC9kczpUcmFuc2Zvcm1zPjxkczpEaWdlc3RNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGVuYyNzaGEyNTYiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT5lRjEvdUFkbVNqcm5vUGo1WVphVE4rUGJwR3ZseDI0TnlQS2R3WlVMMTJrPTwvZHM6RGlnZXN0VmFsdWU+PC9kczpSZWZlcmVuY2U+PC9kczpTaWduZWRJbmZvPg==
+13:03:55.208 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.w.s.w.p.AbstractCommonBindingHandler - Asserting {http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702}InitiatorToken
+13:03:55.208 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.w.s.w.p.AbstractCommonBindingHandler - Asserting {http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702}X509Token
+13:03:55.211 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.w.s.w.p.AbstractCommonBindingHandler - Asserting {http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702}Wss11
+13:03:55.211 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.algorithms.JCEMapper - Request for URI http://www.w3.org/2009/xmlenc11#aes128-gcm
+13:03:55.212 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.algorithms.JCEMapper - Request for URI http://www.w3.org/2009/xmlenc11#rsa-oaep
+13:03:55.212 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.algorithms.JCEMapper - Request for URI http://www.w3.org/2001/04/xmlenc#sha256
+13:03:55.214 [https-jsse-nio-9480-exec-6] DEBUG o.a.w.dom.message.WSSecEncryptedKey - cipher blksize: 0
+13:03:55.224 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.algorithms.JCEMapper - Request for URI http://www.w3.org/2009/xmlenc11#aes128-gcm
+13:03:55.233 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.encryption.XMLCipher - Have functional IdentityTransformer: false
+13:03:55.233 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.encryption.XMLCipher - Getting XMLCipher with transformation
+13:03:55.233 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.encryption.XMLCipher - Constructing XMLCipher...
+13:03:55.238 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.algorithms.JCEMapper - Request for URI http://www.w3.org/2009/xmlenc11#aes128-gcm
+13:03:55.239 [https-jsse-nio-9480-exec-6] DEBUG o.a.x.security.encryption.XMLCipher - JCE Algorithm = AES/GCM/NoPadding
+13:03:55.239 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.ws.policy.PolicyVerificationOutInterceptor@54e55307
+13:03:55.241 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.w.p.PolicyVerificationOutInterceptor - Verified policies for outbound message.
+13:03:55.241 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor$SoapOutEndingInterceptor@7f49475e
+13:03:55.241 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.saaj.SAAJOutInterceptor$SAAJOutEndingInterceptor@51cbb56b
+13:03:55.244 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.ws.addressing.ContextUtils - retrieving MAPs from context property javax.xml.ws.addressing.context.inbound
+13:03:55.245 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.ws.addressing.ContextUtils - WS-Addressing - failed to retrieve Message Addressing Properties from context
+13:03:55.246 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxOutEndingInterceptor@7c2e68fa
+13:03:55.246 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.phase.PhaseInterceptorChain - Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@dc3b4e5
+13:03:55.247 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.ws.addressing.ContextUtils - retrieving MAPs from context property javax.xml.ws.addressing.context.outbound
+13:03:55.247 [https-jsse-nio-9480-exec-6] DEBUG o.a.cxf.ws.addressing.ContextUtils - WS-Addressing - failed to retrieve Message Addressing Properties from context
+13:03:55.247 [https-jsse-nio-9480-exec-6] INFO  o.a.c.services.As4Provider.RESP_OUT - RESP_OUT
+    Address: https://test-notier.regione.emilia-romagna.it/oxalis/as4
+    Content-Type: application/soap+xml
+    ResponseCode: 200
+    ExchangeId: c5f7cf60-110a-408f-a039-0a36548da73d
+    ServiceName: As4ProviderService
+    PortName: As4ProviderPort
+    PortTypeName: As4Provider
+    Headers: {}
+    Payload: <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope"><env:Header><eb:Messaging xmlns:eb="http://docs.oasis-open.org/ebxml-msg/ebms/v3.0/ns/core/200704/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" env:mustUnderstand="true" wsu:Id="_fe28850a-499c-4cf9-a216-6a33c1658ab4"><eb:SignalMessage xmlns="" xmlns:ns3="http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader" xmlns:ns4="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns6="http://www.w3.org/2000/09/xmldsig#" xmlns:ns7="http://docs.oasis-open.org/ebxml-bp/ebbp-signals-2.0"><eb:MessageInfo><eb:Timestamp>2020-03-10T13:03:54.654+01:00</eb:Timestamp><eb:MessageId>01aaab4c-45a6-4639-b24a-4e9104eb42ed@vm21lnx.ente.regione.emr.it</eb:MessageId><eb:RefToMessageId>4332bc50-3206-4d2a-bcf5-a53729d50c4b@domibus.eu</eb:RefToMessageId></eb:MessageInfo><eb:Receipt><ns7:NonRepudiationInformation><ns7:MessagePartNRInformation><ns6:Reference URI="#_08c22a2c-9f1a-4606-84fd-9d142ad05b88"><ns6:Transforms><ns6:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ns6:Transforms><ns6:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ns6:DigestValue>awtpT114hoF3pzqjzxFwca/H3d/Sus1Y2dELM6oM+Bs=</ns6:DigestValue></ns6:Reference></ns7:MessagePartNRInformation><ns7:MessagePartNRInformation><ns6:Reference URI="#_6b2e7c9a-91d9-4e6a-b0ff-fcb29b0b8712"><ns6:Transforms><ns6:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ns6:Transforms><ns6:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ns6:DigestValue>TDc111FbZx9zs+6YGDdQ8ajtaSXv5/I6S08rcDl3l9U=</ns6:DigestValue></ns6:Reference></ns7:MessagePartNRInformation><ns7:MessagePartNRInformation><ns6:Reference URI="cid:message"><ns6:Transforms><ns6:Transform Algorithm="http://docs.oasis-open.org/wss/oasis-wss-SwAProfile-1.1#Attachment-Content-Signature-Transform"/></ns6:Transforms><ns6:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ns6:DigestValue>jtW5RfJ8/LGJt4O4XT602I5ys7zMtQ//IrFHMqNVAkw=</ns6:DigestValue></ns6:Reference></ns7:MessagePartNRInformation></ns7:NonRepudiationInformation></eb:Receipt></eb:SignalMessage></eb:Messaging><wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" env:mustUnderstand="true"><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="SIG-44ddb386-b1eb-4fdd-9e99-9397354244eb"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"><ec:InclusiveNamespaces xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#" PrefixList="env"/></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><ds:Reference URI="#_b8140423-ab45-4f2b-bce5-f913c0dd5e80"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>wVqDcYPz6AEBPxAqyovkBg2FzhCYCQhjD1ZnmYDEFsg=</ds:DigestValue></ds:Reference><ds:Reference URI="#_fe28850a-499c-4cf9-a216-6a33c1658ab4"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>eF1/uAdmSjrnoPj5YZaTN+PbpGvlx24NyPKdwZUL12k=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>QukccwswOPScAy7O2IFcusXVWpM9gDOu591DoatDAuukJTjbpqkSWGI6rgwYxXCxh4nh9rGX3BlRxzuR9AnIRp3kpX0qj/lNaA/kR/iySBKvaeVFauKjfUYZ+XZNhiABKue26ei+250/tDhMrjkwLBBJwGXxOvTn2T9OG3A8zs2ynTLQKXddkljRm2Yz60/jUg+Xvb4idjy65p/xySr7+T4XqTFcp97+p9UCzknmBtLpPTI/3ywDWr7WjhBbmGRBDoLakPjuH9gdDGx0scIJN7oan5g2zUoTaWmdaqMlf0iXbtv8NmmGcwL/T30Xp/ceZTGdfVLMZ/C1LUf+hcstug==</ds:SignatureValue><ds:KeyInfo Id="KI-2e6cd4b5-e560-47d9-a3e9-2feb990f7797"><wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="STR-8c8ef82c-4af4-4c7a-ba52-b2c785b2fc82"><wsse:KeyIdentifier EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509SubjectKeyIdentifier">ME3uKA+DrYvwZ4OPpVxgy2ApBKo=</wsse:KeyIdentifier></wsse:SecurityTokenReference></ds:KeyInfo></ds:Signature></wsse:Security></env:Header><env:Body xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="_b8140423-ab45-4f2b-bce5-f913c0dd5e80"/></env:Envelope>
+
+13:03:55.253 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.t.http.AbstractHTTPDestination - Finished servicing http request on thread: Thread[https-jsse-nio-9480-exec-6,5,main]
+13:03:55.253 [https-jsse-nio-9480-exec-6] DEBUG o.a.c.t.servlet.ServletController - Finished servicing http request on thread: Thread[https-jsse-nio-9480-exec-6,5,main]

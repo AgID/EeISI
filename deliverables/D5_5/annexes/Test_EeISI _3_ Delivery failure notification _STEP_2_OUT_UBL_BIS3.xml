@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationResponse xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+                     xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2"
+                     xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                     xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                     xmlns:types="http://www.fatturapa.gov.it/sdi/messaggi/v1.0">
+   <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:invoice_response:3</cbc:CustomizationID>
+   <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:invoice_response:3</cbc:ProfileID>
+   <cbc:ID>2146017390</cbc:ID>
+   <cbc:IssueDate>2019/11/25</cbc:IssueDate>
+   <cbc:IssueTime>09:22:08</cbc:IssueTime>
+   <cbc:Note/>
+   <cac:SenderParty>
+      <cbc:EndpointID schemeID="0202">sdi01@pec.fatturapa.it</cbc:EndpointID>
+      <cac:PartyLegalEntity>
+         <cbc:RegistrationName>Agenzia delle Entrate</cbc:RegistrationName>
+      </cac:PartyLegalEntity>
+   </cac:SenderParty>
+   <cac:ReceiverParty>
+      <cbc:EndpointID schemeID=""/>
+      <cac:PartyLegalEntity>
+         <cbc:RegistrationName/>
+      </cac:PartyLegalEntity>
+   </cac:ReceiverParty>
+   <cac:DocumentResponse>
+      <cac:Response>
+         <cbc:ResponseCode>IP</cbc:ResponseCode>
+         <cac:Status>
+            <cbc:StatusReasonCode listID="OPStatusReason">OTH</cbc:StatusReasonCode>
+            <cbc:StatusReason>La fattura è disponibile in consultazione nell'area riservata a partire dalla 'Data Messa a Disposizione'. Non è stato possibile recapitare la fattura/e al destinatario per indisponibilità dell'indirizzo telematico di ricezione o perché tale indirizzo non è stato indicato in fattura (Codice Destinatario: 0000000).</cbc:StatusReason>
+         </cac:Status>
+      </cac:Response>
+      <cac:DocumentReference>
+         <cbc:ID/>
+         <cbc:IssueDate/>
+         <cbc:DocumentTypeCode>380</cbc:DocumentTypeCode>
+      </cac:DocumentReference>
+   </cac:DocumentResponse>
+</ApplicationResponse>

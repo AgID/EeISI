@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2" xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2">
+  <cbc:CustomizationID>urn:cen.eu:en16931:2017</cbc:CustomizationID>
+  <cbc:ID>Test EeISI 30</cbc:ID>
+  <cbc:IssueDate>2019-01-18</cbc:IssueDate>
+  <cbc:DueDate>2019-02-18</cbc:DueDate>
+  <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+  <cbc:Note>Causale 1 per la fattura:SI</cbc:Note>
+  <cbc:Note>Causale 2 per la fattura:SI</cbc:Note>
+  <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+  <cbc:AccountingCost>ABCF45667</cbc:AccountingCost>
+  <cac:InvoicePeriod>
+    <cbc:StartDate>2019-01-18</cbc:StartDate>
+    <cbc:EndDate>2019-01-18</cbc:EndDate>
+    <cbc:DescriptionCode>3</cbc:DescriptionCode>
+  </cac:InvoicePeriod>
+  <cac:BillingReference>
+    <cac:InvoiceDocumentReference>
+      <cbc:ID>123</cbc:ID>
+      <cbc:IssueDate>2019-01-10</cbc:IssueDate>
+    </cac:InvoiceDocumentReference>
+  </cac:BillingReference>
+  <cac:DespatchDocumentReference>
+    <cbc:ID>12345:2019-01-08</cbc:ID>
+  </cac:DespatchDocumentReference>
+  <cac:ReceiptDocumentReference>
+    <cbc:ID>123</cbc:ID>
+  </cac:ReceiptDocumentReference>
+  <cac:OriginatorDocumentReference>
+    <cbc:ID>aadbb</cbc:ID>
+  </cac:OriginatorDocumentReference>
+  <cac:ContractDocumentReference>
+    <cbc:ID>123</cbc:ID>
+  </cac:ContractDocumentReference>
+  <cac:AdditionalDocumentReference>
+    <cbc:ID>Allegato 1</cbc:ID>
+    <cbc:DocumentDescription>Descrizione allegato uno</cbc:DocumentDescription>
+    <cac:Attachment>
+      <cbc:EmbeddedDocumentBinaryObject mimeCode="text/csv" filename="Allegato 1">ZUlHT1IgYXR0YWNobWVudCB0ZXN0</cbc:EmbeddedDocumentBinaryObject>
+    </cac:Attachment>
+  </cac:AdditionalDocumentReference>
+  <cac:AdditionalDocumentReference>
+    <cbc:ID>Allegato 2</cbc:ID>
+    <cbc:DocumentDescription>Descrizione allegato due</cbc:DocumentDescription>
+    <cac:Attachment>
+      <cbc:EmbeddedDocumentBinaryObject mimeCode="text/csv" filename="Allegato 2">ZUlHT1IgYXR0YWNobWVudCB0ZXN0</cbc:EmbeddedDocumentBinaryObject>
+    </cac:Attachment>
+  </cac:AdditionalDocumentReference>
+  <cac:AdditionalDocumentReference>
+    <cbc:ID>not-mapped-values.txt</cbc:ID>
+    <cac:Attachment>
+      <cbc:EmbeddedDocumentBinaryObject mimeCode="text/csv" filename="not-mapped-values.txt">MS4xLjEuMSBJZFBhZXNlOiBJVAoxLjEuMS4yIElkQ29kaWNlOiA5NzczNTAyMDU4NAoxLjEuMiBQcm9ncmVzc2l2b0ludmlvOiAwMDAwMQoxLjEuMyBGb3JtYXRvVHJhc21pc3Npb25lOiBGUEExMgoxLjEuNS4xIFRlbGVmb25vOiAwMjEyMjQ5NTAzMAoxLjEuNS4yIEVtYWlsOiB0cmFzbWl0dGVudGVAZ21haWwuY29tCjEuNS4xLjEuMSBJZFBhZXNlOiBJVAoxLjUuMS4xLjIgSWRDb2RpY2U6IDk3NzM1MDIwNTg0CjEuNS4xLjIgQ29kaWNlRmlzY2FsZTogQkdSR0RONzdUMTBMMTE3RgoxLjUuMS4zLjEgRGVub21pbmF6aW9uZTogR0FNTUEgaW50ZXJtZWRpYXJpbwoxLjUuMS4zLjQgVGl0b2xvOiBTdXBlcgoxLjUuMS4zLjUgQ29kRU9SSTogMzEyMzQ1Njc4OTAxMgoyLjEuMS41LjIgSW1wb3J0b1JpdGVudXRhOiAyMDAuMDAKMi4zLjEgRGF0YTogMTk5MC0wMS0wMQoyLjMuMiBUb3RhbGVQZXJjb3JzbzogNDgwMAoxLjYgU29nZ2V0dG9FbWl0dGVudGU6IFRaCjIuMS4xLjUuMSBUaXBvUml0ZW51dGE6IFJUMDEKMi4xLjEuNS4yIEltcG9ydG9SaXRlbnV0YTogMjAwLjAwCjIuMS4xLjUuMyBBbGlxdW90YVJpdGVudXRhOiAyMC4wMAoyLjEuMS41LjQgQ2F1c2FsZVBhZ2FtZW50bzogQQoyLjEuMS43LjYgUml0ZW51dGE6IFNJCjIuMi4xLjEzIFJpdGVudXRhOiBTSSAyLjIuMS4xIE51bWVyb0xpbmVhOiAxCjIuMS4yLjUgQ29kaWNlQ29tbWVzc2FDb252ZW56aW9uZTogamtsMzQKMi4xLjIuNiBDb2RpY2VDVVA6IDExMjIKMi4xLjIuNyBDb2RpY2VDSUc6IGFhYmIK</cbc:EmbeddedDocumentBinaryObject>
+    </cac:Attachment>
+  </cac:AdditionalDocumentReference>
+  <cac:ProjectReference>
+    <cbc:ID>11d22</cbc:ID>
+  </cac:ProjectReference>
+  <cac:AccountingSupplierParty>
+    <cac:Party>
+      <cbc:EndpointID schemeID="0201">NA</cbc:EndpointID>
+      <cac:PartyIdentification>
+        <cbc:ID>IT:EORI:0123456789012</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyIdentification>
+        <cbc:ID>IT:ALBO:Ordine Commercialisti:43DDD</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PostalAddress>
+        <cbc:StreetName>VIALE ROMA</cbc:StreetName>
+        <cbc:AdditionalStreetName>543</cbc:AdditionalStreetName>
+        <cbc:CityName>SASSARI</cbc:CityName>
+        <cbc:PostalZone>07100</cbc:PostalZone>
+        <cbc:CountrySubentity>SS</cbc:CountrySubentity>
+        <cac:Country>
+          <cbc:IdentificationCode>IT</cbc:IdentificationCode>
+        </cac:Country>
+      </cac:PostalAddress>
+      <cac:PartyTaxScheme>
+        <cbc:CompanyID>IT07945211006</cbc:CompanyID>
+        <cac:TaxScheme>
+          <cbc:ID>VAT</cbc:ID>
+        </cac:TaxScheme>
+      </cac:PartyTaxScheme>
+      <cac:PartyTaxScheme>
+        <cbc:CompanyID>BGRGDN77T10L117F</cbc:CompanyID>
+        <cac:TaxScheme>
+          <cbc:ID>NOVAT</cbc:ID>
+        </cac:TaxScheme>
+      </cac:PartyTaxScheme>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName>ALPHA SRL</cbc:RegistrationName>
+        <cbc:CompanyID>IT:REA:BG:2344tf566</cbc:CompanyID>
+        <cbc:CompanyLegalForm>150000.00 SM LN</cbc:CompanyLegalForm>
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+        <cbc:Telephone>035204938</cbc:Telephone>
+        <cbc:ElectronicMail>cedente@gmail.com</cbc:ElectronicMail>
+      </cac:Contact>
+    </cac:Party>
+  </cac:AccountingSupplierParty>
+  <cac:AccountingCustomerParty>
+    <cac:Party>
+      <cbc:EndpointID schemeID="0201">99YJBO</cbc:EndpointID>
+      <cac:PartyIdentification>
+        <cbc:ID>IT:CF:BGRGDN77T10L117F</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PostalAddress>
+        <cbc:StreetName>VIA TORINO</cbc:StreetName>
+        <cbc:AdditionalStreetName>38 B</cbc:AdditionalStreetName>
+        <cbc:CityName>ROMA</cbc:CityName>
+        <cbc:PostalZone>00145</cbc:PostalZone>
+        <cbc:CountrySubentity>RM</cbc:CountrySubentity>
+        <cac:Country>
+          <cbc:IdentificationCode>IT</cbc:IdentificationCode>
+        </cac:Country>
+      </cac:PostalAddress>
+      <cac:PartyTaxScheme>
+        <cbc:CompanyID>IT07945211006</cbc:CompanyID>
+        <cac:TaxScheme>
+          <cbc:ID>VAT</cbc:ID>
+        </cac:TaxScheme>
+      </cac:PartyTaxScheme>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName>Mario Verdi</cbc:RegistrationName>
+        <cbc:CompanyID>IT:EORI:2123456789012</cbc:CompanyID>
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+        <cbc:Name>Mario Verdi</cbc:Name>
+      </cac:Contact>
+    </cac:Party>
+  </cac:AccountingCustomerParty>
+  <cac:PayeeParty>
+    <cac:PartyName>
+      <cbc:Name>Nome del beneficiario</cbc:Name>
+    </cac:PartyName>
+  </cac:PayeeParty>
+  <cac:TaxRepresentativeParty>
+    <cac:PartyName>
+      <cbc:Name>ALPHA Rappresentante fiscale</cbc:Name>
+    </cac:PartyName>
+    <cac:PostalAddress>
+      <cac:Country>
+        <cbc:IdentificationCode>IT</cbc:IdentificationCode>
+      </cac:Country>
+    </cac:PostalAddress>
+    <cac:PartyTaxScheme>
+      <cbc:CompanyID>IT07945211006</cbc:CompanyID>
+      <cac:TaxScheme>
+        <cbc:ID>VAT</cbc:ID>
+      </cac:TaxScheme>
+    </cac:PartyTaxScheme>
+  </cac:TaxRepresentativeParty>
+  <cac:Delivery>
+    <cbc:ActualDeliveryDate>2019-01-10</cbc:ActualDeliveryDate>
+    <cac:DeliveryLocation>
+      <cac:Address>
+        <cbc:StreetName>VIA Paglia</cbc:StreetName>
+        <cbc:AdditionalStreetName>16</cbc:AdditionalStreetName>
+        <cbc:CityName>Castro</cbc:CityName>
+        <cbc:PostalZone>24065</cbc:PostalZone>
+        <cbc:CountrySubentity>BG</cbc:CountrySubentity>
+        <cac:Country>
+          <cbc:IdentificationCode>IT</cbc:IdentificationCode>
+        </cac:Country>
+      </cac:Address>
+    </cac:DeliveryLocation>
+    <cac:DeliveryParty>
+      <cac:PartyName>
+        <cbc:Name>Vettore</cbc:Name>
+      </cac:PartyName>
+    </cac:DeliveryParty>
+  </cac:Delivery>
+  <cac:PaymentMeans>
+    <cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+    <cbc:PaymentID>codpag123</cbc:PaymentID>
+    <cac:PayeeFinancialAccount>
+      <cbc:ID>IT02L1234512345123456789012</cbc:ID>
+      <cac:FinancialInstitutionBranch>
+        <cbc:ID>BLOPIT22XXX</cbc:ID>
+      </cac:FinancialInstitutionBranch>
+    </cac:PayeeFinancialAccount>
+  </cac:PaymentMeans>
+  <cac:PaymentTerms>
+    <cbc:Note>Condizioni di Pagamento=TP01, Data Decorrenza Penale=2019-03-15, Data Limite Pagamento Anticipato=2019-02-01, Data Riferimento Termini Pagamento=2019-01-18, Giorni Termini Pagamento=30, Penalita Pagamenti Ritardati=10.00, Sconto Pagamento Anticipato=10.00, BT-113 represents Withholding tax amount</cbc:Note>
+  </cac:PaymentTerms>
+  <cac:AllowanceCharge>
+    <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+    <cbc:AllowanceChargeReasonCode>95</cbc:AllowanceChargeReasonCode>
+    <cbc:AllowanceChargeReason>DESCRIZIONE DELLA LINEA di sconto</cbc:AllowanceChargeReason>
+    <cbc:Amount currencyID="EUR">10.00</cbc:Amount>
+    <cac:TaxCategory>
+      <cbc:ID>G</cbc:ID>
+      <cbc:Percent>0.00</cbc:Percent>
+      <cac:TaxScheme>
+        <cbc:ID>VAT</cbc:ID>
+      </cac:TaxScheme>
+    </cac:TaxCategory>
+  </cac:AllowanceCharge>
+  <cac:AllowanceCharge>
+    <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+    <cbc:AllowanceChargeReasonCode>95</cbc:AllowanceChargeReasonCode>
+    <cbc:AllowanceChargeReason>DESCRIZIONE DELLA LINEA sconto con iva</cbc:AllowanceChargeReason>
+    <cbc:Amount currencyID="EUR">10.00</cbc:Amount>
+    <cac:TaxCategory>
+      <cbc:ID>S</cbc:ID>
+      <cbc:Percent>22.00</cbc:Percent>
+      <cac:TaxScheme>
+        <cbc:ID>VAT</cbc:ID>
+      </cac:TaxScheme>
+    </cac:TaxCategory>
+  </cac:AllowanceCharge>
+  <cac:AllowanceCharge>
+    <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+    <cbc:AllowanceChargeReasonCode>ABK</cbc:AllowanceChargeReasonCode>
+    <cbc:AllowanceChargeReason>DESCRIZIONE DELLA LINEA spesa accessoria</cbc:AllowanceChargeReason>
+    <cbc:Amount currencyID="EUR">10.00</cbc:Amount>
+    <cac:TaxCategory>
+      <cbc:ID>S</cbc:ID>
+      <cbc:Percent>22.00</cbc:Percent>
+      <cac:TaxScheme>
+        <cbc:ID>VAT</cbc:ID>
+      </cac:TaxScheme>
+    </cac:TaxCategory>
+  </cac:AllowanceCharge>
+  <cac:AllowanceCharge>
+    <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+    <cbc:AllowanceChargeReason>SI</cbc:AllowanceChargeReason>
+    <cbc:MultiplierFactorNumeric>0.0000</cbc:MultiplierFactorNumeric>
+    <cbc:Amount currencyID="EUR">0.00</cbc:Amount>
+    <cbc:BaseAmount currencyID="EUR">2.00</cbc:BaseAmount>
+    <cac:TaxCategory>
+      <cbc:ID>E</cbc:ID>
+      <cbc:Percent>0.00</cbc:Percent>
+      <cac:TaxScheme>
+        <cbc:ID>VAT</cbc:ID>
+      </cac:TaxScheme>
+    </cac:TaxCategory>
+  </cac:AllowanceCharge>
+  <cac:AllowanceCharge>
+    <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+    <cbc:AllowanceChargeReasonCode>ABK</cbc:AllowanceChargeReasonCode>
+    <cbc:AllowanceChargeReason>Maggiorazione documento</cbc:AllowanceChargeReason>
+    <cbc:MultiplierFactorNumeric>4.0000</cbc:MultiplierFactorNumeric>
+    <cbc:Amount currencyID="EUR">40.00</cbc:Amount>
+    <cbc:BaseAmount currencyID="EUR">1000.00</cbc:BaseAmount>
+    <cac:TaxCategory>
+      <cbc:ID>E</cbc:ID>
+      <cbc:Percent>0.00</cbc:Percent>
+      <cac:TaxScheme>
+        <cbc:ID>VAT</cbc:ID>
+      </cac:TaxScheme>
+    </cac:TaxCategory>
+  </cac:AllowanceCharge>
+  <cac:AllowanceCharge>
+    <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+    <cbc:AllowanceChargeReason>RT01 A</cbc:AllowanceChargeReason>
+    <cbc:MultiplierFactorNumeric>20.0000</cbc:MultiplierFactorNumeric>
+    <cbc:Amount currencyID="EUR">0.00</cbc:Amount>
+    <cbc:BaseAmount currencyID="EUR">200.00</cbc:BaseAmount>
+    <cac:TaxCategory>
+      <cbc:ID>E</cbc:ID>
+      <cbc:Percent>0.00</cbc:Percent>
+      <cac:TaxScheme>
+        <cbc:ID>VAT</cbc:ID>
+      </cac:TaxScheme>
+    </cac:TaxCategory>
+  </cac:AllowanceCharge>
+  <cac:TaxTotal>
+    <cbc:TaxAmount currencyID="EUR">220.00</cbc:TaxAmount>
+    <cac:TaxSubtotal>
+      <cbc:TaxableAmount currencyID="EUR">1000.00</cbc:TaxableAmount>
+      <cbc:TaxAmount currencyID="EUR">220.00</cbc:TaxAmount>
+      <cac:TaxCategory>
+        <cbc:ID>S</cbc:ID>
+        <cbc:Percent>22.00</cbc:Percent>
+        <cac:TaxScheme>
+          <cbc:ID>VAT</cbc:ID>
+        </cac:TaxScheme>
+      </cac:TaxCategory>
+    </cac:TaxSubtotal>
+    <cac:TaxSubtotal>
+      <cbc:TaxableAmount currencyID="EUR">0.00</cbc:TaxableAmount>
+      <cbc:TaxAmount currencyID="EUR">0.00</cbc:TaxAmount>
+      <cac:TaxCategory>
+        <cbc:ID>G</cbc:ID>
+        <cbc:Percent>0.00</cbc:Percent>
+        <cbc:TaxExemptionReasonCode>vatex-eu-g</cbc:TaxExemptionReasonCode>
+        <cac:TaxScheme>
+          <cbc:ID>VAT</cbc:ID>
+        </cac:TaxScheme>
+      </cac:TaxCategory>
+    </cac:TaxSubtotal>
+    <cac:TaxSubtotal>
+      <cbc:TaxableAmount currencyID="EUR">40.00</cbc:TaxableAmount>
+      <cbc:TaxAmount currencyID="EUR">0.00</cbc:TaxAmount>
+      <cac:TaxCategory>
+        <cbc:ID>E</cbc:ID>
+        <cbc:Percent>0.00</cbc:Percent>
+        <cbc:TaxExemptionReasonCode>vatex-eu-151-1b</cbc:TaxExemptionReasonCode>
+        <cbc:TaxExemptionReason>Exempt from tax</cbc:TaxExemptionReason>
+        <cac:TaxScheme>
+          <cbc:ID>VAT</cbc:ID>
+        </cac:TaxScheme>
+      </cac:TaxCategory>
+    </cac:TaxSubtotal>
+  </cac:TaxTotal>
+  <cac:LegalMonetaryTotal>
+    <cbc:LineExtensionAmount currencyID="EUR">1010.00</cbc:LineExtensionAmount>
+    <cbc:TaxExclusiveAmount currencyID="EUR">1040.00</cbc:TaxExclusiveAmount>
+    <cbc:TaxInclusiveAmount currencyID="EUR">1260.00</cbc:TaxInclusiveAmount>
+    <cbc:AllowanceTotalAmount currencyID="EUR">20.00</cbc:AllowanceTotalAmount>
+    <cbc:ChargeTotalAmount currencyID="EUR">50.00</cbc:ChargeTotalAmount>
+    <cbc:PrepaidAmount currencyID="EUR">200.00</cbc:PrepaidAmount>
+    <cbc:PayableAmount currencyID="EUR">1060.00</cbc:PayableAmount>
+  </cac:LegalMonetaryTotal>
+  <cac:InvoiceLine>
+    <cbc:ID>1</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="C62">2.00000000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="EUR">1000.00</cbc:LineExtensionAmount>
+    <cbc:AccountingCost>rifamm123</cbc:AccountingCost>
+    <cac:InvoicePeriod>
+      <cbc:StartDate>2019-01-18</cbc:StartDate>
+      <cbc:EndDate>2019-01-18</cbc:EndDate>
+    </cac:InvoicePeriod>
+    <cac:DocumentReference>
+      <cbc:ID schemeID="ZZZ">klji12</cbc:ID>
+      <cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
+    </cac:DocumentReference>
+    <cac:AllowanceCharge>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:AllowanceChargeReasonCode>95</cbc:AllowanceChargeReasonCode>
+      <cbc:MultiplierFactorNumeric>2.00</cbc:MultiplierFactorNumeric>
+      <cbc:Amount currencyID="EUR">10.00</cbc:Amount>
+    </cac:AllowanceCharge>
+    <cac:Item>
+      <cbc:Name>DESCRIZIONE DELLA LINEA 1</cbc:Name>
+      <cac:ClassifiedTaxCategory>
+        <cbc:ID>S</cbc:ID>
+        <cbc:Percent>22.00</cbc:Percent>
+        <cac:TaxScheme>
+          <cbc:ID>VAT</cbc:ID>
+        </cac:TaxScheme>
+      </cac:ClassifiedTaxCategory>
+      <cac:AdditionalItemProperty>
+        <cbc:Name>colore</cbc:Name>
+        <cbc:Value>bianco</cbc:Value>
+      </cac:AdditionalItemProperty>
+      <cac:AdditionalItemProperty>
+        <cbc:Name>causale del trasporto</cbc:Name>
+        <cbc:Value>causale del trasporto</cbc:Value>
+      </cac:AdditionalItemProperty>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="EUR">500.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="C62">1.00</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>2</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="C62">10.00000000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="EUR">10.00</cbc:LineExtensionAmount>
+    <cac:InvoicePeriod>
+      <cbc:StartDate>2019-01-18</cbc:StartDate>
+      <cbc:EndDate>2019-01-18</cbc:EndDate>
+    </cac:InvoicePeriod>
+    <cac:DocumentReference>
+      <cbc:ID schemeID="ZZZ">klji12</cbc:ID>
+      <cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
+    </cac:DocumentReference>
+    <cac:Item>
+      <cbc:Name>DESCRIZIONE DELLA LINEA 2</cbc:Name>
+      <cac:ClassifiedTaxCategory>
+        <cbc:ID>G</cbc:ID>
+        <cbc:Percent>0.00</cbc:Percent>
+        <cac:TaxScheme>
+          <cbc:ID>VAT</cbc:ID>
+        </cac:TaxScheme>
+      </cac:ClassifiedTaxCategory>
+      <cac:AdditionalItemProperty>
+        <cbc:Name>materiale</cbc:Name>
+        <cbc:Value>carta</cbc:Value>
+      </cac:AdditionalItemProperty>
+      <cac:AdditionalItemProperty>
+        <cbc:Name>causale del trasporto</cbc:Name>
+        <cbc:Value>causale del trasporto</cbc:Value>
+      </cac:AdditionalItemProperty>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="EUR">1.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="C62">1.00</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+</Invoice>

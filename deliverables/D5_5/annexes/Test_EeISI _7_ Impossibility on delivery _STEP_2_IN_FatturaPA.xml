@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><ns3:AttestazioneTrasmissioneFattura xmlns:ns3="http://www.fatturapa.gov.it/sdi/messaggi/v1.0" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" versione="1.0">
+    <IdentificativoSdI>1420719893</IdentificativoSdI>
+    <NomeFile>IT02406911202_17XFA.xml</NomeFile>
+    <DataOraRicezione>2019-11-25T15:22:11.000+02:00</DataOraRicezione>
+    <Destinatario>
+        <Codice>4Z3U0J</Codice>
+        <Descrizione>Azienda U.S.L. Toscana Nord - Ovest - UFFICIO FATTURAZIONE LIVORNO</Descrizione>
+    </Destinatario>
+    <MessageId>4435142622</MessageId>
+    <Note>Se la fattura e' indirizzata ad una PA, la presente attestazione puo' essere utilizzata come titolo da presentare o inoltrare alla PA (attraverso canali diversi dal SdI) al fine di sottoporre la fattura in essa contenuta al dovuto controllo da parte dell'amministrazione interessata e all'eventuale liquidazione della stessa. Qualora invece la fattura sia indirizzata a soggetto privato, la presente attestazione certifica soltanto l'impossibilita' di consegna del file al soggetto destinatario.Se infine la fattura e' stata inviata in ottemperanza agli obblighi di trasmissione dei 'Dati Fattura', la presente attestazione certifica l'avvenuto recapito al Sistema dell'Agenzia delle Entrate.</Note>
+    <HashFileOriginale>25c36c2f927f4af68e146ce30dc490f1a53185567606a0b01832aa8c243d7cd4</HashFileOriginale>
+<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="Signature1"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><ds:Reference Id="reference-document" URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2002/06/xmldsig-filter2"><XPath xmlns="http://www.w3.org/2002/06/xmldsig-filter2" Filter="subtract">/descendant::ds:Signature</XPath></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>Ra+JGj8wbRQuPFmfvOJgaV3zurLfn/jgPXwX+mLlcx4=</ds:DigestValue></ds:Reference><ds:Reference Id="reference-signedpropeties" Type="http://uri.etsi.org/01903#SignedProperties" URI="#SignedProperties_1"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>smLnFN8qln/f9oqZpwBd4ESk7WOpqA9czR6qcJtQRrA=</ds:DigestValue></ds:Reference><ds:Reference Id="reference-keyinfo" URI="#KeyInfoId"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>a8kJS5DTRP/htj4YsPbUP6BpiZ8Ex/W0fymdE/8Okpk=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="SignatureValue1">TrDp47z28pfidZCSRRd85QAd9E0FN3ZmW/7t8T3bwkEBDo1eAZ03A9wFQotkYoXJQw/eiCIjgOq6
+qSzcRPgfIhZrMPe3aY1yQAWaJVkZvlrKbKLW/ziC03SywkpvEvlDdsP3GgI1Yr5fbmKhZ8a1EDTN
+EWliqBwfvDLchaOpC7vD5h0D+Ly/oGEdeEmNXrXu2e56Bfpc86Uy/42lBPi/Nrz0cBqDU0+vmWWW
+OYZqJBPuidHSwpygOMWBVQ63JvzYGgxc7i6Pvg+eZZTsjNQrRbQ94D+BK9K5ma2lxAyGB3WJtL9C
+PGx5L9eBM5UN+GhKI9Fpjpi9gWfft/JvUQv+eA==</ds:SignatureValue><ds:KeyInfo Id="KeyInfoId"><ds:X509Data><ds:X509Certificate>MIIEZTCCA02gAwIBAgIITPn9utyy2GMwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCSVQxHjAc
+BgNVBAoTFUFnZW56aWEgZGVsbGUgRW50cmF0ZTEbMBkGA1UECxMSU2Vydml6aSBUZWxlbWF0aWNp
+MSEwHwYDVQQDExhDQSBBZ2VuemlhIGRlbGxlIEVudHJhdGUwHhcNMTcwNTI0MTIzNDE3WhcNMjAw
+NTI0MTIzNDE3WjB0MQswCQYDVQQGEwJJVDEeMBwGA1UECgwVQWdlbnppYSBkZWxsZSBFbnRyYXRl
+MRswGQYDVQQLDBJTZXJ2aXppIFRlbGVtYXRpY2kxKDAmBgNVBAMMH1Npc3RlbWEgSW50ZXJzY2Ft
+YmlvIEZhdHR1cmEgUEEwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCLJQZHLMe7PybW
+stb/sLv0kk8dewRdDZ4VDAWtxuE7AOCXzSeuTOj3RLW3V53jYYLnjvUFO4v/q8/Y70sG+D9/3xt7
+7E4Q+my42qfGnjDFa5CNNvmm/Bh707k/8RVQtaDmFNCu0qq+z8lk9Nqy+rwEX7fPJ5M0a3jK4alH
+1P25thEGFHsJi51swuddW2jc5TLLpDce6dMAFu7ysRQcosXEKOpY9zGimZ51m+emX1cGa2sUpuGF
+VYrRywd97trU+8qPmvJlYUlSV3h05TZW6imrvjonO3k2bHIjnk/ttkdNoO5kp0PeUN0XVAEHi+fZ
+6q8LfJQJZPJV6jYFqx6OjyehAgMBAAGjggEAMIH9MB8GA1UdIwQYMBaAFOpEPx8Z4zc+q6qUgqWf
+6/wWun+1MIGqBgNVHR8EgaIwgZ8wgZyggZmggZaGgZNsZGFwOi8vY2Fkcy5lbnRyYXRlLmZpbmFu
+emUuaXQvQ049Q0ElMjBBZ2VuemlhJTIwZGVsbGUlMjBFbnRyYXRlLE9VPVNlcnZpemklMjBUZWxl
+bWF0aWNpLE89QWdlbnppYSUyMGRlbGxlJTIwRW50cmF0ZSxDPWl0P2NlcnRpZmljYXRlUmV2b2Nh
+dGlvbkxpc3QwHQYDVR0OBBYEFPvx4ds7h8HRgUpb4YbAY/nVZ/OqMA4GA1UdDwEB/wQEAwIGQDAN
+BgkqhkiG9w0BAQsFAAOCAQEAMp2EYR25WLlVBbf2mUKxVJwN0/zkEc8Ejz0po5RTMuskjbbU1JR1
+t72PDTNVAkuouj3X6Fx8TiO6CaEG9ShGdJHosMwekj5S7Iqd0xS66KlKuQkmPyHBPguS2/WLdLiT
+IFn5J8hnKUrXzOr48s48K5iY4QcFcA6wa2PcmLmBFj/uRHqzdrwPmY0orEZkJo9Zh+W1/BCMVGL+
+Ai5j5vaTmcRU4d6z7TekrfSthjxaYY1v8PVeS6YOpYb2MwPXr9MPm/4cpP2tZqhtWFRkUhqBVQ69
+Nf+6rShNRNk9kwWgyQvuJI4y50d5tcMvca6tin4WzrHoe6I2+DtVpQxx5wtvZg==</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" Target="#Signature1"><xades:SignedProperties Id="SignedProperties_1"><xades:SignedSignatureProperties><xades:SigningTime>2019-11-25T16:07:06Z</xades:SigningTime></xades:SignedSignatureProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></ns3:AttestazioneTrasmissioneFattura>
